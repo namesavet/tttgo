@@ -1,0 +1,61 @@
+label{
+    display: inline-block;
+    margin: 10px 0;
+}
+input{
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 50%;
+  
+}
+
+.LoginwithPhone{
+    padding: auto;
+    background-color:black;
+   
+  }
+.btnLogin{
+    align-items: center;
+    border-radius: 6px;
+    background-color: rgb(152, 219, 228);
+    color: whitesmoke;
+    display: block;
+    margin: 10px 0 30px;
+    padding: 10px;
+    font-size: 16px;
+    width: 54%;
+}
+.btnGoogle{
+    border-radius: 6px;
+    background-color: rgb(204, 43, 43);
+    color: whitesmoke;
+    display: block;
+    margin: 10px 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 54%;
+  
+}
+.btnFacebook{
+    border-radius: 6px;
+    background-color: rgb(9, 76, 138);
+    color: whitesmoke;
+    display: block;
+    margin: 10px 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 54%;
+}
+.btnLine{
+    border-radius:6px;
+    background-color: rgb(27, 247, 19);
+    color: whitesmoke;
+    display: block;
+    margin: 0px 0 30px;
+    padding: 10px;
+    font-size: 16px;
+    width: 54%;
+}
+
