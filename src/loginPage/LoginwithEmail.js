@@ -1,5 +1,5 @@
 import { Button, Form } from "react-bootstrap";
-import "./LoginWithPhone.css";
+import "./LoginWithEmail.css";
 import google from "../img/google.png";
 import facebook from "../img/facebook.png";
 import line from "../img/line.png";
@@ -7,12 +7,12 @@ import React from "react";
 import FooterLogin from "../footer/FooterLogin";
 import Navbar1 from "../components/Navbar";
 // import "bootstrap/dist/css/bootstrap.min.css";
-class LoginWithPhone extends React.Component {
+class LoginWithEmail extends React.Component {
   render() {
     return (
       <div>
         <Navbar1 />
-        <div className="LoginWithPhone">
+        <div className="LoginWithEmail">
           <div className="inputLogin">
             <div className="row mt-5" style={{ width: "100%" }}>
               <div
@@ -35,21 +35,54 @@ class LoginWithPhone extends React.Component {
                   textAlign: "right",
                 }}
               >
-                เข้าสู่ระบบด้วยรหัสผ่าน
+                เข้าสู่ระบบด้วยเบอร์มือถือ
               </div>
             </div>
 
             <form>
               <Form.Group className="mb-3 mt-4">
-                <Form.Label style={{ width: "40%", marginleft: "20%",textAlign:"left" }}>
-                  เบอร์มือถือ(10 หลัก)
+                <Form.Label
+                  style={{
+                    width: "40%",
+                    marginleft: "30%",
+                    textAlign: "left",
+                  }}
+                >
+                  อีเมล
                 </Form.Label>
                 <Form.Control
+                  type="email"
+                  placeholder="info@nilecon.co"
                   style={{ width: "40%", marginLeft: "30%" }}
-                  type="text"
-                  placeholder="088xxxxxxx"
+                />
+                <Form.Label
+                  style={{
+                    width: "40%",
+                    marginleft: "30%",
+                    textAlign: "left",
+                  }}
+                >
+                  รหัสผ่าน
+                </Form.Label>
+                <Form.Control
+                  type="password"
+                  style={{ width: "40%", marginLeft: "30%" }}
                 />
               </Form.Group>
+
+              <div className="row">
+                <div
+                  className="col mt-2 "
+                  style={{
+                    fontSize: "16px",
+                    color: "aqua",
+                    marginRight: "30%",
+                    textAlign: "right",
+                  }}
+                >
+                  ลืมรหัสผ่าน?
+                </div>
+              </div>
 
               <div>
                 <Button
@@ -157,4 +190,4 @@ class LoginWithPhone extends React.Component {
     );
   }
 }
-export default LoginWithPhone;
+export default LoginWithEmail;
