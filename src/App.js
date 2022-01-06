@@ -1,17 +1,25 @@
-import React from 'react';
-import './App.css';
-import Navbar1 from './components/Navbar';
-import Bander from './components/bandner';
-import Menu from './components/menu';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <Navbar1></Navbar1>
-      <Bander></Bander>
-      <Menu></Menu>
-    </div>
-  );
+import { Home } from './pages/Home'
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom'
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div>
+          <Navbar></Navbar>
+          <div>
+            <Switch>
+              <Route path="/" component={Home} />
+
+            </Switch>
+          </div>
+
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

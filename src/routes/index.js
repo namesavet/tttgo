@@ -1,17 +1,14 @@
 import React from 'react'
-import {Route, Switch} from "react-router-dom";
-
+import { BrowserRouter as Router,Switch, Route,} from 'react-router-dom'
 import { Home } from '../pages/Home'
 
-
-
-
-export default () => (
-  <Switch>
-
-   
-    <Route exact path="/home" component={Home} />
+export default () => {
   
 
-  </Switch>
-)
+
+        <Route exact path="/" component={Home} >
+            <Switch></Switch>
+        </Route>
+
+    
+ };

@@ -1,0 +1,55 @@
+.layoutmenubtn{
+    justify-content: center;
+    
+}
+.fontmenubtn{
+    margin-top: 3px;
+}
+.menubtn{
+    margin-left: 14%;
+}
+.tabmenu{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: center;
+}
+.today{
+    margin-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.slick-next:before, .slick-prev:before {
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #fd7e14;
+}
+.ads175{
+    
+    width: 1140px;
+    height: 175px;
+}
+.ads{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.category{
+    margin-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+   
+}
+.categorypic{
+    width: 45%;
+    border-radius: 500%;
+    box-shadow: rgb(149 157 165 / 20%) 1px 8px 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.categorytext{
+    text-align: center;
+}

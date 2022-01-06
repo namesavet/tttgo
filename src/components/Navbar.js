@@ -35,7 +35,7 @@ class Navbar1 extends Component {
                             <Button variant="outline-success" style={{ marginRight: '18px', width: '90%', fontSize: '13px' }}>สำหรับผู้ประกอบการ</Button>{' '}
                         </div>
 
-                        <a href="_blank" ref="noopender noreferrer" style={{ color: "grey" }}><i class="fas fa-language"></i></a>
+                        <a href="_blank"  style={{ color: "grey" }}><i className="fas fa-language"></i></a>
 
                         <Nav className="fontNavbar">
                             <NavDropdown title="TH/EN" id="basic-nav-dropdown">
@@ -45,7 +45,7 @@ class Navbar1 extends Component {
                         </Nav>
 
                         <div style={{ marginLeft: '10px' }}>
-                            <a href="_blank" ref="noopender noreferrer" style={{ color: "grey" }}><i class="fas fa-user-circle fa-2x"></i></a>
+                            <a href="_blank"  style={{ color: "grey" }}><i className="fas fa-user-circle fa-2x"></i></a>
                         </div>
 
                         <div style={{ marginLeft: '20px' }}>
