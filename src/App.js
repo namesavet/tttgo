@@ -1,17 +1,16 @@
 import React from "react";
 import "./App.css";
-// import LoginWithPhone from "./loginPage/LoginWithPhone";
-// import FooterLogin from "./footer/FooterLogin";
-// import Navbar1 from "./components/Navbar";
-import LoginWithEmail from "./loginPage/LoginwithEmail";
-import LoginWithPhone from "./loginPage/LoginWithPhone";
-// import Bander from './components/bandner';
-// import Menu from './components/menu';
+// import LoginWithEmail from "./pages/LoginPageWithEmail/LoginWithEmail"
+import Register from "./pages/Register/Register"
+// import LoginWithPhone from "./pages/LoginPageWithPhone/LoginWithPhone"
+// import { withRouter } from 'react-router-dom';
+// import Routing from "./routes";
+
 
 function App() {
   return (
     <div className="App">
-        <LoginWithPhone/>
+        <Register/>
       </div>
   );
 }

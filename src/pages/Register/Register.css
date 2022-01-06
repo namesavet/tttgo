@@ -1,0 +1,52 @@
+label{
+    margin: 10px 0 ;
+}
+h1{
+    color: black;
+}
+
+.Register{
+    padding:10%;
+    margin: auto;
+    background-image: url('../../img/tttgo.jpg');
+    background-size: cover;
+   
+  }
+.inputRegister{
+    justify-content: center;
+    padding: 1px;
+    background-color: white;
+    border-radius: 6px;
+    height:100%;
+    width: 100%; 
+    display: inline-block;
+}
+
+
+.btnLogin{
+    border-radius: 6px;
+    background-color: #8be973;
+    color: whitesmoke;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 25%;
+   
+}
+.btnGoogle{
+    margin: 10px 0 5px;
+    padding: 10px;
+    width: 40%;
+   
+}
+.btnFacebook{
+    margin: 0px 0 5px;
+    padding: 10px;
+    width: 40%;
+   
+}
+.btnLine{
+    margin: 0px 0 30px;
+    padding: 10px;
+    width: 40%;
+}
+
