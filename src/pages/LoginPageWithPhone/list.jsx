@@ -22,6 +22,7 @@ export class LoginWithPhone extends React.Component {
                   fontSize: "24px",
                   marginLeft: "30%",
                   textAlign: "left",
+                  
                 }}
               >
                 เข้าสู่ระบบ
@@ -31,8 +32,10 @@ export class LoginWithPhone extends React.Component {
                 style={{
                   fontSize: "16px",
                   color: "aqua",
-                  marginRight: "25%",
+                  marginRight: "15%",
                   textAlign: "right",
+                  textDecoration: "underline"
+                  
                 }}
               >
                 เข้าสู่ระบบด้วยรหัสผ่าน
@@ -40,8 +43,10 @@ export class LoginWithPhone extends React.Component {
             </div>
 
             <form>
-              <Form.Group className="mb-3 mt-4">
-                <Form.Label style={{ width: "40%", marginleft: "20%",textAlign:"left" }}>
+              <div className="row">
+                <Form.Group className="mb-3 mt-4" >
+                <Form.Label style={{ marginLeft: "30%" }}
+                >
                   เบอร์มือถือ(10 หลัก)
                 </Form.Label>
                 <Form.Control
@@ -50,11 +55,13 @@ export class LoginWithPhone extends React.Component {
                   placeholder="088xxxxxxx"
                 />
               </Form.Group>
+                </div>              
+                
 
               <div>
                 <Button
                   variant="outline"
-                  style={{ backgroundColor: "#8be973", color: "white" }}
+                  style={{ backgroundColor: "#8be973", color: "white" ,marginLeft:"37%"}}
                   type="submit"
                   className="btnLogin"
                 >
@@ -62,13 +69,13 @@ export class LoginWithPhone extends React.Component {
                 </Button>
               </div>
             </form>
-            <div style={{ color: "black", fontSize: "20px" }}>
+            <div style={{ color: "black", fontSize: "20px" ,marginLeft:"35%" }}>
               <div>หรือจะลงทะเบียนด้วย</div>
             </div>
             <div>
               <Button
                 variant="outline"
-                style={{ backgroundColor: "#eb7070", color: "white" }}
+                style={{ backgroundColor: "#eb7070", color: "white" ,marginLeft:"30%"}}
                 type="submit"
                 className="btnGoogle"
               >
@@ -88,7 +95,7 @@ export class LoginWithPhone extends React.Component {
             <div>
               <Button
                 variant="outline"
-                style={{ backgroundColor: "#6280e2", color: "white" }}
+                style={{ backgroundColor: "#6280e2", color: "white" ,marginLeft:"30%"}}
                 type="submit"
                 className="btnFacebook"
               >
@@ -109,7 +116,7 @@ export class LoginWithPhone extends React.Component {
             <div>
               <Button
                 variant="outline"
-                style={{ backgroundColor: "#7af062", color: "white" }}
+                style={{ backgroundColor: "#7af062", color: "white" ,marginLeft:"30%"}}
                 type="submit"
                 className="btnLine"
               >
@@ -126,7 +133,7 @@ export class LoginWithPhone extends React.Component {
                 </div>
               </Button>
             </div>
-            <div className="row mt-8" style={{ display: "inline" }}>
+            <div className="row mt-8" style={{ textAlign:"center" ,marginLeft:"10%",marginRight:"10%" }}>
               <ul>
                 ท่านยอมรับ <p1>ข้อกำหนดในการใช้งาน</p1> และ
                 <p1> นโยบายความเป็นส่วนตัว</p1> ของ Thaiteawthai.com
@@ -143,10 +150,10 @@ export class LoginWithPhone extends React.Component {
                 marginLeft: "0",
               }}
             >
-              <div className="col">
+              <div className="col" style={{whiteSpace:"nowrap"}}>
                 <i>ยังไม่เป็นสมาชิก ThiteawthaiGo ใช่หรือไม่ ?</i>
               </div>
-              <div className="col" style={{textDecoration:"underline"}}>
+              <div className="col" style={{ textDecoration: "underline" ,textAlign:"right" }}>
                 <i>ลงทะเบียน</i>
               </div>
             </div>
@@ -157,4 +164,3 @@ export class LoginWithPhone extends React.Component {
     );
   }
 }
-

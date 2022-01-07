@@ -1,9 +1,9 @@
-// import React from "react";
-// import {Switch,Route} from 'react-route-dom'
-// import {LoginWithPhone} from '..pages/LoginPageWithPhone'
+import React from "react";
+import { BrowserRouter as Switch, Route } from "react-router-dom";
+import { LoginWithPhone } from "../pages/LoginPageWithPhone";
 
-// export default()=> (
-//     <Switch>
-//         <Route exact path="/loginwithphone" component={LoginWithPhone} />
-//     </Switch>
-// )
+export default()=>(
+  <Switch>
+    <Route exact path="/" component={LoginWithPhone} />
+  </Switch>
+);

@@ -1,18 +1,20 @@
 import React from "react";
-import "./App.css";
 // import LoginWithEmail from "./pages/LoginPageWithEmail/LoginWithEmail"
-import Register from "./pages/Register/Register"
+// import Register from "./pages/Register/Register"
+import Routing from "./routes";
 // import LoginWithPhone from "./pages/LoginPageWithPhone/LoginWithPhone"
-// import { withRouter } from 'react-router-dom';
-// import Routing from "./routes";
+import { withRouter } from 'react-router-dom';
 
 
-function App() {
-  return (
-    <div className="App">
-        <Register/>
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="my-app">
+        <Routing />
       </div>
-  );
+    );
+  }
 }
 
-export default App;
+export default withRouter(App);

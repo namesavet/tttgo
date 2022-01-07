@@ -4,6 +4,13 @@ label{
 h1{
     color: black;
 }
+li {
+  font-size: 10px,                
+     
+}
+p{
+    color: black;
+}
 
 .Register{
     padding:10%;
