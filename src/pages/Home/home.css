@@ -1,55 +1,139 @@
-.layoutmenubtn{
-    justify-content: center;
-    
+.layoutmenubtn {
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: ghostwhite;
 }
-.fontmenubtn{
-    margin-top: 3px;
+.testmenu{
+  justify-content: center;
 }
-.menubtn{
-    margin-left: 14%;
+.tabbtnmenu {
+  justify-content: center;
+  width: 100%;
 }
-.tabmenu{
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    justify-content: center;
+.fontmenubtn {
+  margin-top: 3px;
 }
-.today{
-    margin-top: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
+.menubtn {
+  margin-left: 14%;
 }
-.slick-next:before, .slick-prev:before {
-    font-size: 20px;
-    line-height: 1;
-    opacity: .75;
-    color: #fd7e14;
+.tabmenu {
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  justify-content: center;
 }
-.ads175{
-    
-    width: 1140px;
-    height: 175px;
+.today {
+  margin-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.ads{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
+.hotel {
+  margin-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-.category{
-    margin-top: 30px;
-    padding-left: 10%;
-    padding-right: 10%;
-   
+.slick-next:before,
+.slick-prev:before {
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #fd7e14;
 }
-.categorypic{
-    width: 45%;
-    border-radius: 500%;
-    box-shadow: rgb(149 157 165 / 20%) 1px 8px 24px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.categoryarrow {
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  background: "#fd7e14";
 }
-.categorytext{
-    text-align: center;
+.ads175 {
+  width: 100%;
+  height: 100%;
+}
+.ads380 {
+  width: 100%;
+  height: 100%;
+}
+.ads {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.category {
+  margin-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.categorypic {
+  width: 45%;
+  border-radius: 500%;
+  box-shadow: rgb(149 157 165 / 20%) 1px 8px 24px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.categorytext {
+  text-align: center;
+}
+.thailand {
+  margin-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 30px;
+}
+.thaipic {
+  border-radius: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.textregister {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.seeall {
+  text-align: end;
+}
+.textseeall {
+  justify-content: center;
+  margin-top: 10px;
+  margin-right: 20px;
+  text-align: end;
+}
+.footmenu {
+  background-color: ghostwhite;
+}
+.disprice {
+  text-decoration: line-through;
+  color: gray;
+  font-size: small;
+  
+  margin-top: 10px;
+}
+.detailprice {
+  color: gray;
+  font-size: small;
+ 
+}
+.location{
+  color: rgb(70, 187, 255);
+  font-size: small;
+
+}
+
+.redprice {
+  font-size: large;
+  color: red;
+  font-weight: bold;
+
+}
+.greenprice{
+  font-size: large;
+  color: green;
+  font-weight: bold;
+ 
 }

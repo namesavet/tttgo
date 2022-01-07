@@ -1,8 +1,9 @@
 import React from "react";
+import Routing from "./routes";
 
-import { Home } from './pages/Home'
+import { withRouter } from 'react-router-dom';
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom'
+import { BrowserRouter as Router,} from 'react-router-dom'
 class App extends React.Component {
   render() {
     return (
@@ -10,10 +11,7 @@ class App extends React.Component {
         <div>
           <Navbar></Navbar>
           <div>
-            <Switch>
-              <Route path="/" component={Home} />
-
-            </Switch>
+          <Routing />
           </div>
 
         </div>
@@ -22,4 +20,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default withRouter(App);
