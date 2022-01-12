@@ -3,7 +3,9 @@ import Routing from "./routes";
 
 import { withRouter } from 'react-router-dom';
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router,} from 'react-router-dom'
+import Footmenu from "./components/footmenu";
+
+import { BrowserRouter as Router} from 'react-router-dom'
 class App extends React.Component {
   render() {
     return (
@@ -13,7 +15,9 @@ class App extends React.Component {
           <div>
           <Routing />
           </div>
-
+        
+            <Footmenu></Footmenu>
+        
         </div>
       </Router>
     );
