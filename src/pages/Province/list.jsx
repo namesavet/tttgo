@@ -7,6 +7,7 @@ import {
   Breadcrumb,
   Container,
   Pagination,
+  NavLink
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import thai from "../../img/thai.jpg";
@@ -295,9 +296,9 @@ export class Province extends React.Component {
 
         <div className="row  " style={{ listStyle: "none" }}>
           <li className="col-md-6 col-lg-3">
-            <Card className="provincedetail">
+            <NavLink href="/Provincedetail" className="province-link">
+               <Card className="provincedetail">
               <Card.Img variant="top" src={thai} />
-
               <Card.Body>
                 <div className="titlelocation">วัดแสนสุข</div>
                 <div className="greenlocation">อ.เมือง(บางแสน)</div>
@@ -307,6 +308,8 @@ export class Province extends React.Component {
                 </Card.Text>
               </Card.Body>
             </Card>
+            </NavLink>
+           
           </li>
           <li className="col-md-6 col-lg-3">
             <Card className="provincedetail">
