@@ -4,15 +4,19 @@ import React from "react";
 import Routing from "./routes";
 // import LoginWithPhone from "./pages/LoginPageWithPhone/LoginWithPhone"
 import { withRouter } from 'react-router-dom';
+import FooterLogin from "./footer/FooterLogin";
+import Navbar1 from "./components/Navbar";
 
 
 
 class App extends React.Component {
   render() {
     return (
+    
       <div className="my-app">
         <Routing />
       </div>
+    
     );
   }
 }

@@ -1,4 +1,4 @@
-import { Button, Form } from "react-bootstrap";
+import { Button, Form ,Container } from "react-bootstrap";
 import "./LoginWithEmail.css";
 import google from "../../img/google.png";
 import facebook from "../../img/facebook.png";
@@ -6,46 +6,47 @@ import line from "../../img/line.png";
 import React from "react";
 import FooterLogin from "../../footer/FooterLogin";
 import Navbar1 from "../../components/Navbar";
-// import "bootstrap/dist/css/bootstrap.min.css";
-class LoginWithEmail extends React.Component {
+import { NavLink } from "react-router-dom";
+
+export class LoginWithEmail extends React.Component {
   render() {
     return (
-      <div>
+      <div className="LoginWithEmail">
         <Navbar1 />
-        <div className="LoginWithEmail">
+        <Container>
           <div className="inputLogin">
-            <div className="row mt-5" style={{ width: "100%" }}>
+            <div className="row mt-3" style={{ width: "100%" }}>
               <div
                 className="col"
                 style={{
                   color: "black",
                   fontSize: "24px",
-                  marginLeft: "30%",
+                  marginLeft: "10%",
                   textAlign: "left",
                 }}
               >
                 เข้าสู่ระบบ
               </div>
-              <div
-                className="col mt-2 "
-                style={{
-                  fontSize: "16px",
-                  color: "aqua",
-                  marginRight: "25%",
-                  textAlign: "right",
-                }}
-              >
-                เข้าสู่ระบบด้วยเบอร์มือถือ
-              </div>
+              <NavLink to="/" className="col mt-2 ">
+                <div
+                  style={{
+                    fontSize: "16px",
+                    color: "aqua",
+                    marginRight: "15%",
+                    textAlign: "right",
+                    textDecoration: "underline",
+                  }}
+                >
+                  เข้าสู่ระบบด้วยเบอร์มือถือ
+                </div>
+              </NavLink>
             </div>
 
             <form>
-              <Form.Group className="mb-3 mt-4">
+              <Form.Group className="mb-3 mt-4" style={{ textAlign: "left" }}>
                 <Form.Label
                   style={{
-                    width: "40%",
-                    marginleft: "30%",
-                    textAlign: "left",
+                    marginLeft: "10%",
                   }}
                 >
                   อีเมล
@@ -53,43 +54,43 @@ class LoginWithEmail extends React.Component {
                 <Form.Control
                   type="email"
                   placeholder="info@nilecon.co"
-                  style={{ width: "40%", marginLeft: "30%" }}
+                  style={{ width: "80%", marginLeft: "10%" }}
                 />
                 <Form.Label
                   style={{
-                    width: "40%",
-                    marginleft: "30%",
-                    textAlign: "left",
+                    marginLeft: "10%",
                   }}
                 >
                   รหัสผ่าน
                 </Form.Label>
                 <Form.Control
                   type="password"
-                  style={{ width: "40%", marginLeft: "30%" }}
+                  style={{ width: "80%", marginLeft: "10%" }}
                 />
               </Form.Group>
 
+              <NavLink to="/forgotPassword" className="col mt-2 ">
               <div className="row">
                 <div
                   className="col mt-2 "
                   style={{
                     fontSize: "16px",
                     color: "aqua",
-                    marginRight: "30%",
+                    marginRight: "10%",
                     textAlign: "right",
+                    textDecoration: "underline",
                   }}
                 >
                   ลืมรหัสผ่าน?
                 </div>
               </div>
+              </NavLink>
 
               <div>
                 <Button
-                  variant="outline"
-                  style={{ backgroundColor: "#8be973", color: "white" }}
+                  style={{color: "white" }}
                   type="submit"
-                  className="btnLogin"
+                  className="btn-Email-Login"
                 >
                   เข้าสู่ระบบ
                 </Button>
@@ -101,7 +102,11 @@ class LoginWithEmail extends React.Component {
             <div>
               <Button
                 variant="outline"
-                style={{ backgroundColor: "#eb7070", color: "white" }}
+                style={{
+                  backgroundColor: "#eb7070",
+                  color: "white",
+                  width: "80%",
+                }}
                 type="submit"
                 className="btnGoogle"
               >
@@ -121,7 +126,11 @@ class LoginWithEmail extends React.Component {
             <div>
               <Button
                 variant="outline"
-                style={{ backgroundColor: "#6280e2", color: "white" }}
+                style={{
+                  backgroundColor: "#6280e2",
+                  color: "white",
+                  width: "80%",
+                }}
                 type="submit"
                 className="btnFacebook"
               >
@@ -142,7 +151,11 @@ class LoginWithEmail extends React.Component {
             <div>
               <Button
                 variant="outline"
-                style={{ backgroundColor: "#7af062", color: "white" }}
+                style={{
+                  backgroundColor: "#7af062",
+                  color: "white",
+                  width: "80%",
+                }}
                 type="submit"
                 className="btnLine"
               >
@@ -159,7 +172,14 @@ class LoginWithEmail extends React.Component {
                 </div>
               </Button>
             </div>
-            <div className="row mt-8" style={{ display: "inline" }}>
+            <div
+              className="row mt-8"
+              style={{
+                textAlign: "center",
+                marginLeft: "10%",
+                marginRight: "10%",
+              }}
+            >
               <ul>
                 ท่านยอมรับ <p1>ข้อกำหนดในการใช้งาน</p1> และ
                 <p1> นโยบายความเป็นส่วนตัว</p1> ของ Thaiteawthai.com
@@ -179,15 +199,23 @@ class LoginWithEmail extends React.Component {
               <div className="col">
                 <i>ยังไม่เป็นสมาชิก ThiteawthaiGo ใช่หรือไม่ ?</i>
               </div>
-              <div className="col">
-                <i>ลงทะเบียน</i>
-              </div>
+
+              <NavLink to="/register" className="col">
+                <div
+                  style={{
+                    textAlign: "right",
+                    color: "#20B2AA",
+                    textDecoration: "underline",
+                  }}
+                >
+                  <i>ลงทะเบียน</i>
+                </div>
+              </NavLink>
             </div>
           </div>
-        </div>
+        </Container>
         <FooterLogin />
       </div>
     );
   }
 }
-export default LoginWithEmail;

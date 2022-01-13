@@ -8,55 +8,49 @@ import instagram from "../img/instagram.png";
 import youtube from "../img/youtube.png";
 import twitter from "../img/twitter.png";
 import "./FooterLogin.css";
+import { Container } from "react-bootstrap";
 class FooterLogin extends React.Component {
   render() {
     return (
       <footer>
-        <div className="row " style={{ backgroundColor: "#98FB98" }}>
-          <div className="col mt-5">
-            <img src={logopk} alt="logo" style={{ width: "200px" }}></img>
-          </div>
-          <div className="col text-center mt-5">
-            <h1>บริษัท พี.เค. ดิจิทัล คอนเนคท์ จำกัด</h1>
-            <p>
-              59/1 ถนน เจริญราษฎร์ แขวง บางโคล่ เขตบางคอแหลม กรุงเทพมหานคร 10120
-            </p>
-            <p>
-              ติดต่อ:02-307-84488 | Line ID:@tttgo | Email :
-              ae@pkdigitalconnect.com
-            </p>
-          </div>
-          <div className="col mt-5">
-            <div className="row justify-content-center">
-              <div className="col">
-                <img src={dbdlogo} alt="logo" style={{ width: "100px" }}></img>{" "}
-                <img src={ssllogo} alt="logo" style={{ width: "80px" }}></img>
-              </div>
-            </div>
-            <div className="row row-cols-auto justify-content-center">
-              <div className="col">
-                <button type="">
-                  <img
-                    src={facebookw}
-                    alt="logo"
-                    style={{ width: "30px" }}
-                  ></img>
-                </button>
-              <button type="">
-                <img src={twitter} alt="logo" style={{ width: "30px" }}></img>
-              </button>
-              <button type="">
-                <img src={linew} alt="logo" style={{ width: "30px" }}></img>
-              </button>
-              <button type="">
-                <img src={instagram} alt="logo" style={{ width: "30px" }}></img>
-              </button>
-              <button type="">
-                <img src={youtube} alt="logo" style={{ width: "30px" }}></img>
-              </button>
-              </div>
-            </div>
-          </div>
+        <div className="footer-background">
+          <Container>
+           <div className="row">
+             <div className="col-4 mt-5 logoCompany">
+                <img src={logopk} alt="logo" className="logo-company"></img>
+             </div>
+             <div className="col-4 mt-4">
+                <div className="company-footer">
+                  <h>บริษัท พี.เค. ดิจิทัล คอนเนคท์ จำกัด</h>
+                </div>
+                <div className="address-footer">
+                  <h>59/1 ถนน เจริญราษฎร์ แขวง บางโคล่ เขตบางคอแหลม กรุงเทพมหานคร 10120</h>
+                </div>
+                <div className="tel-footer">
+                  <h>ติดต่อ:02-307-8448 | Line ID :@tttgo | Email:ae@pkdigitalconnect.com</h>
+                </div>
+             </div>
+             <div className="col-4 ">
+                <div className="row">
+                    <div className="col award-logo mt-5">
+                      <img src={dbdlogo} alt="logo" className="logo-dbdlogo"></img>
+                      <img src={ssllogo} alt="logo" className="logo-ssllogo"></img>
+                    </div>
+                </div>
+                <div className="row">
+                  <div className="col social-logo mt-3" >
+                    <img src={facebookw} alt="logo" className="logo-facebookw"></img>
+                    <img src={linew} alt="logo" className="logo-linew"></img>
+                    <img src={instagram} alt="logo" className="logo-instagram"></img>
+                    <img src={youtube} alt="logo" className="logo-youtube"></img>
+                    <img src={twitter} alt="logo" className="logo-twitter"></img>
+                  </div>
+                    
+                </div>
+
+             </div>
+           </div>
+          </Container>
         </div>
       </footer>
     );

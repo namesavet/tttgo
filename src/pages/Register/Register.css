@@ -13,47 +13,19 @@ p{
 }
 
 .Register{
-    padding:10%;
-    margin: auto;
-    background-image: url('../../img/tttgo.jpg');
+    background: #c9e7e7;;
     background-size: cover;
+    text-align: center;
    
   }
 .inputRegister{
-    justify-content: center;
-    padding: 1px;
+    margin-top: 5% ;
+    margin-bottom:10% ;
+    padding: auto;
     background-color: white;
-    border-radius: 6px;
-    height:100%;
-    width: 100%; 
+    border-radius: 6px; 
     display: inline-block;
+
 }
 
-
-.btnLogin{
-    border-radius: 6px;
-    background-color: #8be973;
-    color: whitesmoke;
-    margin: 10px 0 30px;
-    padding: 10px;
-    width: 25%;
-   
-}
-.btnGoogle{
-    margin: 10px 0 5px;
-    padding: 10px;
-    width: 40%;
-   
-}
-.btnFacebook{
-    margin: 0px 0 5px;
-    padding: 10px;
-    width: 40%;
-   
-}
-.btnLine{
-    margin: 0px 0 30px;
-    padding: 10px;
-    width: 40%;
-}
 

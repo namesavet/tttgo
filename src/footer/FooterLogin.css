@@ -1,13 +1,62 @@
-h1{
-    font-size: 24px;
-    color:white;
+.footer-background {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
 }
-p{
-    font-size: 16px;
-    color:white;
+.logo-company {
+  width: 200px;
+  
 }
-button{
-   border-radius: 50%;
-   border: none;
-   background: none;
+.logoCompany{
+   text-align: start;
+}
+.company-footer {
+  font-size: 24px;
+  color: white;
+}
+.address-footer {
+  font-size: 16px;
+  color: white;
+}
+.tel-footer {
+  font-size: 16px;
+  color: white;
+}
+.logo-dbdlogo {
+  width: 100px;
+  margin-right: 5px;
+}
+.logo-ssllogo {
+  width: 70px;
+  margin-right: 5px;
+}
+.award-logo{
+    text-align:end;
+    
+}
+.social-logo{
+    text-align:end;
+    
+}
+.logo-facebookw {
+  width: 30px;
+  margin-right: 5px;
+}
+.logo-linew {
+  width: 30px;
+  margin-right: 5px;
+}
+.logo-instagram {
+  width:30px;
+  margin-right: 5px;
+}
+.logo-youtube {
+  width:30px;
+  margin-right: 5px;
+}
+.logo-twitter {
+  width:30px;
+  margin-right: 5px;
 }

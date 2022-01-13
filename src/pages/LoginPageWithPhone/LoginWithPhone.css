@@ -4,14 +4,15 @@ label{
 
 
 .LoginWithPhone{ 
-    background-image: url('../../img/tttgo.jpg');
+    background: #c9e7e7;
     background-size: cover;
+    text-align: center;
+    width:100%;
   }
 .inputLogin{
-    justify-content: center;
-    margin-top: 20% ;
+    margin-top: 10% ;
     margin-left: 20% ;
-    margin-bottom:20% ;
+    margin-bottom:10% ;
     margin-right: 20% ;
     padding: auto;
     background-color: white;
@@ -23,28 +24,19 @@ label{
     font-size: 14px;
 }
 
-.btnLogin{
-    border-radius: 6px;
-    background-color: #8be973;
-    color: whitesmoke;
-    margin: 10px 0 30px;
-    padding: 10px;
-    width: 25%;
-   
-}
-.btnGoogle{
+.btn-Phone-Google{
     margin: 10px 0 5px;
     padding: 10px;
     width: 40%;
    
 }
-.btnFacebook{
+.btn-Phone-Facebook{
     margin: 0px 0 5px;
     padding: 10px;
     width: 40%;
    
 }
-.btnLine{
+.btn-Phone-Line{
     margin: 0px 0 30px;
     padding: 10px;
     width: 40%;

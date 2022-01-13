@@ -1,0 +1,115 @@
+.no-border {
+  border: none;
+}
+.select-NumberPhone {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  width: 70%;
+  padding: 12px;
+  border: none;
+}
+.select-NumberEmail {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  border: none;
+  width: 70%;
+  padding: 12px;
+}
+.btn-Otp-SignInPhone {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  color: white;
+  width: 50%;
+}
+.btn-SignInPhone {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  color: white;
+  width: 35%;
+  padding: 12px;
+  border: none;
+  
+}
+.btn-Register {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  width: 100%;
+  padding: 12px;
+  border: none;
+}
+.phone-Verify-btn{
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  border: none;
+  width: 70%;
+  padding: 10px;
+}
+.email-Verify-btn{
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  border: none;
+  width: 70%;
+  padding: 10px;
+}
+.accept-Otp-email{
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  border: none;
+  width: 50%;
+  padding: 10px;
+}
+.accept-Otp-phone{
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  border: none;
+  width: 50%;
+  padding: 10px;
+}
+.resetPassword-btn{
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  border: none;
+  width: 50%;
+  padding: 10px;
+}
+.submit-NewPassword{
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.993),
+    rgb(11, 166, 187)
+  );
+  border: none;
+  width: 30%;
+  padding: 10px;
+  
+}

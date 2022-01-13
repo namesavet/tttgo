@@ -1,33 +1,35 @@
-label{
-    margin: 10px 0 ;
-}
+
 
 
 .LoginWithEmail{
-    padding:20%;
-    margin: auto;
-    background-image: url('../../img/tttgo.jpg');
+    background: #c9e7e7;
     background-size: cover;
-   
+    text-align: center;
   }
 .inputLogin{
-    justify-content: center;
-    padding: 1px;
+    margin-top: 5% ;
+    margin-left: 20% ;
+    margin-bottom:10% ;
+    margin-right: 20% ;
+    padding: auto;
     background-color: white;
     border-radius: 6px;
-    height:100%;
-    width: 100%; 
     display: inline-block;
 }
 
 
-.btnLogin{
+.btn-Email-Login{
     border-radius: 6px;
-    background-color: #8be973;
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 221, 111, 0.993),
+        rgb(11, 166, 187)
+      );
     color: whitesmoke;
     margin: 10px 0 30px;
-    padding: 10px;
-    width: 25%;
+    padding: 12px;
+    width: 35%;
+    border: none;
    
 }
 .btnGoogle{
