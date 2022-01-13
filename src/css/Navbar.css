@@ -7,3 +7,7 @@
 .fontNavbar{
     font-size: 14px;
 }
+.infor-link,.infor-link:focus,.infor-link:hover{
+    padding: 0;
+    color: black;
+}

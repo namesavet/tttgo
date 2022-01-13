@@ -1,0 +1,9 @@
+.information-bg{
+    background-color: ghostwhite;
+}
+.content-bg{
+    background-color: white;border-radius: 2px;
+     border-style: solid;
+     border-width: 1px;
+     border-color: gray;
+}
