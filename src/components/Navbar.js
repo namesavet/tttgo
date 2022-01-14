@@ -12,7 +12,7 @@ class Navbar1 extends Component {
   }
   render() {
     return (
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="white" expand="lg">
         <Container>
           <div className="Navbarpic">
             <Navbar.Brand href="/">
@@ -49,7 +49,7 @@ class Navbar1 extends Component {
             </Nav>
 
             <div style={{ marginLeft: "10px" }}>
-              <a href="_blank" style={{ color: "grey" }}>
+              <a href="/information" style={{ color: "grey" }}>
                 <i className="fas fa-user-circle fa-2x"></i>
               </a>
             </div>

@@ -5,38 +5,83 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import thai from "../../img/thai.jpg";
 import north from "../../img/north.jpg";
 import "./information.css";
+import { Favorites } from "./Favorites";
+import { Address } from "./Address";
 
 export class Information extends React.Component {
   render() {
     return (
       <div className="information-bg">
-        <Container>
+        <Container style={{ paddingTop: "30px", paddingBottom: "30px" }}>
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Row>
-              <Col sm={3} className="content-bg">
-                <Nav variant="pills" className="flex-column">
-                  บัญชีของฉัน
-                  <Nav.Item>
-                    <Nav.Link eventKey="first">ข้อมูลส่วนตัว</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="second">บัตรของฉัน</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="second1">ประวัติรายการซื้อ</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="second2">ตั้งค่าที่อยู่</Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link eventKey="favorites">รายการโปรด</Nav.Link>
-                  </Nav.Item>
+              <Col sm={3}>
+                <Nav variant="pills" className="flex-column tab-infor">
+                  <div className="content-bg">
+                    <div className="tab-menu">
+                      <div className="tab-menu-titel"> บัญชีของฉัน</div>
+                      <Nav.Item>
+                        <Nav.Link eventKey="information">
+                          ข้อมูลส่วนตัว
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="card">บัตรของฉัน</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="history">
+                          ประวัติรายการซื้อ
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="address">ตั้งค่าที่อยู่</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="favorites">รายการโปรด</Nav.Link>
+                      </Nav.Item>
+                    </div>
+                  </div>
+                  <div className="content-bg" style={{ marginTop: "20px" }}>
+                    <div className="tab-menu">
+                      <div className="tab-menu-titel"> การจองของฉัน</div>
+                      <Nav.Item>
+                        <Nav.Link eventKey="bookings">จองทั้งหมด</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="hotel">โรงแรม+ที่พัก</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="voucher">E-Voucher</Nav.Link>
+                      </Nav.Item>
+                    </div>
+                  </div>
+
+                  <div className="content-bg" style={{ marginTop: "20px" }}>
+                    <div className="tab-menu">
+                      <div className="tab-menu-titel"> ข้อมูล</div>
+                      <Nav.Item>
+                        <Nav.Link eventKey="about">
+                          เกี่ยวกับ Thaiteawthaigo.com
+                        </Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="requirements">
+                          ข้อกำหนดและเงื่อนไข
+                        </Nav.Link>
+                      </Nav.Item>
+                    </div>
+                  </div>
                 </Nav>
               </Col>
               <Col sm={9}>
                 <Tab.Content className="content-bg">
                   <Tab.Pane eventKey="first">wda</Tab.Pane>
-                  <Tab.Pane eventKey="favorites">awda</Tab.Pane>
+                  <Tab.Pane eventKey="favorites">
+                    <Favorites />
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="address">
+                    <Address />
+                  </Tab.Pane>
                 </Tab.Content>
               </Col>
             </Row>

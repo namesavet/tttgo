@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 class Menu extends Component {
     render() {
         return (
-            <Stack direction="horizontal" gap={3} style={{backgroundColor:'GhostWhite',height:'100px'}}>
+            <Stack direction="horizontal" gap={3} style={{backgroundColor:'#F5F5F5',height:'100px'}}>
                 <div style={{margin:'auto'}}>
                      <div className="bg-light border">First item</div>
                 <div className="bg-light border">Second item</div>

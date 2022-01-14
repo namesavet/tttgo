@@ -1,9 +1,95 @@
-.information-bg{
-    background-color: ghostwhite;
+.information-bg {
+  background-color: #f5f5f5;
 }
-.content-bg{
-    background-color: white;border-radius: 2px;
-     border-style: solid;
-     border-width: 1px;
-     border-color: gray;
+.content-bg {
+  background-color: white;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dee2e6;
+}
+.favorites-card {
+  padding-top: 10px;
+}
+.favorites-row {
+  padding-bottom: 30px;
+}
+
+.favorites-tab .nav-link,
+.favorites-tab .nav-link.active {
+  color: black;
+  background-color: white;
+  border-bottom-color: #69b767;
+}
+
+.favorites-tab .nav-link {
+  background: 0 0;
+  border-bottom: 5px solid transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0rem;
+}
+
+.favorites-tab {
+  border-bottom: none;
+}
+
+.address-btn {
+  text-align: end;
+  margin-top: 10px;
+}
+.submit-address {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: rgba(8, 214, 8, 0.836);
+  border-color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+}
+.submit-address:focus,
+.submit-address:hover,
+.submit-address:active:focus {
+  color: #fff;
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 0 0.25rem rgba(8, 214, 8, 0.836);
+}
+.address-form {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.address-head {
+  
+  border: 20px solid transparent;
+}
+
+.tab-infor .nav-link,
+.tab-infor .nav-link.active {
+  color: black;
+  background-color: #f6f9fe;
+  border-color: #69b767;
+}
+.tab-infor .nav-link {
+  background: 0 0;
+  border-left: 10px solid transparent;
+  border-radius: 0rem;
+
+  color: gray;
+}
+.tab-menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.tab-menu-titel {
+  padding: 0.5rem 1rem;
+  border-left: 10px solid transparent;
+  font-size: large;
+  color: #8B8B8B;
 }

@@ -848,7 +848,7 @@ export class Home extends React.Component {
             <Tabs
               defaultActiveKey="central"
               id="uncontrolled-tab-example"
-              className="mb-4"
+              className="mb-4 tab-procinve"
             >
               <Tab eventKey="central" title="ภาคกลาง">
                 <Thailand />
@@ -876,7 +876,7 @@ export class Home extends React.Component {
             <Row>
               <Col className="textregister">
                 <h1>ลงทะเบียนร้านค้าออนไลน์ของคุณได้เลยฟรี</h1>
-                <p>
+                <p style={{marginLeft:"5%",marginRight:"5%"}}>
                   เรามีร้านค้าท่องเที่ยวไทย มากกว่า 30 ร้านค้า สินค้าและบริการ
                   มากกว่า 300 รายการ ที่ส่งตรงจากทั่ว ประเทศไทย
                   ธุรกิจการจัดงานแสดงสินค้าด้านการท่องเที่ยวภายในประเทศไทย

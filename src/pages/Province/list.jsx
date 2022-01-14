@@ -268,9 +268,9 @@ export class Province extends React.Component {
           <Tabs
             defaultActiveKey="central"
             id="uncontrolled-tab-example"
-            className="mb-4"
+            className="mb-4 tab-procinve"
           >
-            <Tab eventKey="central" title="ภาคกลาง">
+            <Tab eventKey="central" title="ภาคกลาง" >
               <Central />
             </Tab>
 

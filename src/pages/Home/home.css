@@ -1,7 +1,7 @@
 .layoutmenubtn {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: ghostwhite;
+  background-color: #F5F5F5;
 }
 
 .tabbtnmenu {
@@ -89,7 +89,7 @@
 }
 
 .footmenu {
-  background-color: ghostwhite;
+  background-color: F5F5F5;
 }
 .disprice {
   text-decoration: line-through;
@@ -125,6 +125,12 @@
   background-color: rgba(8, 214, 8, 0.836);
   border-color: white;
   font-weight: bold;
+}
+.btn-start:focus,.btn-start:hover ,.btn-start:active:focus {
+  color: #fff;
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 0 0.25rem rgba(8, 214, 8, 0.836);
 }
 .slick-next:before,
 .slick-prev:before {
