@@ -1,9 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
 import { Row, Tab, Col, Container, Nav, NavLink } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import thai from "../../img/thai.jpg";
-import north from "../../img/north.jpg";
 import "./information.css";
 import { Favorites } from "./Favorites";
 import { Address } from "./Address";

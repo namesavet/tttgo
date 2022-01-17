@@ -66,8 +66,8 @@
   padding-bottom: 5%;
 }
 .address-head {
-  
-  border: 20px solid transparent;
+  border-color: #dee2e6;
+  border-bottom: 1px solid ;
 }
 
 .tab-infor .nav-link,
