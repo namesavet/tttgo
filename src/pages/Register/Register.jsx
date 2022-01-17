@@ -6,28 +6,26 @@ import Navbar1 from "../../components/Navbar";
 import { NavLink } from "react-router-dom";
 import ButtonSignUp from "../SelectOTP/SelectOtp";
 
+
 export class Register extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      // firstname: "",
-      // lastname: "",
-      // telephone: "",
-      // password: "",
-      // confirmpassword: "",
-      // email: "",
-      // gender: "",
-      // dob: "",
-      // city: "",
-      // agree: false,
+      select:{
+          gender:{
+            value:""
+          },
+          city:{
+            value:""
+          }
+      },
       fields:{},
       errors:{},
     };
-    // this.handleSubmit = this.handleSubmit.bind(this);
-    // this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
-  handleValidation() {
+  validateForm() {
     let fields = this.state.fields;
     let select = this.state.select;
     let errors = {};
@@ -36,47 +34,47 @@ export class Register extends React.Component {
     //Name
     if (!fields["firstname"]) {
       formIsValid = false;
-      errors["firstname"] = "กรุณากรอกชื่อ";
+      errors["firstname"] = "*กรุณากรอกชื่อ";
     }
 
-    if (typeof fields["firstname"] !== "undefined") {
+    if (fields["firstname"] !== "" && typeof fields["firstname"] !== "undefined") {
       if (!fields["firstname"].match(/^[a-zA-Z]+$/)) {
         formIsValid = false;
-        errors["firstname"] = "ตัวอักษรเท่านั้น";
+        errors["firstname"] = "*ตัวอักษรเท่านั้น";
       }
     }
 
     if (!fields["lastname"]) {
       formIsValid = false;
-      errors["lastname"] = "กรุณากรอกนามสกุล";
+      errors["lastname"] = "*กรุณากรอกนามสกุล";
     }
 
-    if (typeof fields["lastname"] !== "undefined") {
+    if (fields["lastname"] !== "" && typeof fields["lastname"] !== "undefined") {
       if (!fields["lastname"].match(/^[a-zA-Z]+$/)) {
         formIsValid = false;
-        errors["lastname"] = "ตัวอักษรเท่านั้น";
+        errors["lastname"] = "*ตัวอักษรเท่านั้น";
       }
     }
 
     if (!fields["telephone"]) {
       formIsValid = false;
-      errors["telephone"] = "กรุณากรอกหมายเลขโทรศัพท์";
+      errors["telephone"] = "*กรุณากรอกหมายเลขโทรศัพท์";
     }
 
-    if (typeof fields["telephone"] !== "undefined") {
+    if (fields["telephone"] !== "" &&typeof fields["telephone"] !== "undefined") {
       if (!fields["telephone"].match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)) {
         formIsValid = false;
-        errors["telephone"] = "ตัวเลข 10 ตัวเท่านั้น";
+        errors["telephone"] = "*ตัวเลข 10 ตัวเท่านั้น";
       }
     }
 
     //Email
     if (!fields["email"]) {
       formIsValid = false;
-      errors["email"] = "กรุณากรอกอีเมล";
+      errors["email"] = "*กรุณากรอกอีเมล";
     }
 
-    if (typeof fields["email"] !== "undefined") {
+    if (fields["email"] !== "" && typeof fields["email"] !== "undefined") {
       let lastAtPos = fields["email"].lastIndexOf("@");
       let lastDotPos = fields["email"].lastIndexOf(".");
 
@@ -90,26 +88,83 @@ export class Register extends React.Component {
         )
       ) {
         formIsValid = false;
-        errors["email"] = "อีเมลมีความผิดพลาด";
+        errors["email"] = "*อีเมลมีความผิดพลาด";
       }
+    }
+
+    if (!fields["password"]) {
+      formIsValid = false;
+      errors["password"] = "*กรุณากรอกรหัสผ่าน";
+    }
+
+    if(fields["password"] !== "" && typeof fields["password"] !== 'undefined'){
+      if(fields["password"].length < 8) {
+        formIsValid = false;
+        errors["password"] = "*กรุณากรอกรหัสผ่านอย่างน้อย 8 ตัว"
+      }
+    }
+
+    if (!fields["confirmpassword"]) {
+      formIsValid = false;
+      errors["confirmpassword"] = "*กรุณากรอกยืนยันรหัสผ่าน";
+    }
+
+    if (fields["confirmpassword"] !== "" && typeof fields["password"] !== 'underfined'){
+      if(fields["password"] !== fields["confirmpassword"]){
+        formIsValid = false;
+        errors["confirmpassword"] ="*ยืนยันรหัสผ่านไม่ถูกต้อง"
+      }
+    }
+
+    if (select.gender["value"] == "") {
+      formIsValid = false;
+      errors["gender"] = "*กรุณาเลือกเพศ";
+    }
+    if (!fields["dob"]) {
+      formIsValid = false;
+      errors["dob"] = "*กรุณากรอกยืนยันรหัสผ่าน";
+    }
+
+    if (select.city["value"] == "") {
+      formIsValid = false;
+      errors["city"] = "*กรุณาเลือกจังหวัด";
     }
 
     this.setState({ errors: errors });
     return formIsValid;
   }
-  contactSubmit(e) {
-    e.preventDefault();
+  
+  validateData() {
 
-    if (this.handleValidation()) {
-      alert("Form submitted");
-    } else {
-      alert("Form has errors.");
+    let fields = this.state.fields;
+    let errors = {};
+    let formIsValid = true;
+
+    if(fields["password"] !== "" && typeof fields["password"] !== 'undefined'){
+      if (fields["password"].length < 8) {
+        formIsValid = false;
+        errors["password"] = "*กรุณากรอกรหัสผ่านอย่างน้อย 8 ตัว";
+      }
     }
+
+    this.setState({
+      errors: errors
+    });
+    return formIsValid;
   }
 
-  handleChange(field, e) {
+  handleSelect = (e, action) => {
+    let { select, fields, errors } = this.state;    
+    select[action.name] = {
+      label: e.label,
+      value: e.value
+    };
+    this.state.errors[action.name] = null;
+    this.setState({ select, fields, errors });
+  };
+  handleChange = e => {
     let { fields, errors } = this.state;
-    if (e.target.name === "is_active" || e.target.name === "ad_b_status") {
+    if (e.target.name === "agree") {
       fields[e.target.name] = e.target.checked === true ? 1 : 0;
     } else {
       fields[e.target.name] = e.target.value;
@@ -117,7 +172,27 @@ export class Register extends React.Component {
     this.state.errors[e.target.name] = null;
     this.setState({ fields, errors });
   }
-  // handleInputChange(event) {
+ 
+  handleSubmit(event) {
+    event.preventDefault()
+    this.setState({ modalOption: null })
+
+    if (this.validateForm()) {
+      this.onModalQuestion('Confirm','คุณต้องการเพิ่มข้อมูล ?')
+    }
+  }
+
+  // contactSubmit(e) {
+  //   e.preventDefault();
+
+  //   if (this.handleValidation()) {
+  //     alert("Form submitted");
+  //   } else {
+  //     alert("Form has errors.");
+  //   }
+  // }
+
+   // handleInputChange(event) {
   //   const target = event.target;
   //   const value = target.type === "checkbox" ? target.checked : target.value;
   //   const name = target.name;
@@ -131,8 +206,8 @@ export class Register extends React.Component {
   //   alert("Current State is" + JSON.stringify(this.state));
   //   event.preventDefault();
   // }
-
   render() {
+    let { select } = this.state;
     return (
       <div className="Register">
         <Navbar1 />
@@ -152,7 +227,7 @@ export class Register extends React.Component {
               </h1>
             </div>
 
-            <Form onSubmit={this.contactSubmit.bind(this)}>
+            <Form onSubmit={(e) => this.handleSubmit(e)}>
               <div className="row">
                 <div className="col">
                   <div
@@ -222,9 +297,10 @@ export class Register extends React.Component {
                         id="password"
                         name="password"
                         value={this.state.password}
-                        onChange={this.handleInputChange}
+                        onChange={this.handleChange.bind(this,"password")}
                         style={{ marginLeft: "20%", width: "80%" }}
                       />
+                      <span style={{ color: "red",marginLeft: "20%" }}>{this.state.errors["password"]}</span>
                     </Form.Group>
                   </div>
                 </div>
@@ -285,9 +361,10 @@ export class Register extends React.Component {
                         id="confirmpassword"
                         name="confirmpassword"
                         value={this.state.confirmpassword}
-                        onChange={this.handleInputChange}
+                        onChange={this.handleChange.bind(this,"confirmpassword")}
                         style={{ width: "80%" }}
                       />
+                      <span style={{ color: "red",margin:"10px" }}>{this.state.errors["confirmpassword"]}</span>
                     </Form.Group>
                   </div>
                 </div>
@@ -331,10 +408,10 @@ export class Register extends React.Component {
                       </Form.Label>
                       <Form.Select
                         className="form-select"
-                        value={this.state.gender}
+                        value={select.gender}
                         id="gender"
                         name="gender"
-                        onChange={this.handleInputChange}
+                        onChange={this.handleChange}
                         style={{ marginLeft: "20%", width: "80%" }}
                       >
                         <option selected disabled value="">
@@ -343,6 +420,7 @@ export class Register extends React.Component {
                         <option>ชาย</option>
                         <option>หญิง</option>
                       </Form.Select>
+                      <span style={{ color: "red",marginLeft: "20%" }}>{this.state.errors["gender"]}</span>
                     </Form.Group>
                   </div>
                   <div className="row" style={{ textAlign: "left" }}>
@@ -355,10 +433,10 @@ export class Register extends React.Component {
                       </Form.Label>
                       <Form.Select
                         className="form-select"
-                        value={this.state.city}
+                        value={select.city}
                         id="city"
                         name="city"
-                        onChange={this.handleInputChange}
+                        onChange={this.handleChange}
                         style={{ marginLeft: "20%", width: "80%" }}
                       >
                         <option selected disabled value="">
@@ -442,6 +520,7 @@ export class Register extends React.Component {
                         <option>อุบลราชธานี</option>
                         <option>อำนาจเจริญ</option>
                       </Form.Select>
+                      <span style={{ color: "red",marginLeft: "20%" }}>{this.state.errors["city"]}</span>
                     </Form.Group>
                   </div>
                 </div>
@@ -459,6 +538,7 @@ export class Register extends React.Component {
                         placeholder="Date of Birth"
                         style={{ width: "80%" }}
                       />
+                       <span style={{ color: "red",margin:"10px" }}>{this.state.errors["email"]}</span>
                     </Form.Group>
                   </div>
                 </div>
@@ -478,7 +558,7 @@ export class Register extends React.Component {
                       name="agree"
                       className="form-check-inline"
                       checked={this.state.agree}
-                      onChange={this.handleInputChange}
+                      onChange={this.handleChange}
                     />
                     <Form.Label
                       className="form-check-label"
