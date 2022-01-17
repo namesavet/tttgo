@@ -1,9 +1,46 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 import "../Otp.css";
 import otpPhone from "../../../img/otpPhone.png";
 
 function SelectSiginPhone(props) {
+  const calculateTimeLeft = () => {
+    let year = new Date().getFullYear();
+    let difference = +new Date(`10/01/${year}`) - +new Date();
+
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        วินาที: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+  const timerComponents = [];
+
+  Object.keys(timeLeft).forEach((interval) => {
+    if (!timeLeft[interval]) {
+      return;
+    }
+
+    timerComponents.push(
+      <span>
+        {timeLeft[interval]} {interval}{" "}
+      </span>
+    );
+  });
   return (
     <Modal
       {...props}
@@ -37,7 +74,7 @@ function SelectSiginPhone(props) {
           />
         </div>
         <div className="time-otp">
-          <p>รหัส OTP จะหมดอายุ 42 วินาที</p>
+        <p>รหัส OTP จะหมดอายุ {timerComponents.length ? timerComponents : <span>หมดเวลา</span>}</p>
         </div>
         <div className="row mt-5">
           <div className="col mt-3">

@@ -11,34 +11,120 @@ export class Register extends React.Component {
     super(props);
 
     this.state = {
-      firstname: "",
-      lastname: "",
-      telephone: "",
-      password: "",
-      confirmpassword: "",
-      email: "",
-      gender: "",
-      dob: "",
-      city: "",
-      agree: false,
+      // firstname: "",
+      // lastname: "",
+      // telephone: "",
+      // password: "",
+      // confirmpassword: "",
+      // email: "",
+      // gender: "",
+      // dob: "",
+      // city: "",
+      // agree: false,
+      fields:{},
+      errors:{},
     };
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleInputChange = this.handleInputChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleInputChange = this.handleInputChange.bind(this);
   }
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === "checkbox" ? target.checked : target.value;
-    const name = target.name;
+  handleValidation() {
+    let fields = this.state.fields;
+    let errors = {};
+    let formIsValid = true;
 
-    this.setState({
-      [name]: value,
-    });
+    //Name
+    if (!fields["firstname"]) {
+      formIsValid = false;
+      errors["firstname"] = "กรุณากรอกชื่อ";
+    }
+
+    if (typeof fields["firstname"] !== "undefined") {
+      if (!fields["firstname"].match(/^[a-zA-Z]+$/)) {
+        formIsValid = false;
+        errors["firstname"] = "ตัวอักษรเท่านั้น";
+      }
+    }
+
+    if (!fields["lastname"]) {
+      formIsValid = false;
+      errors["lastname"] = "กรุณากรอกนามสกุล";
+    }
+
+    if (typeof fields["lastname"] !== "undefined") {
+      if (!fields["lastname"].match(/^[a-zA-Z]+$/)) {
+        formIsValid = false;
+        errors["lastname"] = "ตัวอักษรเท่านั้น";
+      }
+    }
+
+    if (!fields["telephone"]) {
+      formIsValid = false;
+      errors["telephone"] = "กรุณากรอกหมายเลขโทรศัพท์";
+    }
+
+    if (typeof fields["telephone"] !== "undefined") {
+      if (!fields["telephone"].match(/[0-9]{3}-[0-9]{3}-[0-9]{4}/)) {
+        formIsValid = false;
+        errors["telephone"] = "ตัวเลข 10 ตัวเท่านั้น";
+      }
+    }
+
+    //Email
+    if (!fields["email"]) {
+      formIsValid = false;
+      errors["email"] = "กรุณากรอกอีเมล";
+    }
+
+    if (typeof fields["email"] !== "undefined") {
+      let lastAtPos = fields["email"].lastIndexOf("@");
+      let lastDotPos = fields["email"].lastIndexOf(".");
+
+      if (
+        !(
+          lastAtPos < lastDotPos &&
+          lastAtPos > 0 &&
+          fields["email"].indexOf("@@") === -1 &&
+          lastDotPos > 2 &&
+          fields["email"].length - lastDotPos > 2
+        )
+      ) {
+        formIsValid = false;
+        errors["email"] = "อีเมลมีความผิดพลาด";
+      }
+    }
+
+    this.setState({ errors: errors });
+    return formIsValid;
   }
-  handleSubmit(event) {
-    console.log("Current State is" + JSON.stringify(this.state));
-    alert("Current State is" + JSON.stringify(this.state));
-    event.preventDefault();
+  contactSubmit(e) {
+    e.preventDefault();
+
+    if (this.handleValidation()) {
+      alert("Form submitted");
+    } else {
+      alert("Form has errors.");
+    }
   }
+
+  handleChange(field, e) {
+    let fields = this.state.fields;
+    fields[field] = e.target.value;
+    this.setState({ fields });
+  }
+  // handleInputChange(event) {
+  //   const target = event.target;
+  //   const value = target.type === "checkbox" ? target.checked : target.value;
+  //   const name = target.name;
+
+  //   this.setState({
+  //     [name]: value,
+  //   });
+  // }
+  // handleSubmit(event) {
+  //   console.log("Current State is" + JSON.stringify(this.state));
+  //   alert("Current State is" + JSON.stringify(this.state));
+  //   event.preventDefault();
+  // }
 
   render() {
     return (
@@ -60,7 +146,7 @@ export class Register extends React.Component {
               </h1>
             </div>
 
-            <Form onSubmit={this.handleSubmit}>
+            <Form onSubmit={this.contactSubmit.bind(this)}>
               <div className="row">
                 <div className="col">
                   <div
@@ -78,10 +164,11 @@ export class Register extends React.Component {
                         id="firstname"
                         name="firstname"
                         placeholder="กรอกชื่อผู้ใช้งาน"
-                        value={this.state.firstname}
-                        onChange={this.handleInputChange}
+                        value={this.state.fields["firstname"]}
+                        onChange={this.handleChange.bind(this,"firstname")}
                         style={{ marginLeft: "20%", width: "80%" }}
                       />
+                      <span style={{ color: "red",marginLeft: "20%" }}>{this.state.errors["firstname"]}</span>
                     </Form.Group>
                   </div>
                   <div
@@ -104,10 +191,11 @@ export class Register extends React.Component {
                         id="telephone"
                         name="telephone"
                         placeholder="กรอกหมายเลขโทรศัพท์ผู้ใช้งาน"
-                        value={this.state.telephone}
-                        onChange={this.handleInputChange}
+                        value={this.state.fields["telephone"]}
+                        onChange={this.handleChange.bind(this,"telephone")}
                         style={{ marginLeft: "20%", width: "80%" }}
                       />
+                       <span style={{ color: "red",marginLeft: "20%" }}>{this.state.errors["telephone"]}</span>
                     </Form.Group>
                   </div>
                   <div
@@ -134,6 +222,7 @@ export class Register extends React.Component {
                     </Form.Group>
                   </div>
                 </div>
+
                 <div className="col">
                   <div
                     className="row"
@@ -148,10 +237,11 @@ export class Register extends React.Component {
                         id="lastname"
                         name="lastname"
                         placeholder="กรอกนามสกุล"
-                        value={this.state.lastname}
-                        onChange={this.handleInputChange}
+                        value={this.state.fields["lastname"]}
+                        onChange={this.handleChange.bind(this,"lastname")}
                         style={{ width: "80%" }}
                       />
+                      <span style={{ color: "red",margin:"10px" }}>{this.state.errors["lastname"]}</span>
                     </Form.Group>
                   </div>
                   <div
@@ -166,11 +256,12 @@ export class Register extends React.Component {
                         type="email"
                         id="email"
                         name="email"
-                        value={this.state.email}
-                        onChange={this.handleInputChange}
+                        value={this.state.fields["email"]}
+                        onChange={this.handleChange.bind(this,"email")}
                         placeholder="กรอกอีเมลผู้ใช้งาน"
                         style={{ width: "80%" }}
                       />
+                      <span style={{ color: "red",margin:"10px" }}>{this.state.errors["email"]}</span>
                     </Form.Group>
                   </div>
                   <div
