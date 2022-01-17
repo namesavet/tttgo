@@ -29,6 +29,7 @@ export class Register extends React.Component {
   }
   handleValidation() {
     let fields = this.state.fields;
+    let select = this.state.select;
     let errors = {};
     let formIsValid = true;
 
@@ -107,9 +108,14 @@ export class Register extends React.Component {
   }
 
   handleChange(field, e) {
-    let fields = this.state.fields;
-    fields[field] = e.target.value;
-    this.setState({ fields });
+    let { fields, errors } = this.state;
+    if (e.target.name === "is_active" || e.target.name === "ad_b_status") {
+      fields[e.target.name] = e.target.checked === true ? 1 : 0;
+    } else {
+      fields[e.target.name] = e.target.value;
+    }
+    this.state.errors[e.target.name] = null;
+    this.setState({ fields, errors });
   }
   // handleInputChange(event) {
   //   const target = event.target;
