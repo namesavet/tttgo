@@ -11,7 +11,7 @@ export class Information extends React.Component {
     return (
       <div className="information-bg">
         <Container style={{ paddingTop: "30px", paddingBottom: "30px" }}>
-          <Tab.Container id="left-tabs-example" defaultActiveKey="bookings">
+          <Tab.Container id="left-tabs-example" defaultActiveKey="address">
             <Row>
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column tab-infor">
