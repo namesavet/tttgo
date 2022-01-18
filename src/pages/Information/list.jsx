@@ -5,6 +5,7 @@ import "./information.css";
 import { Favorites } from "./Favorites";
 import { Address } from "./Address";
 import { Personal } from "./PersonalInfo";
+import { Credit } from "./CreditCard";
 
 export class Information extends React.Component {
   render() {
@@ -82,6 +83,9 @@ export class Information extends React.Component {
                   </Tab.Pane>
                   <Tab.Pane eventKey="PersonalInformation">
                     <Personal/>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="card">
+                    <Credit/>
                   </Tab.Pane>
                 </Tab.Content>
               </Col>

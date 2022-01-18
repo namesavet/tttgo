@@ -100,5 +100,51 @@
 }
 .head-body-info{
   border-bottom: 1px solid;
-  border-color: gray;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+
+.info-btn {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.submit-info {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: rgba(8, 214, 8, 0.836);
+  border-color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  margin-right: 10%;
+}
+.data-info{
+  border-bottom: 2px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+.footer-title{
+  border-bottom: 1px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+
+.card-btn {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.submit-card {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: rgba(8, 214, 8, 0.836);
+  border-color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  margin-right: 10%;
 }
