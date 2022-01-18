@@ -24,7 +24,7 @@ export class Provincedetail extends React.Component {
     return (
       <Container>
         <Breadcrumb className="province-head-path">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
           <Breadcrumb.Item href="/Province">ชลบุรี</Breadcrumb.Item>
           <Breadcrumb.Item href="" active>
             Great & Grand Sweet Destination

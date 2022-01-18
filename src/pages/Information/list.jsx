@@ -4,13 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
 import { Favorites } from "./Favorites";
 import { Address } from "./Address";
+import { Reservation } from "./Reservation";
 
 export class Information extends React.Component {
   render() {
     return (
       <div className="information-bg">
         <Container style={{ paddingTop: "30px", paddingBottom: "30px" }}>
-          <Tab.Container id="left-tabs-example" defaultActiveKey="information">
+          <Tab.Container id="left-tabs-example" defaultActiveKey="bookings">
             <Row>
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column tab-infor">
@@ -71,13 +72,15 @@ export class Information extends React.Component {
                 </Nav>
               </Col>
               <Col sm={9}>
-                <Tab.Content className="content-bg">
-                  <Tab.Pane eventKey="first">wda</Tab.Pane>
-                  <Tab.Pane eventKey="favorites">
+                <Tab.Content >
+                  <Tab.Pane eventKey="favorites" className="content-bg">
                     <Favorites />
                   </Tab.Pane>
-                  <Tab.Pane eventKey="address">
+                  <Tab.Pane eventKey="address" className="content-bg">
                     <Address />
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="bookings" className="bg-reservation">
+                    <Reservation />
                   </Tab.Pane>
                 </Tab.Content>
               </Col>
