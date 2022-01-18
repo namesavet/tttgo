@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Form, Col, Button, Nav, NavLink, Card } from "react-bootstrap";
+import { Row, Form, Col, Button, } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
 
@@ -70,7 +70,7 @@ export class Personal extends React.Component {
                       </Form.Group>
                     </Row>
                     <Row style={{ marginLeft: "5%" }}>
-                      <Form.Group className="mb-3" controlId="phonenumber">
+                      <Form.Group className="mb-3" controlId="phonenumber-personal">
                         <Form.Label>หมายเลขโทรศัพท์</Form.Label>
                         <Form.Control
                           type="text"
@@ -80,10 +80,11 @@ export class Personal extends React.Component {
                       </Form.Group>
                     </Row>
                     <Row style={{ marginLeft: "5%" }}>
-                      <Form.Group className="mb-3" controlId="address">
+                      <Form.Group className="mb-3" controlId="gender">
                         <Form.Label>เพศ</Form.Label>
                         <Form.Select
                           placeholder="เลือกเพศ"
+                          name="gender"
                           style={{ width: "80%" }}
                         >
                           <option>ชาย</option>
@@ -92,10 +93,12 @@ export class Personal extends React.Component {
                       </Form.Group>
                     </Row>
                     <Row style={{ marginLeft: "5%" }}>
-                      <Form.Group className="mb-3" controlId="city">
+                      <Form.Group className="mb-3" controlId="province">
                         <Form.Label>จังหวัด</Form.Label>
                         <Form.Select
                           placeholder="จังหวัด"
+                          name="province"
+                          id="province"
                           style={{ width: "80%" }}
                         >
                           <option>กรุงเทพมหานคร</option>
@@ -191,7 +194,7 @@ export class Personal extends React.Component {
                       </Form.Group>
                     </Row>
                     <Row>
-                      <Form.Group className="mb-3" controlId="email">
+                      <Form.Group className="mb-3" controlId="email-personal">
                         <Form.Label>อีเมล</Form.Label>
                         <Form.Control
                           type="email"
@@ -256,6 +259,7 @@ export class Personal extends React.Component {
                             type="email"
                             placeholder="อีเมล"
                             style={{ width: "80%" }}
+                            disabled
                           />
                         </Form.Group>
                       </Row>

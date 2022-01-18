@@ -1,70 +1,112 @@
 import React from "react";
-import { Row, Form, Col, Button, Nav, NavLink, Card } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
+import Visa from "../../img/visa.png";
 
 export class Credit extends React.Component {
   render() {
     return (
       <div className="information-bg">
         <div className="content-bg">
-          <div className="body-info ">
-            <div className="footer-body-info">
-              <div className="footer-title">
-                <Row>
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "left", marginLeft: "5%" }}
-                  >
-                    <p>บัญชีและรหัสผ่าน</p>
-                  </Col>
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                   <div className="card-btn ">
+          <div className="credit">
+            <div className="head-credit">
+              <Row>
+                <Col
+                  className="mt-4"
+                  style={{ textAlign: "left", marginLeft: "5%" }}
+                >
+                  <p>บัญชีและรหัสผ่าน</p>
+                </Col>
+                <Col style={{ textAlign: "right", marginRight: "5%" }}>
+                  <div className="addcard-btn ">
                     <Button
                       variant="primary"
                       type="submit"
-                      className="submit-card"
+                      className="submit-addcard"
                     >
                       + เพิ่มบัตรเครดิต
                     </Button>
                   </div>
-                  </Col>
-                </Row>
-              </div>
+                </Col>
+              </Row>
+            </div>
 
-              <div className="changePass mt-3 mb-3">
-                <Form>
-                  <Row>
+            <div className="body-card mt-3 ">
+              <Row className="mb-3">
+                <Col>
+                  <Row style={{ textAlign: "left", marginLeft: "5%" }}>
                     <Col>
-                      <Row style={{ marginLeft: "5%" }}>
-                        <Form.Group className="mb-3" controlId="email">
-                          <Form.Label>อีเมล</Form.Label>
-                          <Form.Control
-                            type="email"
-                            placeholder="อีเมล"
-                            style={{ width: "80%" }}
-                          />
-                        </Form.Group>
-                      </Row>
+                      <div className="reset-card-btn ">
+                        <Button
+                          variant="outline"
+                          type="submit"
+                          className="reset-card"
+                        >
+                          ค่าเริ่มต้น
+                        </Button>
+                      </div>
                     </Col>
+                    <img className="visa-logo" src={Visa} alt="logo"></img>
                     <Col>
-                      <Row>
-                        <Form.Group className="mb-3" controlId="password">
-                          <Form.Label>รหัสผ่าน</Form.Label>
-                          <Form.Control
-                            type="password"
-                            placeholder="รหัสผ่าน"
-                            style={{ width: "80%" }}
-                          />
-                        </Form.Group>
-                      </Row>
+                      <div className="mt-3" style={{ textAlign: "left" }}>
+                        <p>VISA</p>
+                      </div>
                     </Col>
                   </Row>
-                </Form>
-              </div>
+                </Col>
+                <Col sm={3}>
+                  <div className="mt-3" style={{ textAlign: "center" }}>
+                    <p>**** **** **** 0600</p>
+                  </div>
+                </Col>
+                <Col sm={3}>
+                  <div
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "40%" }}
+                  >
+                    <p>ลบข้อมูล</p>
+                  </div>
+                </Col>
+              </Row>
+            </div>
+            <div className="body-card mt-3 ">
+              <Row className="mb-3">
+                <Col>
+                  <Row style={{ textAlign: "left", marginLeft: "5%" }}>
+                    <Col>
+                      <div className="reset-card-btn ">
+                        <Button
+                          variant="outline"
+                          type="submit"
+                          className="reset-card"
+                        >
+                          ค่าเริ่มต้น
+                        </Button>
+                      </div>
+                    </Col>
+                    <img className="visa-logo" src={Visa} alt="logo"></img>
+                    <Col>
+                      <div className="mt-3" style={{ textAlign: "left" }}>
+                        <p>VISA</p>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+                <Col sm={3}>
+                  <div className="mt-3" style={{ textAlign: "center" }}>
+                    <p>**** **** **** 0600</p>
+                  </div>
+                </Col>
+                <Col sm={3}>
+                  <div
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "40%" }}
+                  >
+                    <p>ลบข้อมูล</p>
+                  </div>
+                </Col>
+              </Row>
             </div>
           </div>
         </div>

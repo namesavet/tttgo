@@ -67,7 +67,7 @@
 }
 .address-head {
   border-color: #dee2e6;
-  border-bottom: 1px solid ;
+  border-bottom: 1px solid;
 }
 
 .tab-infor .nav-link,
@@ -91,14 +91,12 @@
   padding: 0.5rem 1rem;
   border-left: 10px solid transparent;
   font-size: large;
-  color: #8B8B8B;
+  color: #8b8b8b;
 }
 
-.head-point{
- 
-  
+.head-point {
 }
-.head-body-info{
+.head-body-info {
   border-bottom: 1px solid;
   border-color: rgba(214, 211, 211, 0.959);
 }
@@ -121,21 +119,21 @@
   height: 50px;
   margin-right: 10%;
 }
-.data-info{
+.data-info {
   border-bottom: 2px solid;
   border-color: rgba(214, 211, 211, 0.959);
 }
-.footer-title{
+.footer-title {
   border-bottom: 1px solid;
   border-color: rgba(214, 211, 211, 0.959);
 }
 
-.card-btn {
+.addcard-btn {
   text-align: right;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.submit-card {
+.submit-addcard {
   background-image: linear-gradient(
     to right,
     rgba(0, 221, 111, 0.856),
@@ -147,4 +145,28 @@
   width: 150px;
   height: 50px;
   margin-right: 10%;
+}
+.head-credit {
+  border-bottom: 1px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+
+.visa-logo {
+  width: 90px;
+  height: 60px;
+}
+
+.reset-card {
+  border:2px solid #49c44d;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+}
+.reset-card-btn{
+  text-align: left;
+}
+.body-card{
+  border-bottom: 2px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+  
 }

@@ -6,6 +6,7 @@ import { Favorites } from "./Favorites";
 import { Address } from "./Address";
 import { Personal } from "./PersonalInfo";
 import { Credit } from "./CreditCard";
+import { History } from "./BuyHistory";
 
 export class Information extends React.Component {
   render() {
@@ -86,6 +87,9 @@ export class Information extends React.Component {
                   </Tab.Pane>
                   <Tab.Pane eventKey="card">
                     <Credit/>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="history">
+                    <History/>
                   </Tab.Pane>
                 </Tab.Content>
               </Col>
