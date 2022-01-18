@@ -1,9 +1,10 @@
 import React from "react";
-import { Row, Tab, Col, Container, Nav, NavLink } from "react-bootstrap";
+import { Row, Tab, Col, Container, Nav, NavLink, TabPane } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
 import { Favorites } from "./Favorites";
 import { Address } from "./Address";
+import { Personal } from "./PersonalInfo";
 
 export class Information extends React.Component {
   render() {
@@ -18,7 +19,7 @@ export class Information extends React.Component {
                     <div className="tab-menu">
                       <div className="tab-menu-titel"> บัญชีของฉัน</div>
                       <Nav.Item>
-                        <Nav.Link eventKey="information">
+                        <Nav.Link eventKey="PersonalInformation">
                           ข้อมูลส่วนตัว
                         </Nav.Link>
                       </Nav.Item>
@@ -78,6 +79,9 @@ export class Information extends React.Component {
                   </Tab.Pane>
                   <Tab.Pane eventKey="address">
                     <Address />
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="PersonalInformation">
+                    <Personal/>
                   </Tab.Pane>
                 </Tab.Content>
               </Col>
