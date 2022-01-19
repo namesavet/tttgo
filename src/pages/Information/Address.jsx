@@ -46,7 +46,7 @@ export class Address extends React.Component {
             </Form.Group>
             <Form.Group className="mb-3" controlId="address">
               <Form.Label>จังหวัด</Form.Label>
-              <Form.Select placeholder="ชื่อ-นามสกุล">
+              <Form.Select placeholder="จังหวัด">
                 <option>กรุงเทพมหานคร</option>
                 <option>กระบี่</option>
                 <option>กาญจนบุรี</option>

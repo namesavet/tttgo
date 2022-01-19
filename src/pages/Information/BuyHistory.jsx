@@ -1,163 +1,305 @@
 import React from "react";
-import {
-  Row,
-  Tab,
-  Tabs,
-  Col,
-  Container,
-  Card,
-} from "react-bootstrap";
+import { Row, Tab, Tabs, Col, Container, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import hotel1 from "../../img/hotel1.jpg";
-import flash2 from "../../img/flash2.jpg";
-import product from "../../img/product/product1.png";
 import "./information.css";
+import shoplogo from "../../img/shoplogo.png";
+import bagpackproduct from "../../img/bagpack.jpg";
 
-export class Favoriteshotel extends React.Component {
+export class AllBuy extends React.Component {
   render() {
     return (
-      <Container>
-        <div className="row favorites-row">
-          <li className="col-sm-6 col-md-4 favorites-card">
-            <Card>
-              <Card.Img variant="top" src={hotel1} />
-              <Card.Body>
-                <div>
-                  เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                  <div className="location">
-                    <i className="fas fa-map-marker-alt"></i>
-                    {""} กรุงเทพมหานคร,สุขุมวิท
-                  </div>
-                  <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                  <div className="greenprice">1560 บาท</div>
-                </div>
-              </Card.Body>
-            </Card>
-          </li>
-          <li className="col-sm-6 col-md-4 favorites-card">
-            <Card>
-              <Card.Img variant="top" src={hotel1} />
-              <Card.Body>
-                <div>
-                  เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                  <div className="location">
-                    <i className="fas fa-map-marker-alt"></i>
-                    {""} กรุงเทพมหานคร,สุขุมวิท
-                  </div>
-                  <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                  <div className="greenprice">1560 บาท</div>
-                </div>
-              </Card.Body>
-            </Card>
-          </li>
-          <li className="col-sm-6 col-md-4 favorites-card">
-            <Card>
-              <Card.Img variant="top" src={hotel1} />
-              <Card.Body>
-                <div>
-                  เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                  <div className="location">
-                    <i className="fas fa-map-marker-alt"></i>
-                    {""} กรุงเทพมหานคร,สุขุมวิท
-                  </div>
-                  <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                  <div className="greenprice">1560 บาท</div>
-                </div>
-              </Card.Body>
-            </Card>
-          </li>
-          <li className="col-sm-6 col-md-4 favorites-card">
-            <Card>
-              <Card.Img variant="top" src={hotel1} />
-              <Card.Body>
-                <div>
-                  เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                  <div className="location">
-                    <i className="fas fa-map-marker-alt"></i>
-                    {""} กรุงเทพมหานคร,สุขุมวิท
-                  </div>
-                  <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                  <div className="greenprice">1560 บาท</div>
-                </div>
-              </Card.Body>
-            </Card>
-          </li>
+      <div className="information-bg">
+        <div className="content-bg"></div>
+        <div className="content-bg mt-3">
+          <div className="book-history">
+            <div className="head-book-history">
+              <Row>
+                <Col
+                  className="mt-3"
+                  style={{ textAlign: "left", marginLeft: "5%" }}
+                >
+                  <p>หมายเลการจอง : 564403517</p>
+                </Col>
+                <Col
+                  className="mt-3"
+                  style={{ textAlign: "right", marginRight: "5%" }}
+                >
+                  <p>สั่งซื้อเมื่อวันที่ : 27/05/2021</p>
+                </Col>
+              </Row>
+            </div>
+            <div className="shop-history">
+              <div className="head-shop-history">
+                <Row>
+                  <Col>
+                    <Row>
+                      <Col
+                        sm={1}
+                        className="mt-3"
+                        style={{ marginLeft: "10%" }}
+                      >
+                        <img
+                          className="shop-logo"
+                          src={shoplogo}
+                          alt="logo"
+                        ></img>
+                      </Col>
+                      <Col
+                        sm={9}
+                        className="mt-3"
+                        style={{ textAlign: "left" }}
+                      >
+                        <p>ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา</p>
+                      </Col>
+                    </Row>
+                  </Col>
+
+                  <Col
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "5%" }}
+                  >
+                    <p>2 รายการ</p>
+                  </Col>
+                </Row>
+              </div>
+
+              <div className="body-book-history mb-3">
+                <Row>
+                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
+                    <img
+                      className="product-image"
+                      src={bagpackproduct}
+                      alt="logo"
+                    ></img>
+                  </Col>
+                  <Col sm={5} className="mt-3">
+                    <div className="name-product">
+                      กระเป๋าเดินทาง LOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์
+                      28
+                    </div>
+                    <div className="about-product mt-3">
+                      ตัวเลือกสินค้า: HM50GL+footrest
+                    </div>
+                  </Col>
+
+                  <Col>
+                    <div className="circle-quantity">
+                      <div className="quantity">x1</div>
+                    </div>
+                  </Col>
+                  <Col 
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "5%" }}
+                  >
+                    <div className="price">2,500 บาท</div>
+                  </Col>
+                </Row>
+              </div>
+              <div className="body-book-history mb-3">
+                <Row>
+                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
+                    <img
+                      className="product-image"
+                      src={bagpackproduct}
+                      alt="logo"
+                    ></img>
+                  </Col>
+                  <Col sm={5} className="mt-3">
+                    <div className="name-product">
+                     เครื่องสำอางท่องเที่ยวกระเป๋าหูรูดเชือกกันฝุ่น
+                    </div>
+                    <div className="about-product mt-3">
+                      ตัวเลือกสินค้า: size 65x85 cm.
+                    </div>
+                  </Col>
+
+                  <Col>
+                    <div className="circle-quantity">
+                      <div className="quantity">x1</div>
+                    </div>
+                  </Col>
+                  <Col 
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "5%" }}
+                  >
+                    <div className="price">720 บาท</div>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+            <div className="shop-history">
+              <div className="head-shop-history">
+                <Row>
+                  <Col>
+                    <Row>
+                      <Col
+                        sm={1}
+                        className="mt-3"
+                        style={{ marginLeft: "10%" }}
+                      >
+                        <img
+                          className="shop-logo"
+                          src={shoplogo}
+                          alt="logo"
+                        ></img>
+                      </Col>
+                      <Col
+                        sm={9}
+                        className="mt-3"
+                        style={{ textAlign: "left" }}
+                      >
+                        <p>QIAOYUE Sports City</p>
+                      </Col>
+                    </Row>
+                  </Col>
+
+                  <Col
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "5%" }}
+                  >
+                    <p>1 รายการ</p>
+                  </Col>
+                </Row>
+              </div>
+
+              <div className="body-book-history mb-3">
+                <Row>
+                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
+                    <img
+                      className="product-image"
+                      src={bagpackproduct}
+                      alt="logo"
+                    ></img>
+                  </Col>
+                  <Col sm={5} className="mt-3">
+                    <div className="name-product">
+                      AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา Retractable สตูลพลาสติกสำหรับผู้ใหญ่
+                    </div>
+                    <div className="about-product mt-3">
+                      ตัวเลือกสินค้า:Joom 1pc
+                    </div>
+                  </Col>
+
+                  <Col>
+                    <div className="circle-quantity">
+                      <div className="quantity">x1</div>
+                    </div>
+                  </Col>
+                  <Col 
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "5%" }}
+                  >
+                    <div className="price">1,400 บาท</div>
+                  </Col>
+                </Row>
+              </div>
+  
+            </div>
+
+          </div>
         </div>
-      </Container>
+
+        <div className="content-bg mt-3">
+          <div className="book-history">
+            <div className="head-book-history">
+              <Row>
+                <Col
+                  className="mt-3"
+                  style={{ textAlign: "left", marginLeft: "5%" }}
+                >
+                  <p>หมายเลการจอง : 564403517</p>
+                </Col>
+                <Col
+                  className="mt-3"
+                  style={{ textAlign: "right", marginRight: "5%" }}
+                >
+                  <p>สั่งซื้อเมื่อวันที่ : 06/05/2021</p>
+                </Col>
+              </Row>
+            </div>
+            <div className="shop-history">
+              <div className="head-shop-history">
+                <Row>
+                  <Col>
+                    <Row>
+                      <Col
+                        sm={1}
+                        className="mt-3"
+                        style={{ marginLeft: "10%" }}
+                      >
+                        <img
+                          className="shop-logo"
+                          src={shoplogo}
+                          alt="logo"
+                        ></img>
+                      </Col>
+                      <Col
+                        sm={9}
+                        className="mt-3"
+                        style={{ textAlign: "left" }}
+                      >
+                        <p>QIAOYUE Sports City</p>
+                      </Col>
+                    </Row>
+                  </Col>
+
+                  <Col
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "5%" }}
+                  >
+                    <p>1 รายการ</p>
+                  </Col>
+                </Row>
+              </div>
+
+              <div className="body-book-history mb-3">
+                <Row>
+                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
+                    <img
+                      className="product-image"
+                      src={bagpackproduct}
+                      alt="logo"
+                    ></img>
+                  </Col>
+                  <Col sm={5} className="mt-3">
+                    <div className="name-product">
+                      AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา Retractable สตูลพลาสติกสำหรับผู้ใหญ่
+                    </div>
+                    <div className="about-product mt-3">
+                      ตัวเลือกสินค้า:Joom 1pc
+                    </div>
+                  </Col>
+
+                  <Col>
+                    <div className="circle-quantity">
+                      <div className="quantity">x1</div>
+                    </div>
+                  </Col>
+                  <Col 
+                    className="mt-3"
+                    style={{ textAlign: "right", marginRight: "5%" }}
+                  >
+                    <div className="price">1,400 บาท</div>
+                  </Col>
+                </Row>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+
+      </div>
     );
   }
 }
-export class Favoritesproduct extends React.Component {
+export class GetBuy extends React.Component {
   render() {
-    return (
-      <Container>
-        <div className="row favorites-row">
-          <li className="col-sm-6 col-md-4 favorites-card">
-            <Card>
-              <Card.Img variant="top" src={product} />
-              <Card.Body>
-                <div>
-                  *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                  ขนาดหน้าปัด 30 mm
-                  <div className="disprice">ปกติ 2990 บาท</div>
-                  <div className="redprice">1560 บาท</div>
-                </div>
-              </Card.Body>
-            </Card>
-          </li>
-          <li className="col-sm-6 col-md-4 favorites-card">
-            <Card>
-              <Card.Img variant="top" src={product} />
-              <Card.Body>
-                <div>
-                  *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                  ขนาดหน้าปัด 30 mm
-                  <div className="disprice">ปกติ 2990 บาท</div>
-                  <div className="redprice">1560 บาท</div>
-                </div>
-              </Card.Body>
-            </Card>
-          </li>
-          <li className="col-sm-6 col-md-4 favorites-card">
-            <Card>
-              <Card.Img variant="top" src={product} />
-              <Card.Body>
-                <div>
-                  *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                  ขนาดหน้าปัด 30 mm
-                  <div className="disprice">ปกติ 2990 บาท</div>
-                  <div className="redprice">1560 บาท</div>
-                </div>
-              </Card.Body>
-            </Card>
-          </li>
-        </div>
-      </Container>
-    );
+    return <Container></Container>;
   }
 }
-export class Favoritesvoucher extends React.Component {
+export class BuySuccess extends React.Component {
   render() {
-    return (
-      <Container>
-        <div className="row favorites-row">
-          <li className="col-sm-6 col-md-4 favorites-card">
-            {" "}
-            <Card style={{ width: "100%" }}>
-              <Card.Img variant="top" src={flash2} />
-              <Card.Body>
-                <Card.Text>
-                  ดีลบิวตี้ Thai massage and tension release (Thai maseeage +
-                  Foot massage)
-                </Card.Text>
-                <Card.Text></Card.Text>
-                <Card.Text>3,200 บาท</Card.Text>
-              </Card.Body>
-            </Card>
-          </li>
-        </div>
-      </Container>
-    );
+    return <Container></Container>;
   }
 }
 
@@ -166,19 +308,19 @@ export class History extends React.Component {
     return (
       <div>
         <Tabs
-          defaultActiveKey="favorites-hotel"
+          defaultActiveKey="all-buy"
           transition={false}
           id="noanim-tab-example"
-          className="mb-3 favorites-tab"
+          className=" history-tab"
         >
-          <Tab eventKey="favorites-hotel" title="ทั้งหมด">
-            <Favoriteshotel />
+          <Tab eventKey="all-buy" title="ทั้งหมด">
+            <AllBuy />
           </Tab>
-          <Tab eventKey="favorites-product" title="ที่ต้องชำระ">
-            <Favoritesproduct />
+          <Tab eventKey="get-buy" title="ที่ต้องชำระ">
+            <GetBuy />
           </Tab>
-          <Tab eventKey="favorites-voucher" title="สั่งซื้อสำเร็จ">
-            <Favoritesvoucher />
+          <Tab eventKey="buy-success" title="สั่งซื้อสำเร็จ">
+            <BuySuccess />
           </Tab>
         </Tabs>
       </div>
