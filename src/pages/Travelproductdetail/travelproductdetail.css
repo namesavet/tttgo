@@ -1,0 +1,55 @@
+.bg-travelproductdetail {
+  background-color: #f5f5f5;
+}
+.travelproductdetail-head-path {
+  font-size: small;
+  color: black;
+}
+
+.content-travelproductdetail {
+  background-color: white;
+  border-radius: 2px;
+  /* border-style: solid;
+    border-width: 1px;
+    border-color: #dee2e6; */
+}
+.travelproductdetail-tab .nav-link,
+.travelproductdetail-tab .nav-link.active {
+  color: black;
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+}
+
+.travelproductdetail-tab .nav-link {
+  background: 0 0;
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-color: #dee2e6;
+  border-radius: 0rem;
+  background-color: #f5f5f5;
+}
+.travelproductdetail-tab {
+  background-color: #f5f5f5;
+}
+.boder-content-travelproduct {
+  border: 1px solid;
+  border-top: none;
+  border-color: #dee2e6;
+}
+ul.mb-3.travelproductdetail-tab.nav.nav-tabs {
+  margin-bottom: 0rem !important;
+}
+.content-travelproduct-detail {
+  font-size: 14px;
+  padding: 30px;
+}
+.travelproduct-sellby {
+  font-size: 14px;
+
+  margin-top: 3%;
+  background-color: white;
+  border: 1px solid;
+  border-color: #dee2e6;
+}

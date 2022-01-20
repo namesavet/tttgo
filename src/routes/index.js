@@ -6,6 +6,7 @@ import { Flashsale } from '../pages/Flashsale'
 import { Provincedetail } from '../pages/Provincedetail'
 import { Information } from '../pages/Information'
 import { Travelproduct } from '../pages/Travelproduct'
+import { Travelproductdetail } from '../pages/Travelproductdetail'
 export default () => (
      <Switch>
      <Route exact path="/" component={Home} />
@@ -14,6 +15,7 @@ export default () => (
      <Route exact path="/Provincedetail" component={Provincedetail} />
      <Route exact path="/Information" component={Information} />
      <Route exact path="/Travelproduct" component={Travelproduct} />
+     <Route exact path="/Travelproductdetail" component={Travelproductdetail} />
     </Switch>
 )
    
