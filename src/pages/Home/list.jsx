@@ -65,7 +65,7 @@ export class Thailand extends React.Component {
       <div>
         <div className="">
           <Slider {...toptravel}>
-          <div>
+            <div>
               <div style={{ padding: "3%" }}>
                 <div className="provinec-pic">
                   <img className="thaipic " src={thai} alt="" />
@@ -293,31 +293,38 @@ export class Home extends React.Component {
                   <li className="col-sm-2 col-md-2 col-lg-2 tabbtnmenu"></li>
                   <li className="col-sm-8 col-md-8 col-lg-8 tabbtnmenu"></li>
                   <li className="col-sm-2 col-md-8 col-lg-2 "></li>
-
-                  {/* <div className=" col-lg-3 testmenu">
-                    <button type="button" className="row menubtn">
-                      <div className="col-3">
-                        <i className="fas fa-user-circle fa-2x"></i>
-                      </div>
-                      <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
-                    </button>
-                  </div>
-                  <div className=" col-lg-3">
-                    <button type="button" className="row menubtn">
-                      <div className="col-3">
-                        <i className="fas fa-user-circle fa-2x"></i>
-                      </div>
-                      <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
-                    </button>
-                  </div>
-                  <div className=" col-lg-3">
-                    <button type="button" className="row menubtn">
-                      <div className="col-3">
-                        <i className="fas fa-user-circle fa-2x"></i>
-                      </div>
-                      <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
-                    </button>
-                  </div> */}
+                  <Row style={{ textAlign: "center" }}>
+                    <Col className="mt-2">
+                      <button type="button" className="menubtn">
+                        <Row>
+                          <div className="col-3">
+                            <i className="fas fa-user-circle fa-2x"></i>
+                          </div>
+                          <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
+                        </Row>
+                      </button>
+                    </Col>
+                    <Col lg={3} className="mt-2">
+                      <button type="button" className="menubtn">
+                        <Row>
+                          <div className="col-3">
+                            <i className="fas fa-user-circle fa-2x"></i>
+                          </div>
+                          <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
+                        </Row>
+                      </button>
+                    </Col>
+                    <Col className="mt-2">
+                      <button type="button" className="menubtn">
+                        <Row>
+                          <div className="col-3">
+                            <i className="fas fa-user-circle fa-2x"></i>
+                          </div>
+                          <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
+                        </Row>
+                      </button>
+                    </Col>
+                  </Row>
                 </div>
               </nav>
             </article>
@@ -405,7 +412,7 @@ export class Home extends React.Component {
           <div className="todaymenu">
             <Row>
               <Col>
-              <h3> ดีลพิเศษประจำวัน</h3>
+                <h3> ดีลพิเศษประจำวัน</h3>
               </Col>
               <Col>
                 <NavLink href="Flashsale" className="btn-seeall">
@@ -507,7 +514,7 @@ export class Home extends React.Component {
           <div className="todaymenu">
             <Row>
               <Col>
-              <h3> สินค้าราคาพิเศษ</h3>
+                <h3> สินค้าราคาพิเศษ</h3>
               </Col>
               <Col>
                 <NavLink href="" className="btn-seeall">
@@ -629,7 +636,7 @@ export class Home extends React.Component {
           <div className="hotelmenu">
             <Row>
               <Col>
-              <h3> โรงแรม+ที่พัก สำหรับคุณ</h3>
+                <h3> โรงแรม+ที่พัก สำหรับคุณ</h3>
               </Col>
               <Col>
                 <NavLink href="" className="btn-seeall">
@@ -743,10 +750,9 @@ export class Home extends React.Component {
           </div>
 
           <div className="today">
-    
             <Row>
               <Col>
-              <h3>E-voucher</h3>
+                <h3>E-voucher</h3>
               </Col>
               <Col>
                 <NavLink href="" className="btn-seeall">
@@ -876,7 +882,7 @@ export class Home extends React.Component {
             <Row>
               <Col className="textregister">
                 <h1>ลงทะเบียนร้านค้าออนไลน์ของคุณได้เลยฟรี</h1>
-                <p style={{marginLeft:"5%",marginRight:"5%"}}>
+                <p style={{ marginLeft: "5%", marginRight: "5%" }}>
                   เรามีร้านค้าท่องเที่ยวไทย มากกว่า 30 ร้านค้า สินค้าและบริการ
                   มากกว่า 300 รายการ ที่ส่งตรงจากทั่ว ประเทศไทย
                   ธุรกิจการจัดงานแสดงสินค้าด้านการท่องเที่ยวภายในประเทศไทย

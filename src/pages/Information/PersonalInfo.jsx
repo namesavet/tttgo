@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Form, Col, Button, } from "react-bootstrap";
+import { Row, Form, Col, Button, NavLink, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
 
@@ -26,11 +26,18 @@ export class Personal extends React.Component {
                   </Col>
                 </Row>
               </Col>
-              <Col
-                className="mt-3"
-                style={{ textAlign: "right", marginRight: "5%" }}
-              >
-                <p>ประวัติ Go Point</p>
+              <Col className="mt-2">
+                <Nav.Link
+                  href=""
+                  style={{
+                    textAlign: "right",
+                    marginRight: "5%",
+                    textDecoration: "underline",
+                    color: "#3CB371",
+                  }}
+                >
+                  <p>ประวัติ Go Point</p>
+                </Nav.Link>
               </Col>
             </Row>
           </div>
@@ -46,11 +53,18 @@ export class Personal extends React.Component {
                 >
                   <p>ข้อมูลส่วนตัว</p>
                 </Col>
-                <Col
-                  className="mt-3"
-                  style={{ textAlign: "right", marginRight: "5%" }}
-                >
-                  <p>ล้างข้อมูล</p>
+                <Col className="mt-1">
+                  <Nav.Link
+                    href="/"
+                    style={{
+                      textAlign: "right",
+                      marginRight: "5%",
+                      textDecoration: "underline",
+                      color: "#3CB371",
+                    }}
+                  >
+                    <p>ล้างข้อมูล</p>
+                  </Nav.Link>
                 </Col>
               </Row>
             </div>
@@ -70,7 +84,10 @@ export class Personal extends React.Component {
                       </Form.Group>
                     </Row>
                     <Row style={{ marginLeft: "5%" }}>
-                      <Form.Group className="mb-3" controlId="phonenumber-personal">
+                      <Form.Group
+                        className="mb-3"
+                        controlId="phonenumber-personal"
+                      >
                         <Form.Label>หมายเลขโทรศัพท์</Form.Label>
                         <Form.Control
                           type="text"
@@ -239,11 +256,18 @@ export class Personal extends React.Component {
                   >
                     <p>บัญชีและรหัสผ่าน</p>
                   </Col>
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <p>เปลี่ยนรหัสผ่าน</p>
+                  <Col className="mt-2">
+                    <Nav.Link
+                      href=""
+                      style={{
+                        textAlign: "right",
+                        marginRight: "5%",
+                        textDecoration: "underline",
+                        color: "#3CB371",
+                      }}
+                    >
+                      <p>เปลี่ยนรหัสผ่าน</p>
+                    </Nav.Link>
                   </Col>
                 </Row>
               </div>
