@@ -1,9 +1,9 @@
 .flashdetail {
-    margin-top: 4%;
-    margin-bottom: 4%;
-    box-shadow: rgb(149 157 165 / 20%) 1px 8px 24px;
-
-  }
-  .flashsale{
-      margin-bottom: 80px;
-  }
+  margin-top: 4%;
+  margin-bottom: 4%;
+  box-shadow: rgb(149 157 165 / 20%) 1px 8px 24px;
+  font-size: 15px;
+}
+.flashsale {
+  margin-bottom: 80px;
+}

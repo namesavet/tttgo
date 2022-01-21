@@ -23,7 +23,7 @@ import flash2 from "../../img/flash2.jpg";
 import flash3 from "../../img/flash3.jpg";
 import second from "../../img/second.jpg";
 import shirt from "../../img/category/shirt.png";
-import product from "../../img/product/product.png";
+import product from "../../img/product1.jpg";
 import thai from "../../img/thai.jpg";
 import "./home.css";
 
@@ -518,109 +518,100 @@ export class Home extends React.Component {
             <Slider {...promotion}>
               <div>
                 <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={product} />
-                    <Card.Body>
-                      <div>
-                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                        ขนาดหน้าปัด 30 mm
-                        <div className="disprice">ปกติ 2990 บาท</div>
-                        <div className="redprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
+                <Card className="flashdetail">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={product} />
-                    <Card.Body>
-                      <div>
-                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                        ขนาดหน้าปัด 30 mm
-                        <div className="disprice">
-                          <br />
-                        </div>
-                        <div className="greenprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
+                <Card className="flashdetail">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={product} />
-                    <Card.Body>
-                      <div>
-                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                        ขนาดหน้าปัด 30 mm
-                        <div className="disprice">ปกติ 2990 บาท</div>
-                        <div className="redprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
+                <Card className="flashdetail">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={product} />
-                    <Card.Body>
-                      <div>
-                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                        ขนาดหน้าปัด 30 mm
-                        <div className="disprice">ปกติ 2990 บาท</div>
-                        <div className="redprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
+                <Card className="flashdetail">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={product} />
-                    <Card.Body>
-                      <div>
-                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                        ขนาดหน้าปัด 30 mm
-                        <div className="disprice">ปกติ 2990 บาท</div>
-                        <div className="redprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
+                <Card className="flashdetail">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={product} />
-                    <Card.Body>
-                      <div>
-                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                        ขนาดหน้าปัด 30 mm
-                        <div className="disprice">ปกติ 2990 บาท</div>
-                        <div className="redprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
+                <Card className="flashdetail">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={product} />
-                    <Card.Body>
-                      <div>
-                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด ภาพถ่ายสินค้าจริง
-                        ขนาดหน้าปัด 30 mm
-                        <div className="disprice">ปกติ 2990 บาท</div>
-                        <div className="redprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
+                <Card className="flashdetail">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
                 </div>
               </div>
             </Slider>
