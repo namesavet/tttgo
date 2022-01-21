@@ -1,0 +1,283 @@
+.bg-travelproductdetail {
+  background-color: #f5f5f5;
+}
+.travelproductdetail-head-path {
+  font-size: small;
+  color: black;
+}
+
+.content-travelproductdetail {
+  background-color: white;
+  border-radius: 2px;
+  /* border-style: solid;
+    border-width: 1px;
+    border-color: #dee2e6; */
+}
+.travelproductdetail-tab .nav-link,
+.travelproductdetail-tab .nav-link.active {
+  color: black;
+  background-color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 14px;
+}
+
+.travelproductdetail-tab .nav-link {
+  background: 0 0;
+  border-right: 1px solid;
+  border-top: 1px solid;
+  border-color: #dee2e6;
+  border-radius: 0rem;
+  background-color: #f5f5f5;
+}
+.travelproductdetail-tab {
+  background-color: #f5f5f5;
+}
+.boder-content-travelproduct {
+  border: 1px solid;
+  border-top: none;
+  border-color: #dee2e6;
+}
+ul.mb-3.travelproductdetail-tab.nav.nav-tabs {
+  margin-bottom: 0rem !important;
+}
+.content-travelproduct-detail {
+  font-size: 14px;
+  padding: 30px;
+}
+.travelproduct-sellby {
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid;
+  border-color: #dee2e6;
+  height: 100%;
+}
+.travelproductdetail-price{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #dee2e6;
+}
+.travelproduct-content-review{
+  border: 1px solid;
+  border-color: #dee2e6;
+  background-color: white;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+.travelproduct-review{
+  border-bottom: 1.5px solid;
+  border-color: #dee2e6;
+}
+.travelproduct-review-row{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.travelproduct-review-date{
+  margin-top: 5px;
+  color: gray;
+}
+.travelproduct-review-detail{
+  margin-top: 10px;
+}
+.travelproduct-review-point{
+  color: #69b767;
+  font-weight: bold;
+  font-size: 16px;
+}
+.travelproduct-review-getpoint{
+  font-size: 40px;
+}
+.travelproduct-near{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.travelproduct-disprice {
+  text-decoration: line-through;
+  color: gray;
+  font-size: small;
+  margin-top: 10px;
+}
+.travelproduct-redprice {
+  font-size: large;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.travelproduct-item-number{
+  font-size: medium;
+  color: gray;
+}
+.travelproduct-store{
+  color: rgb(0, 153, 255);
+}
+
+.travelproduct-btn-buy {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: rgba(8, 214, 8, 0.836);
+  border-color: white;
+  width: 100%;
+  height: 120%;
+}
+.travelproduct-btn-buy:focus,.travelproduct-btn-buy:hover ,.travelproduct-btn-buy:active:focus {
+  color: #fff;
+  background-color: white;
+  border-color: white;
+  box-shadow: 0 0 0 0 rgba(8, 214, 8, 0.836);
+}
+
+.travelproduct-btn-add {
+
+  background-color: #f5f5f5;
+  border-color: rgba(8, 214, 8, 0.836);
+  border-width: 2px;
+  width: 100%;
+  height: 120%;
+  color: black;
+}
+.travelproduct-btn-add:focus,.travelproduct-btn-add:hover ,.travelproduct-btn-add:active:focus {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: rgba(8, 214, 8, 0.836);
+  border-color: rgba(8, 214, 8, 0.836);
+  border-width: 2px;
+  width: 100%;
+  height: 120%;
+  box-shadow: 0 0 0 0 rgba(8, 214, 8, 0.836);
+}
+.travelproduct-page-review{
+  margin-top: 30px;
+ 
+  justify-content: center;
+}
+
+.page-review.page-item.active,.page-review.page-item {
+  padding: 5px;
+}
+
+.page-review.page-item .page-link {
+  margin-left: -1px;
+  border-radius: 10px;
+  text-align: center;
+ 
+}
+.page-review.page-item.active .page-link {
+  z-index: 3;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: white;
+  border-color: grey;
+
+  
+}
+.page-review.page-item .page-link ,.page-review.page-item .page-link:focus {
+  z-index: 3;
+  color: grey;
+  background-color: white;
+  border-color: grey;
+  box-shadow: 0 0 0 0 rgba(8, 214, 8, 0.836);
+ 
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

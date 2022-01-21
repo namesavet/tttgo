@@ -258,7 +258,7 @@ export class Province extends React.Component {
     return (
       <Container>
         <Breadcrumb className="province-head-path">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
           <Breadcrumb.Item href="" active>
             ชลบุรี
           </Breadcrumb.Item>

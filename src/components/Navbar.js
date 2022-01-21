@@ -24,7 +24,7 @@ class Navbar1 extends Component {
             <Nav className="me-auto fontNavbar">
               <Nav.Link href="#Accommodation">ค้นหาที่พัก</Nav.Link>
               <Nav.Link href="#EVoucher">E-Voucher</Nav.Link>
-              <Nav.Link href="#Travelgoods">สินค้าท่องเที่ยว</Nav.Link>
+              <Nav.Link href="Travelproduct">สินค้าท่องเที่ยว</Nav.Link>
               <Nav.Link href="#Privilege">สิทธิพิเศษ</Nav.Link>
               <Nav.Link href="#New">ข่าวประชาสัมพันธ์</Nav.Link>
             </Nav>
@@ -37,9 +37,9 @@ class Navbar1 extends Component {
               </Button>{" "}
             </div>
 
-            <a href="_blank" style={{ color: "grey" }}>
-              <i className="fas fa-language"></i>
-            </a>
+           
+              <i style={{color:"gray"}} className="fas fa-language"></i>
+           
 
             <Nav className="fontNavbar">
               <NavDropdown title="TH/EN" id="basic-nav-dropdown">
