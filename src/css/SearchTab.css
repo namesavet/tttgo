@@ -1,0 +1,27 @@
+.logo-tab{
+    width: 100%;
+    margin-top: 10px;
+    padding: 2px;
+  }
+  .circle-booking{
+    background-color: #91bbf1;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+  }
+  .circle-cart{
+    background-color: #ec5fc9;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+  }
+  .booking-link,.booking-link:hover{
+    background-color: white;
+    color: black;
+    border: none;
+  }
+  .cart-link,.cart-link:hover{
+    background-color: white;
+    color: black;
+    border: none;
+  }

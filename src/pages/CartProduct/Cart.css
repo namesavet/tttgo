@@ -1,0 +1,102 @@
+.cart-bg {
+  background-image: linear-gradient(
+    to right,
+    rgba(76, 245, 84, 0.856),
+    rgba(85, 240, 240, 0.795)
+  );
+  border-color: white;
+}
+.head-cart-tab{
+    background-color: white;
+    box-shadow: 0 12px 10px rgba(10, 10, 10, 0.205);
+    
+}
+.cart-body {
+  background-color: rgb(218, 213, 213);
+  width: 100%;
+}
+.pathName{
+    font-size: 16px;
+    color: rgb(170, 168, 168);
+
+}
+.allProductinCart-bg{
+    background-color: white;
+    border-radius: 2px;
+}
+.productincart{
+  background-color: white;
+  border-radius: 2px;
+  margin-top: 2%;
+}
+.shoplogo{
+  width: 15px;
+}
+.shopName{
+  border-bottom: 1px solid gray;
+
+}
+.select-detailPrduct{
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.411);
+  font-size: 14px;
+  border: none;
+}
+.photoProduct{
+  width: 100%;
+  height: 100%;
+}
+.incrementNumber{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgb(56, 230, 123);
+}
+.decreaseNumber{
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: rgba(128, 128, 128, 0.411);
+}
+.fontprice{
+  text-align: end;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.deletelogo{
+    width: 20px;
+}
+.checkbill-bg{
+  background-color: white;
+  margin-left: 2%;
+  border-radius: 2px;
+}
+.checkbill{
+  font-weight: bold;
+}
+.allCheckBill{
+  border-bottom:2px solid;
+  border-bottom-style: dotted;
+  border-color: gray;
+}
+.fontBill{
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+.fontpriceBill{
+  text-align: end;
+  font-size: 14px;
+  font-weight: bold;
+}
+.submit-bill {
+  background-image: linear-gradient(
+    to right,
+    rgba(76, 245, 84, 0.856),
+    rgba(85, 240, 240, 0.795)
+  );
+  border-color: white;
+  font-weight: bold;
+  border: none;
+}

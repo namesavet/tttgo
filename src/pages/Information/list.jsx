@@ -11,7 +11,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
 import { Favorites } from "./Favorites";
-import { Address } from "./Address";
+// import { Address } from "./Address";
 import { Personal } from "./PersonalInfo";
 import { Credit } from "./CreditCard";
 import { History } from "./BuyHistory";
@@ -88,7 +88,7 @@ export class Information extends React.Component {
                     <Favorites />
                   </Tab.Pane>
                   <Tab.Pane eventKey="address" className="content-bg">
-                    <Address />
+                    {/* <Address /> */}
                   </Tab.Pane>
                   <Tab.Pane eventKey="PersonalInformation">
                     <Personal />
