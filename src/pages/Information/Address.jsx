@@ -13,10 +13,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
 import useState from "react-hook-use-state";
 
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+
 import { useForm, Controller } from "react-hook-form";
 function Formaddress() {
-  const { reset, control } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const { reset } = useForm();
 
   const [validated, setValidated] = useState(false);
 
@@ -29,7 +31,7 @@ function Formaddress() {
 
     setValidated(true);
   };
-
+  const [value, setValue] = useState();
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit}>
       <div className="address-head">
@@ -59,8 +61,18 @@ function Formaddress() {
             โปรดใส่ชื่อ-นามสกุล
           </Form.Control.Feedback>
         </Form.Group>
+
         <Form.Group className="mb-3" controlId="phonenumber">
           <Form.Label>หมายเลขโทรศัพท์</Form.Label>
+       
+{/*    รหัสโทรศัพท์
+          <PhoneInput
+            international
+            defaultCountry="TH"
+            value={value}
+            onChange={setValue}
+          /> */}
+
           <Form.Control type="text" placeholder="หมายเลขโทรศัพท์" required />
           <Form.Control.Feedback type="invalid">
             โปรดใส่หมายเลขโทรศัพท์

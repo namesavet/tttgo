@@ -1,5 +1,4 @@
-import React from "react";
-import Slider from "react-slick";
+import React, { useEffect, useState } from "react";
 import {
   Card,
   Tabs,
@@ -11,11 +10,44 @@ import {
   Row,
   Col,
   Pagination,
+  ButtonGroup,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import product from "../../img/product1.jpg";
 import "./travelproductdetail.css";
 import { Imgproduct } from "./Imgproduct";
+import ToggleButton from "react-bootstrap/ToggleButton";
+
+function Btnchoosecolor() {
+  const [checked, setChecked] = useState(false);
+  const [radioValue, setRadioValue] = useState("1");
+
+  const radios = [
+    { name: "HM50GL+footrest", value: "1" },
+    { name: "HM50GL+footrest", value: "2" },
+  ];
+  return (
+    <>
+      <ButtonGroup>
+        {radios.map((radio, idx) => (
+          <ToggleButton
+            key={idx}
+            id={`radio-${idx}`}
+            type="radio"
+            variant={idx % 2 ? "outline-success" : "outline-danger"}
+            name="radio"
+            value={radio.value}
+            checked={radioValue === radio.value}
+            onChange={(e) => setRadioValue(e.currentTarget.value)}
+            className="btn-travelproductdetail-color"
+          >
+            {radio.name}
+          </ToggleButton>
+        ))}
+      </ButtonGroup>
+    </>
+  );
+}
 
 export class Travelproductdetail extends React.Component {
   render() {
@@ -31,8 +63,8 @@ export class Travelproductdetail extends React.Component {
               กระเป๋าเดินทาง LOJELL LUGGAGE LJCF1638 สีขาวไซส์28
             </Breadcrumb.Item>
           </Breadcrumb>
-          
-          <Imgproduct/>
+
+          <Imgproduct />
           <div className="row" style={{ marginTop: "30px" }}>
             <div className="col-xs-16 col-md-6">wda</div>
             <div className="col-xs-16 col-md-6">
@@ -70,14 +102,14 @@ export class Travelproductdetail extends React.Component {
               <div className="row" style={{ marginTop: "10px" }}>
                 <div className="col-3">สี</div>
                 <div className="col">
-                  <input type="number" value="50" min="0" max="100" step="10" />
+                <Btnchoosecolor />
                 </div>
               </div>
 
               <div className="row" style={{ marginTop: "10px" }}>
                 <div className="col-3">จำนวน</div>
                 <div className="col">
-                  <input type="number" value="50" min="0" max="100" step="10" />
+                {/* <input type="number" value="50" min="0" max="100" step="10" /> */}
                 </div>
               </div>
               <div className="row" style={{ marginTop: "10px" }}>
@@ -123,13 +155,18 @@ export class Travelproductdetail extends React.Component {
                     <div className="boder-content-travelproduct">
                       <div className="content-travelproduct-detail">
                         <p>กระเป๋าเดินทางผลิตจากวัสดุ PC Polycarbonate</p>
-                        <p> ล้อสามารถหมุนได้ 360องศา น้ำหนักเบาแข็งแรงทนทานกันน้ำ
+                        <p>
+                          {" "}
+                          ล้อสามารถหมุนได้ 360องศา น้ำหนักเบาแข็งแรงทนทานกันน้ำ
                         </p>
                         <p> ระบบคันชักทำมาจาก อลูมิเนียมสังเคราะห์</p>
                         <p>มีความปลอดภัยด้วยระบบล็อค TSA</p>
-                        <p> สายคาดสัมภาระและแผงกั้นภายในเพื่อความง่ายในการจัดเก็บ
+                        <p>
+                          {" "}
+                          สายคาดสัมภาระและแผงกั้นภายในเพื่อความง่ายในการจัดเก็บ
                         </p>
-                        <p>ช่องกระเป๋าพร้อมซิปรูดเพิ่มประสิทธิภาพในการจัดเก็บสัมภาระ
+                        <p>
+                          ช่องกระเป๋าพร้อมซิปรูดเพิ่มประสิทธิภาพในการจัดเก็บสัมภาระ
                         </p>
                         <p>ระหว่างการเดินทาง SafePlux™ ซิปคู่</p>
                         <p>ป้องกันการโจรกรรมสิ่งของสัมภาระในกระเป๋าเดินทาง</p>
@@ -252,16 +289,16 @@ export class Travelproductdetail extends React.Component {
               </div>
             </div>
 
-          
             <Pagination className="travelproduct-page-review">
-                <Pagination.Item className="page-review" active>{1}</Pagination.Item>
-                <Pagination.Item className="page-review">{2}</Pagination.Item>
-                <Pagination.Item className="page-review">{3}</Pagination.Item>
-                <Pagination.Ellipsis className="page-review" />
-                <Pagination.Next className="page-review" />
-                <Pagination.Last className="page-review" />
+              <Pagination.Item className="page-review" active>
+                {1}
+              </Pagination.Item>
+              <Pagination.Item className="page-review">{2}</Pagination.Item>
+              <Pagination.Item className="page-review">{3}</Pagination.Item>
+              <Pagination.Ellipsis className="page-review" />
+              <Pagination.Next className="page-review" />
+              <Pagination.Last className="page-review" />
             </Pagination>
-             
           </div>
 
           <div className="travelproduct-near">
@@ -333,8 +370,6 @@ export class Travelproductdetail extends React.Component {
             </div>
           </div>
         </Container>
-
-
       </div>
     );
   }
