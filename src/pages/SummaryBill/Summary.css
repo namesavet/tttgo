@@ -1,0 +1,139 @@
+.summary-bg {
+  background-color: rgb(218, 213, 213);
+  border-color: white;
+}
+.head-summary-tab {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(10, 10, 10, 0.205);
+}
+.summary-body {
+  background-color: rgb(218, 213, 213);
+  width: 100%;
+}
+.pathName {
+  font-size: 16px;
+  color: rgb(170, 168, 168);
+}
+.address-bg {
+  background-color: white;
+  border-radius: 2px;
+}
+.address{
+  border-bottom:2px solid rgb(218, 213, 213); 
+  border-bottom-style: dotted;
+}
+.sendchoice-bg{
+  background-color: rgba(253, 250, 250, 0.781);
+}
+.product-summary {
+  background-color: white;
+  border-radius: 2px;
+  margin-top: 2%;
+  border-bottom:2px solid rgb(218, 213, 213); 
+  border-bottom-style: dotted;
+}
+.footer-product-insummary{
+  background-color: white;
+  border-radius: 2px;
+}
+.shoplogo {
+  width: 15px;
+}
+.shopName-insummary {
+  border-bottom: 2px solid rgb(218, 213, 213); 
+}
+.select-detailPrduct {
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.411);
+  font-size: 14px;
+  border: none;
+}
+.photoProduct {
+  width: 100%;
+  height: 100%;
+}
+.fontprice {
+  text-align: end;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.deletelogo {
+  width: 20px;
+}
+.summarybill-bg {
+  background-color: white;
+  border-radius: 2px;
+}
+.select-summarycheckbill {
+  font-weight: bold;
+}
+.font12px {
+  font-size: 12px;
+}
+.font14px{
+  font-size: 14px;
+}
+.font16px{
+  font-size: 16px;
+}
+.font20px-bold{
+  font-size: 20px;
+  font-weight: bold;
+}
+.select-card{
+  border: 2px solid;
+  border-radius: 2px;
+  border-color:rgb(218, 213, 213); ;
+}
+.account {
+  border: 2px solid;
+  border-radius: 2px;
+  border-color:rgb(218, 213, 213); ;
+}
+.visalogo {
+  width: 35px;
+  height: 40px;
+}
+.title-goPoint{
+  font-size: 14px;
+  font-weight: bold;
+
+}
+.checkboxAccount input[type="radio"]:checked {
+  background-color: #98fb98;
+  border: none;
+  margin-top: 10px;
+}
+.checkbillsummary {
+  font-weight: bold;
+}
+.accountNumber {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 4px;
+  margin-top: 10px;
+}
+.allCheckBill {
+  border-bottom: 2px solid rgb(218, 213, 213);
+  border-bottom-style: dotted;
+}
+.fontBill {
+  font-size: 14px;
+  color: rgb(128, 128, 128);
+}
+.fontpriceBill {
+  text-align: end;
+  font-size: 14px;
+  font-weight: bold;
+}
+.submit-bill {
+  background-image: linear-gradient(
+    to right,
+    rgba(76, 245, 84, 0.856),
+    rgba(85, 240, 240, 0.795)
+  );
+  border-color: white;
+  font-weight: bold;
+  border: none;
+}

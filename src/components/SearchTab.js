@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import { Row, Col, Nav, Form, Button, FormControl } from "react-bootstrap";
+import { Row, Col, Nav, Form, Button, FormControl, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/SearchTab.css";
 import cart from "../img/shopping-cart.png";
@@ -9,15 +9,16 @@ class SearchTab extends Component {
   render() {
     return (
       <div className="SearchTab mt-3 mb-3">
-        <Row className="justify-content-center ">
-          <Col className="mt-3">
-            <Form.Group style={{ marginLeft: "60%" }}>
+        <Container>
+          <Row>
+          <Col sm={2} className="mt-3">
+            <Form.Group>
               <Form.Select>
                 <option id="productTravel">สินค้าท่องเที่ยว</option>
               </Form.Select>
             </Form.Group>
           </Col>
-          <Col className="mt-3" sm={6}>
+          <Col className="mt-3" sm={7}>
             <Form className="d-flex">
               <FormControl
                 type="search"
@@ -29,7 +30,7 @@ class SearchTab extends Component {
             </Form>
           </Col>
           <Col>
-            <Row xs="auto">
+            <Row sm="auto">
               <Col>
                 <Nav.Link className="booking-link mt-1 ">
                   <Row>
@@ -44,7 +45,7 @@ class SearchTab extends Component {
               </Col>
 
               <Col>
-                <Nav.Link className="cart-link" href="/Cart">
+                <Nav.Link className="cart-link mt-1 s" href="/Cart">
                   <Row>
                     <div className="col-3 circle-cart">
                       <img className="logo-tab " src={cart} alt="logo"></img>
@@ -57,7 +58,8 @@ class SearchTab extends Component {
               </Col>
             </Row>
           </Col>
-        </Row>
+          </Row>
+        </Container>
       </div>
     );
   }

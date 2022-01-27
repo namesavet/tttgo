@@ -7,7 +7,8 @@ import { Provincedetail } from '../pages/Provincedetail'
 import { Information } from '../pages/Information'
 import { Travelproduct } from '../pages/Travelproduct'
 import { Travelproductdetail } from '../pages/Travelproductdetail'
-import {Cart} from '../pages/CartProduct'
+import {Cart } from '../pages/CartProduct'
+import { Summary } from '../pages/SummaryBill' 
 export default () => (
      <Switch>
      <Route exact path="/" component={Home} />
@@ -18,6 +19,7 @@ export default () => (
      <Route exact path="/Travelproduct" component={Travelproduct} />
      <Route exact path="/Travelproductdetail" component={Travelproductdetail} />
      <Route exact path="/Cart" component={Cart} />
+     <Route exact path="/Summary" component={Summary} />
     </Switch>
 )
    
