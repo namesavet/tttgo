@@ -65,7 +65,7 @@ export class AllBuy extends React.Component {
 
               <div className="body-book-history mb-3">
                 <Row>
-                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
+                  <Col sm={2} className="mt-3" style={{textAlign:"center"}}>
                     <img
                       className="product-image"
                       src={bagpackproduct}
@@ -87,7 +87,7 @@ export class AllBuy extends React.Component {
                       <div className="quantity">x1</div>
                     </div>
                   </Col>
-                  <Col 
+                  <Col
                     className="mt-3"
                     style={{ textAlign: "right", marginRight: "5%" }}
                   >
@@ -96,106 +96,92 @@ export class AllBuy extends React.Component {
                 </Row>
               </div>
               <div className="body-book-history mb-3">
-                <Row>
-                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
-                    <img
-                      className="product-image"
-                      src={bagpackproduct}
-                      alt="logo"
-                    ></img>
-                  </Col>
-                  <Col sm={5} className="mt-3">
-                    <div className="name-product">
-                     เครื่องสำอางท่องเที่ยวกระเป๋าหูรูดเชือกกันฝุ่น
-                    </div>
-                    <div className="about-product mt-3">
-                      ตัวเลือกสินค้า: size 65x85 cm.
-                    </div>
-                  </Col>
+                <Container>
+                  <Row className="mt-4">
+                    <Col sm={2} style={{textAlign:"center"}}>
+                      <img
+                        className="product-image"
+                        src={bagpackproduct}
+                        alt="logo"
+                      ></img>
+                    </Col>
+                    <Col sm={5}>
+                      <div className="name-product">
+                        เครื่องสำอางท่องเที่ยวกระเป๋าหูรูดเชือกกันฝุ่น
+                      </div>
+                      <div className="about-product mt-3">
+                        ตัวเลือกสินค้า: size 65x85 cm.
+                      </div>
+                    </Col>
 
-                  <Col>
-                    <div className="circle-quantity">
-                      <div className="quantity">x1</div>
-                    </div>
-                  </Col>
-                  <Col 
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <div className="price">720 บาท</div>
-                  </Col>
-                </Row>
+                    <Col>
+                      <div className="circle-quantity">x1</div>
+                    </Col>
+                    <Col style={{ textAlign: "end" }}>
+                      <div className="price">720 บาท</div>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
             </div>
             <div className="shop-history">
               <div className="head-shop-history">
-                <Row>
-                  <Col>
-                    <Row>
-                      <Col
-                        sm={1}
-                        className="mt-3"
-                        style={{ marginLeft: "10%" }}
-                      >
-                        <img
-                          className="shop-logo"
-                          src={shoplogo}
-                          alt="logo"
-                        ></img>
-                      </Col>
-                      <Col
-                        sm={9}
-                        className="mt-3"
-                        style={{ textAlign: "left" }}
-                      >
-                        <p>QIAOYUE Sports City</p>
-                      </Col>
-                    </Row>
-                  </Col>
+                <Container>
+                  <Row>
+                    <Col>
+                      <Row>
+                        <Col xs={8} md={10} className="mt-3">
+                          <i
+                            className="fas fa-store"
+                            style={{ color: "gray" }}
+                          ></i>{" "}
+                          QIAOYUE Sports City
+                        </Col>
+                      </Row>
+                    </Col>
 
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <p>1 รายการ</p>
-                  </Col>
-                </Row>
+                    <Col
+                      xs={4}
+                      md={2}
+                      className="mt-3"
+                      style={{ textAlign: "end" }}
+                    >
+                      <p>1 รายการ</p>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
 
               <div className="body-book-history mb-3">
-                <Row>
-                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
-                    <img
-                      className="product-image"
-                      src={bagpackproduct}
-                      alt="logo"
-                    ></img>
-                  </Col>
-                  <Col sm={5} className="mt-3">
-                    <div className="name-product">
-                      AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา Retractable สตูลพลาสติกสำหรับผู้ใหญ่
-                    </div>
-                    <div className="about-product mt-3">
-                      ตัวเลือกสินค้า:Joom 1pc
-                    </div>
-                  </Col>
+                <Container>
+                  <Row className="mt-4">
+                    <Col sm={2} style={{textAlign:"center"}}>
+                      <img
+                        className="product-image"
+                        src={bagpackproduct}
+                        alt="logo"
+                      ></img>
+                    </Col>
+                    <Col sm={5} className="">
+                      <div className="name-product">
+                        AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา
+                        Retractable สตูลพลาสติกสำหรับผู้ใหญ่
+                      </div>
+                      <div className="about-product ">
+                        ตัวเลือกสินค้า:Joom 1pc
+                      </div>
+                    </Col>
 
-                  <Col>
-                    <div className="circle-quantity">
-                      <div className="quantity">x1</div>
-                    </div>
-                  </Col>
-                  <Col 
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <div className="price">1,400 บาท</div>
-                  </Col>
-                </Row>
+                    <Col style={{ textAlign: "center" }}>
+                      <div className="circle-quantity">x1</div>
+                    </Col>
+                    <Col style={{ textAlign: "end" }}>
+                      <div className="price">1,400 บาท</div>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
-  
             </div>
-
           </div>
         </div>
 
@@ -254,7 +240,7 @@ export class AllBuy extends React.Component {
 
               <div className="body-book-history mb-3">
                 <Row>
-                  <Col sm={2}className="mt-3" style={{ marginLeft: "5%" }}>
+                  <Col sm={2} className="mt-3" style={{ marginLeft: "5%" }}>
                     <img
                       className="product-image"
                       src={bagpackproduct}
@@ -263,7 +249,8 @@ export class AllBuy extends React.Component {
                   </Col>
                   <Col sm={5} className="mt-3">
                     <div className="name-product">
-                      AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา Retractable สตูลพลาสติกสำหรับผู้ใหญ่
+                      AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา
+                      Retractable สตูลพลาสติกสำหรับผู้ใหญ่
                     </div>
                     <div className="about-product mt-3">
                       ตัวเลือกสินค้า:Joom 1pc
@@ -275,7 +262,7 @@ export class AllBuy extends React.Component {
                       <div className="quantity">x1</div>
                     </div>
                   </Col>
-                  <Col 
+                  <Col
                     className="mt-3"
                     style={{ textAlign: "right", marginRight: "5%" }}
                   >
@@ -283,11 +270,9 @@ export class AllBuy extends React.Component {
                   </Col>
                 </Row>
               </div>
-  
             </div>
           </div>
         </div>
-
       </div>
     );
   }

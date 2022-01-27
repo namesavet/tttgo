@@ -14,14 +14,12 @@
 .favorites-row {
   padding-bottom: 30px;
 }
-
 .favorites-tab .nav-link,
 .favorites-tab .nav-link.active {
   color: black;
   background-color: white;
   border-bottom-color: #69b767;
 }
-
 .favorites-tab .nav-link {
   background: 0 0;
   border-bottom: 5px solid transparent;
@@ -30,11 +28,9 @@
   border-right: none;
   border-radius: 0rem;
 }
-
 .favorites-tab {
   border-bottom: none;
 }
-
 .address-btn {
   text-align: end;
   margin-top: 10px;
@@ -81,6 +77,7 @@
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-color: #dee2e6;
+
 }
 
 .tab-infor .nav-link,
@@ -93,7 +90,6 @@
   background: 0 0;
   border-left: 10px solid transparent;
   border-radius: 0rem;
-
   color: gray;
 }
 .tab-menu {
@@ -106,6 +102,138 @@
   font-size: large;
   color: #8b8b8b;
 }
+.head-body-info {
+  border-bottom: 1px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+
+.info-btn {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.submit-info {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: rgba(8, 214, 8, 0.836);
+  border-color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  margin-right: 10%;
+}
+.data-info {
+  border-bottom: 2px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+.footer-title {
+  border-bottom: 1px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+
+.addcard-btn {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.submit-addcard {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 221, 111, 0.856),
+    rgba(4, 148, 100, 0.733)
+  );
+  background-color: rgba(8, 214, 8, 0.836);
+  border-color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+  margin-right: 10%;
+}
+.head-credit {
+  border-bottom: 1px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+
+.visa-logo {
+  width: 90px;
+  height: 60px;
+}
+
+.reset-card {
+  border:2px solid #49c44d;
+  font-weight: bold;
+  width: 150px;
+  height: 50px;
+}
+.reset-card-btn{
+  text-align: left;
+}
+.body-card{
+  border-bottom: 2px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+
+}
+.history-tab {
+  border-bottom: none;
+}
+
+
+.history-tab .nav-link,
+.history-tab .nav-link.active {
+  color: black;
+  background-color: white;
+  border-bottom-color: #69b767;
+}
+
+.history-tab .nav-link {
+  background: 0 0;
+  border-bottom: 5px solid transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0rem;
+}
+.head-book-history{
+  background-color: #f7f9fc;
+  color: #8b8b8b;
+}
+.shop-history{
+  border-bottom: 2px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+.head-shop-history{
+  border-bottom: 1px solid;
+  border-color: rgba(214, 211, 211, 0.959);
+}
+.shop-logo{
+  width: 20px;
+}
+.product-image{
+  width:100px;
+  height: 100px;
+}
+.name-product{
+  font-weight: bold;
+  text-align: left;
+}
+.price{
+  font-weight: bold;
+  font-size: 20px;
+}
+.circle-quantity{
+  background-color: #d5dbe4ef;
+  width:35px;
+  height:35px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 16px;
+  margin-left: 50%;
+}
+
 .setting-data-address {
   padding-left: 30px;
   padding-top: 20px;
@@ -117,7 +245,6 @@
   padding-top: 20px;
   padding-bottom: 10px;
 }
-
 .bg-reservation {
   background-color: #f5f5f5;
   border-radius: 2px;
@@ -152,7 +279,6 @@
   padding-left: 20px;
   padding-right: 20px;
 }
-
 .booking-tab .nav-link {
   background: 0 0;
   border-bottom: 5px solid transparent;
@@ -168,7 +294,6 @@
 .booking-recent-input {
   border-radius: 6px;
 }
-
 .search-booking {
   background-image: linear-gradient(
     to right,
@@ -181,6 +306,7 @@
   width: 80px;
   height: 31px;
   font-size: 15px;
+
 }
 .search-booking:focus,
 .search-booking:hover,
@@ -226,4 +352,4 @@
 .day-checkin-out {
   color: black;
   font-weight: bold;
-}
+} 

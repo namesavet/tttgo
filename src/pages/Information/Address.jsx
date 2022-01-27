@@ -1,5 +1,19 @@
+import React from "react";
+import {
+  Row,
+  Form,
+  Button,
+  Col,
+  Container,
+  Nav,
+  NavLink,
+  InputGroup,
+} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./information.css";
+import useState from "react-hook-use-state";
 import "react-phone-number-input/style.css";
-import PhoneInput from "react-phone-number-input";
+
 
 import { useForm, Controller } from "react-hook-form";
 function Formaddress() {
@@ -49,8 +63,8 @@ function Formaddress() {
 
         <Form.Group className="mb-3" controlId="phonenumber">
           <Form.Label>หมายเลขโทรศัพท์</Form.Label>
-
-          {/*    รหัสโทรศัพท์
+       
+{/*    รหัสโทรศัพท์
           <PhoneInput
             international
             defaultCountry="TH"
