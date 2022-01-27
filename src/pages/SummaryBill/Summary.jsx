@@ -85,9 +85,7 @@ export class Summary extends React.Component {
                         </Col>
                         <Col className="mt-3 mb-3">
                           <Row>
-                            <p style={{ color: "#98fb98", textAlign: "end" }}>
-                              แก้ไข
-                            </p>
+                            <EditAddress/>
                           </Row>
                         </Col>
                       </Row>

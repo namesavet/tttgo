@@ -57,4 +57,4 @@ function EditAddress() {
   );
 }
 
-render(<EditAddress />);
+export default EditAddress;
