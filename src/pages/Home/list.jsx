@@ -285,51 +285,87 @@ export class Home extends React.Component {
           </Carousel>
         </div>
 
-        <Container>
-          <div className="layoutmenubtn">
-            <article className="col-12  ">
-              <nav>
-                <div className="row tabbtnmenu " style={{ listStyle: "none" }}>
-                  <li className="col-sm-2 col-md-2 col-lg-2 tabbtnmenu"></li>
-                  <li className="col-sm-8 col-md-8 col-lg-8 tabbtnmenu"></li>
-                  <li className="col-sm-2 col-md-8 col-lg-2 "></li>
-                  <Row style={{ textAlign: "center" }}>
-                    <Col className="mt-2">
-                      <button type="button" className="menubtn">
-                        <Row>
-                          <div className="col-3">
-                            <i className="fas fa-user-circle fa-2x"></i>
-                          </div>
-                          <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
-                        </Row>
-                      </button>
-                    </Col>
-                    <Col lg={3} className="mt-2">
-                      <button type="button" className="menubtn">
-                        <Row>
-                          <div className="col-3">
-                            <i className="fas fa-user-circle fa-2x"></i>
-                          </div>
-                          <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
-                        </Row>
-                      </button>
-                    </Col>
-                    <Col className="mt-2">
-                      <button type="button" className="menubtn">
-                        <Row>
-                          <div className="col-3">
-                            <i className="fas fa-user-circle fa-2x"></i>
-                          </div>
-                          <div className="col fontmenubtn">โรงแรม+ที่พัก</div>
-                        </Row>
-                      </button>
-                    </Col>
-                  </Row>
-                </div>
-              </nav>
-            </article>
-          </div>
-        </Container>
+        <div className="layoutmenubtn">
+          <Container>
+            <div className="row tabbtnmenu " style={{ listStyle: "none" }}>
+              <div
+                className="col-sm-12 col-md-4 col-lg-4"
+                style={{ textAlign: "center", marginTop: "10px" }}
+              >
+                <Button
+                  type="button"
+                  className="row menubtn"
+                  style={{ width: "200px" }}
+                >
+                  <div className="row">
+                    <div className="col-3" style={{ paddingTop: "4px" }}>
+                      <i
+                        className="fas fa-hotel"
+                        style={{
+                          color: "rgba(8, 214, 8, 0.836)",
+                          fontSize: "20px",
+                        }}
+                      ></i>
+                    </div>
+                    <div className="col-9" style={{ paddingTop: "2px" }}>
+                      โรงแรม+ที่พัก
+                    </div>
+                  </div>
+                </Button>
+              </div>
+              <div
+                className="col-sm-12 col-md-4 col-lg-4"
+                style={{ textAlign: "center", marginTop: "10px" }}
+              >
+                <Button
+                  type="button"
+                  className="row menubtn"
+                  style={{ width: "200px" }}
+                >
+                  <div className="row">
+                    <div className="col-3" style={{ paddingTop: "4px" }}>
+                      <i
+                        className="far fa-credit-card"
+                        style={{
+                          color: "rgba(8, 214, 8, 0.836)",
+                          fontSize: "20px",
+                        }}
+                      ></i>
+                    </div>
+                    <div className="col-9" style={{ paddingTop: "2px" }}>
+                      E-Voucher
+                    </div>
+                  </div>
+                </Button>
+              </div>
+              <div
+                className="col-sm-12 col-md-4 col-lg-4"
+                style={{ textAlign: "center", marginTop: "10px" }}
+              >
+                <Button
+                  type="button"
+                  className="row menubtn"
+                  style={{ width: "200px" }}
+                >
+                  <div className="row">
+                    <div className="col-3" style={{ paddingTop: "4px" }}>
+                      <i
+                        className="fas fa-shopping-bag"
+                        style={{
+                          color: "rgba(8, 214, 8, 0.836)",
+                          fontSize: "20px",
+                        }}
+                      ></i>
+                    </div>
+                    <div className="col-9" style={{ paddingTop: "2px" }}>
+                      สินค้า
+                    </div>
+                  </div>
+                </Button>
+              </div>
+            </div>
+          </Container>
+        </div>
 
         <Container>
           <div className="categorymenu">
@@ -525,100 +561,100 @@ export class Home extends React.Component {
             <Slider {...promotion}>
               <div>
                 <div style={{ padding: "5%" }}>
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
               <div>
                 <div style={{ padding: "5%" }}>
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
                 </div>
               </div>
             </Slider>

@@ -12,7 +12,7 @@ class Navbar1 extends Component {
   }
   render() {
     return (
-      <Navbar bg="white" expand="lg">
+      <Navbar bg="white" expand="lg" className="nav-shadow">
         <Container>
           <div className="Navbarpic">
             <Navbar.Brand href="/">
@@ -37,31 +37,44 @@ class Navbar1 extends Component {
               </Button>{" "}
             </div>
 
-           
-              <i style={{color:"gray"}} className="fas fa-language"></i>
-           
-
             <Nav className="fontNavbar">
-              <NavDropdown title="TH/EN" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">TH</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">EN</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-
-            <div style={{ marginLeft: "10px" }}>
-              <a href="/information" style={{ color: "grey" }}>
-                <i className="fas fa-user-circle fa-2x"></i>
-              </a>
-            </div>
-            <Nav.Link className="infor-link" href="/information">
-              <div style={{ marginLeft: "20px" }}>
-                <div className="row" style={{ fontSize: "13px" }}>
-                  Nutchapisitd EA.
+              <div className="row">
+                <div className="col-1">
+                  <i
+                    style={{
+                      color: "gray",
+                      marginTop: "11px",
+                      marginLeft: "10px",
+                    }}
+                    className="fas fa-language"
+                  ></i>
                 </div>
-                <div className="row" style={{ fontSize: "10px" }}>
-                  2300 Point
+                <div className="col">
+                  <NavDropdown title="TH/EN" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">TH</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">EN</NavDropdown.Item>
+                  </NavDropdown>
                 </div>
               </div>
+            </Nav>
+
+            <Nav.Link className="infor-link" href="/information">
+              <div className="row">
+                <div className="col-1">
+                  
+                    <i className="fas fa-user-circle fa-2x" style={{ color: "grey" }}></i>
+                
+                </div>
+                <div className="col">
+                  <div style={{ fontSize: "13px", marginLeft: "20px" }}>
+                    Nutchapisitd EA.
+                  </div>
+                  <div style={{ fontSize: "10px", marginLeft: "20px" }}>
+                    2300 Point
+                  </div>
+                </div>
+              </div>
+              
             </Nav.Link>
           </Navbar.Collapse>
         </Container>

@@ -9,6 +9,7 @@ import { Travelproduct } from '../pages/Travelproduct'
 import { Travelproductdetail } from '../pages/Travelproductdetail'
 import {Cart } from '../pages/CartProduct'
 import { Summary } from '../pages/SummaryBill' 
+import {Ordersuccessful} from '../pages/Ordersuccessful'
 export default () => (
      <Switch>
      <Route exact path="/" component={Home} />
@@ -20,6 +21,7 @@ export default () => (
      <Route exact path="/Travelproductdetail" component={Travelproductdetail} />
      <Route exact path="/Cart" component={Cart} />
      <Route exact path="/Summary" component={Summary} />
+     <Route exact path="/Ordersuccessful" component={Ordersuccessful} />
     </Switch>
 )
    
