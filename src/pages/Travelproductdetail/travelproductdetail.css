@@ -194,30 +194,40 @@ ul.mb-3.travelproductdetail-tab.nav.nav-tabs {
   box-shadow: 0 0 0 0 rgba(8, 214, 8, 0.836);
 }
 
-.btn-travelproductdetail-color {
+.btn-travelproductdetail-color,
+.btn-travelproductdetail-color.btn-primary:hover {
   color: gray;
   border-color: gray;
   margin-right: 10px;
   border-radius: 6px;
-}
-.btn-travelproductdetail-color:focus, .btn-travelproductdetail-color:active {
-  border: 2px solid;
-  color: black;
-  border-color: rgba(8, 214, 8, 0.836);
   background-color: white;
-  box-shadow: 0 0 0 0 rgb(25 135 84 / 50%);
-  border-radius: 6px;
 }
-.btn-travelproductdetail-color.btn.btn-outline-success:focus {
-  border: 2px solid;
-  color: black;
-  border-color: rgba(8, 214, 8, 0.836);
-  background-color: white;
-  box-shadow: 0 0 0 0 rgb(25 135 84 / 50%);
-  border-radius: 6px;
+.btn-group > .btn-group:not(:last-child) > .btn,
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.btn-group > .btn-group:not(:first-child) > .btn,
+.btn-group > .btn:nth-child(n + 3),
+.btn-group > :not(.btn-check) + .btn {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
 }
 
+.btn-travelproductdetail-color.btn-primary:active {
+  color: black;
+  background-color: white;
+  border-color: rgba(8, 214, 8, 0.836);
+  box-shadow: 0 0 0 0rem white;
+}
 
+.btn-check:checked + .btn-primary,
+.btn-check:checked + .btn-primary:focus {
+  color: black;
+  background-color: white;
+  border-color: rgba(8, 214, 8, 0.836);
+  box-shadow: 0 0 0 0rem white;
+}
 
 * {
   box-sizing: border-box;

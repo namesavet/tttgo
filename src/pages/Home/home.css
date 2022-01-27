@@ -13,6 +13,17 @@
 .menubtn {
   justify-content: center;
 }
+button.row.menubtn.btn.btn-primary {
+  color: black;
+  box-shadow: rgba(149, 157, 165, 0.315) 1px 6px 20px;
+  background-color: white;
+  border:none;
+}
+button.row.menubtn.btn.btn-primary:hover {
+
+  background-color: cadetblue;
+  border:none;
+}
 .tabmenu {
   width: 100%;
   padding-top: 2%;

@@ -11,3 +11,6 @@
     padding: 0;
     color: black;
 }
+.nav-shadow{
+    box-shadow: rgb(149 157 165 / 20%) 1px 8px 24px;
+}

@@ -42,11 +42,7 @@ function Pic() {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    if(slides[slideIndex-1] == undefined){
-   
-    }else{
-      slides[slideIndex-1].style.display = "block";
-    }
+    
     
     console.log(slides[slideIndex-1]);
   }

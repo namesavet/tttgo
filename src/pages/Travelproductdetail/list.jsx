@@ -28,18 +28,17 @@ function Btnchoosecolor() {
   ];
   return (
     <>
-      <ButtonGroup>
+      <ButtonGroup className="mb-2">
         {radios.map((radio, idx) => (
           <ToggleButton
             key={idx}
             id={`radio-${idx}`}
             type="radio"
-            variant={idx % 2 ? "outline-success" : "outline-danger"}
             name="radio"
+            className="btn-travelproductdetail-color"
             value={radio.value}
             checked={radioValue === radio.value}
             onChange={(e) => setRadioValue(e.currentTarget.value)}
-            className="btn-travelproductdetail-color"
           >
             {radio.name}
           </ToggleButton>
@@ -102,14 +101,14 @@ export class Travelproductdetail extends React.Component {
               <div className="row" style={{ marginTop: "10px" }}>
                 <div className="col-3">สี</div>
                 <div className="col">
-                <Btnchoosecolor />
+                  <Btnchoosecolor />
                 </div>
               </div>
 
               <div className="row" style={{ marginTop: "10px" }}>
                 <div className="col-3">จำนวน</div>
                 <div className="col">
-                {/* <input type="number" value="50" min="0" max="100" step="10" /> */}
+                  {/* <input type="number" value="50" min="0" max="100" step="10" /> */}
                 </div>
               </div>
               <div className="row" style={{ marginTop: "10px" }}>
@@ -200,13 +199,37 @@ export class Travelproductdetail extends React.Component {
                       paddingBottom: "10px",
                     }}
                   >
-                    <div className="col-xs-12 col-md-8">
+                    <div
+                      className="col-sx-6  col-md-12 col-lg-5"
+                      style={{ marginTop: "5px" }}
+                    >
                       <b>จำหน่ายโดย</b>
-                      <div className="travelproduct-store">
-                        ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
-                      </div>
                     </div>
-                    <div className="col-xs-6 col-md-4">ฟ กฟ กฟ กฟ</div>
+                    <div
+                      className="col-sx-6 col-md-12  col-lg-7"
+                      style={{ marginTop: "5px" }}
+                    >
+                      <li>
+                        <Button
+                          style={{ fontSize: "12px" }}
+                          variant="outline-success"
+                        >
+                          <i className="far fa-comment-alt"></i> แชท
+                        </Button>
+                        <Button
+                          style={{ fontSize: "12px", marginLeft: "2%" }}
+                          variant="outline-secondary"
+                        >
+                          <i className="fas fa-store"></i> ดูร้านค้า
+                        </Button>
+                      </li>
+                    </div>
+                    <div
+                      className="travelproduct-store"
+                      style={{ marginTop: "5px" }}
+                    >
+                      ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
+                    </div>
                   </div>
 
                   <div className="row" style={{ paddingTop: "10px" }}>
@@ -369,6 +392,10 @@ export class Travelproductdetail extends React.Component {
               </div>
             </div>
           </div>
+
+                 
+
+
         </Container>
       </div>
     );

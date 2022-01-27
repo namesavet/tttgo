@@ -216,8 +216,8 @@ export class Travelproduct extends React.Component {
 
         <h5 style={{marginTop:"30px"}}>สินค้าท่องเที่ยวแนะนำ</h5>
         <div className="row  flashsale" style={{ listStyle: "none" }}>
-          <li className="col col-md-3  col-lg">
-          <Card className="flashdetail">
+          <li className="flashdetail-product-col">
+          <Card className="flashdetail-product">
                   <Card.Img variant="top" src={product} />
                   <Card.Body>
                     <div>
@@ -228,8 +228,8 @@ export class Travelproduct extends React.Component {
                   </Card.Body>
                 </Card>
           </li>
-          <li className="col col-md-3  col-lg">
-          <Card className="flashdetail">
+          <li className="flashdetail-product-col">
+          <Card className="flashdetail-product">
                   <Card.Img variant="top" src={product} />
                   <Card.Body>
                     <div>
@@ -240,8 +240,8 @@ export class Travelproduct extends React.Component {
                   </Card.Body>
                 </Card>
           </li>
-          <li className="col col-md-3  col-lg">
-          <Card className="flashdetail">
+          <li className="flashdetail-product-col">
+          <Card className="flashdetail-product">
                   <Card.Img variant="top" src={product} />
                   <Card.Body>
                     <div>
@@ -252,8 +252,8 @@ export class Travelproduct extends React.Component {
                   </Card.Body>
                 </Card>
           </li>
-          <li className="col col-md-3  col-lg">
-          <Card className="flashdetail">
+          <li className="flashdetail-product-col">
+          <Card className="flashdetail-product">
                   <Card.Img variant="top" src={product} />
                   <Card.Body>
                     <div>
@@ -264,8 +264,8 @@ export class Travelproduct extends React.Component {
                   </Card.Body>
                 </Card>
           </li>
-          <li className="col col-md-3 col-lg">
-          <Card className="flashdetail">
+          <li className="flashdetail-product-col">
+          <Card className="flashdetail-product">
                   <Card.Img variant="top" src={product} />
                   <Card.Body>
                     <div>

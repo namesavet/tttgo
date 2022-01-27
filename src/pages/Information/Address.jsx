@@ -37,10 +37,10 @@ function Formaddress() {
       <div className="address-head">
         <Container>
           <Row>
-            <Col xs={8} md={8} className="setting-data-address">
+            <Col xs={6} md={6} className="setting-data-address">
               ตั้งค่าที่อยู่
             </Col>
-            <Col xs={4} md={4} className="clear-data-address">
+            <Col xs={6} md={6} className="clear-data-address">
               <Button
                 variant=""
                 className="btn-clear-data-address"
