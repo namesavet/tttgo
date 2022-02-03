@@ -56,12 +56,15 @@ export class Travelproduct extends React.Component {
     };
     return (
       <Container>
-        <Breadcrumb className="province-head-path">
-          <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
-          <Breadcrumb.Item href="" active>
-            สินค้าประจำวัน
-          </Breadcrumb.Item>
-        </Breadcrumb>
+
+        <ul className="breadcrumb">
+          <li>
+            <a href="/">หน้าแรก</a>
+          </li>
+          <li>       สินค้าประจำวัน</li>
+        </ul>
+
+
 
         <div className="ads">
           <Container>

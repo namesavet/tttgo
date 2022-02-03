@@ -7,13 +7,12 @@ import {
   Breadcrumb,
   Container,
   Pagination,
-  NavLink
+  NavLink,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import thai from "../../img/thai.jpg";
 import north from "../../img/north.jpg";
 import "./province.css";
-
 
 export class Central extends React.Component {
   render() {
@@ -257,20 +256,20 @@ export class Province extends React.Component {
   render() {
     return (
       <Container>
-        <Breadcrumb className="province-head-path">
-          <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
-          <Breadcrumb.Item href="" active>
-            ชลบุรี
-          </Breadcrumb.Item>
-        </Breadcrumb>
-
+        <ul className="breadcrumb">
+          <li>
+            <a href="/">หน้าแรก</a>
+          </li>
+          <li>ชลบุรี</li>
+        </ul>
+        
         <div className="thailand">
           <Tabs
             defaultActiveKey="central"
             id="uncontrolled-tab-example"
             className="mb-4 tab-procinve"
           >
-            <Tab eventKey="central" title="ภาคกลาง" >
+            <Tab eventKey="central" title="ภาคกลาง">
               <Central />
             </Tab>
 
@@ -297,19 +296,18 @@ export class Province extends React.Component {
         <div className="row  " style={{ listStyle: "none" }}>
           <li className="col-md-6 col-lg-3">
             <NavLink href="/Provincedetail" className="province-link">
-               <Card className="provincedetail">
-              <Card.Img variant="top" src={thai} />
-              <Card.Body>
-                <div className="titlelocation">วัดแสนสุข</div>
-                <div className="greenlocation">อ.เมือง(บางแสน)</div>
-                <Card.Text className="detaillocecation">
-                  ตั้งอยู่ไม่ไกลจากหาดบางแสน มีสิ่งที่น่าสนใจคือ
-                  มหาเจดีย์เกตึแก้วจุฬามณีอาสุขมหา
-                </Card.Text>
-              </Card.Body>
-            </Card>
+              <Card className="provincedetail">
+                <Card.Img variant="top" src={thai} />
+                <Card.Body>
+                  <div className="titlelocation">วัดแสนสุข</div>
+                  <div className="greenlocation">อ.เมือง(บางแสน)</div>
+                  <Card.Text className="detaillocecation">
+                    ตั้งอยู่ไม่ไกลจากหาดบางแสน มีสิ่งที่น่าสนใจคือ
+                    มหาเจดีย์เกตึแก้วจุฬามณีอาสุขมหา
+                  </Card.Text>
+                </Card.Body>
+              </Card>
             </NavLink>
-           
           </li>
           <li className="col-md-6 col-lg-3">
             <Card className="provincedetail">
@@ -403,9 +401,17 @@ export class Province extends React.Component {
             </Card>
           </li>
         </div>
-        <div>
-          <PaginationProvince></PaginationProvince>
-        </div>
+
+        <Pagination className="travelproduct-page-review">
+          <Pagination.Item className="page-review" active>
+            {1}
+          </Pagination.Item>
+          <Pagination.Item className="page-review">{2}</Pagination.Item>
+          <Pagination.Item className="page-review">{3}</Pagination.Item>
+          <Pagination.Ellipsis className="page-review" />
+          <Pagination.Next className="page-review" />
+          <Pagination.Last className="page-review" />
+        </Pagination>
       </Container>
     );
   }
