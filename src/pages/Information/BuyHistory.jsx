@@ -1,8 +1,7 @@
 import React from "react";
-import { Row, Tab, Tabs, Col, Container, Card } from "react-bootstrap";
+import { Row, Tab, Tabs, Col, Container,} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
-import shoplogo from "../../img/shoplogo.png";
 import bagpackproduct from "../../img/bagpack.jpg";
 
 export class AllBuy extends React.Component {
@@ -13,92 +12,84 @@ export class AllBuy extends React.Component {
         <div className="content-bg mt-3">
           <div className="book-history">
             <div className="head-book-history">
-              <Row>
-                <Col
-                  className="mt-3"
-                  style={{ textAlign: "left", marginLeft: "5%" }}
-                >
-                  <p>หมายเลการจอง : 564403517</p>
-                </Col>
-                <Col
-                  className="mt-3"
-                  style={{ textAlign: "right", marginRight: "5%" }}
-                >
-                  <p>สั่งซื้อเมื่อวันที่ : 27/05/2021</p>
-                </Col>
-              </Row>
+              <Container>
+                <Row>
+                  <Col className="mt-3" style={{ textAlign: "left" }}>
+                    <p>หมายเลการจอง : 564403517</p>
+                  </Col>
+                  <Col className="mt-3" style={{ textAlign: "right" }}>
+                    <p>สั่งซื้อเมื่อวันที่ : {`27/05/2021`}</p>
+                  </Col>
+                </Row>
+              </Container>
             </div>
             <div className="shop-history">
               <div className="head-shop-history">
-                <Row>
-                  <Col>
-                    <Row>
-                      <Col
-                        sm={1}
-                        className="mt-3"
-                        style={{ marginLeft: "10%" }}
-                      >
-                        <img
-                          className="shop-logo"
-                          src={shoplogo}
-                          alt="logo"
-                        ></img>
-                      </Col>
-                      <Col
-                        sm={9}
-                        className="mt-3"
-                        style={{ textAlign: "left" }}
-                      >
-                        <p>ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา</p>
-                      </Col>
-                    </Row>
-                  </Col>
+                <Container>
+                  <Row>
+                    <Col>
+                      <Row>
+                        <Col xs={8} md={10} className="mt-3">
+                          <i
+                            className="fas fa-store"
+                            style={{ color: "gray" }}
+                          ></i>{" "}
+                          ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
+                        </Col>
+                      </Row>
+                    </Col>
 
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <p>2 รายการ</p>
-                  </Col>
-                </Row>
+                    <Col
+                      xs={4}
+                      md={2}
+                      className="mt-3"
+                      style={{ textAlign: "end" }}
+                    >
+                      <p>2 รายการ</p>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
 
               <div className="body-book-history mb-3">
-                <Row>
-                  <Col sm={2} className="mt-3" style={{textAlign:"center"}}>
-                    <img
-                      className="product-image"
-                      src={bagpackproduct}
-                      alt="logo"
-                    ></img>
-                  </Col>
-                  <Col sm={5} className="mt-3">
-                    <div className="name-product">
-                      กระเป๋าเดินทาง LOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์
-                      28
-                    </div>
-                    <div className="about-product mt-3">
-                      ตัวเลือกสินค้า: HM50GL+footrest
-                    </div>
-                  </Col>
+                <Container>
+                  <Row className="mt-4">
+                    <Col sm={2} style={{ textAlign: "center" }}>
+                      <img
+                        className="product-image"
+                        src={bagpackproduct}
+                        alt="logo"
+                      ></img>
+                    </Col>
+                    <Col sm={5}>
+                      <div className="name-product">
+                        กระเป๋าเดินทาง LOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว
+                        ไซส์ 28
+                      </div>
+                      <div className="about-product mt-3">
+                        ตัวเลือกสินค้า: HM50GL+footrest
+                      </div>
+                    </Col>
 
-                  <Col>
-                    <div className="circle-quantity">
-                      <div className="quantity">x1</div>
-                    </div>
-                  </Col>
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <div className="price">2,500 บาท</div>
-                  </Col>
-                </Row>
+                    <Col>
+                      <div
+                        className="circle-quantity"
+                        style={{ textAlign: "center" }}
+                      >
+                        x1
+                      </div>
+                    </Col>
+                    <Col style={{ textAlign: "right" }}>
+                      <div className="disprice">4490 บาท</div>
+                      <div className="redprice">2,599 บาท</div>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
               <div className="body-book-history mb-3">
                 <Container>
                   <Row className="mt-4">
-                    <Col sm={2} style={{textAlign:"center"}}>
+                    <Col sm={2} style={{ textAlign: "center" }}>
                       <img
                         className="product-image"
                         src={bagpackproduct}
@@ -114,11 +105,11 @@ export class AllBuy extends React.Component {
                       </div>
                     </Col>
 
-                    <Col>
+                    <Col style={{ textAlign: "center" }}>
                       <div className="circle-quantity">x1</div>
                     </Col>
                     <Col style={{ textAlign: "end" }}>
-                      <div className="price">720 บาท</div>
+                      <div className="greenprice">720 บาท</div>
                     </Col>
                   </Row>
                 </Container>
@@ -155,19 +146,19 @@ export class AllBuy extends React.Component {
               <div className="body-book-history mb-3">
                 <Container>
                   <Row className="mt-4">
-                    <Col sm={2} style={{textAlign:"center"}}>
+                    <Col sm={2} style={{ textAlign: "center" }}>
                       <img
                         className="product-image"
                         src={bagpackproduct}
                         alt="logo"
                       ></img>
                     </Col>
-                    <Col sm={5} className="">
+                    <Col sm={5}>
                       <div className="name-product">
                         AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา
                         Retractable สตูลพลาสติกสำหรับผู้ใหญ่
                       </div>
-                      <div className="about-product ">
+                      <div className="about-product mt-3">
                         ตัวเลือกสินค้า:Joom 1pc
                       </div>
                     </Col>
@@ -176,7 +167,8 @@ export class AllBuy extends React.Component {
                       <div className="circle-quantity">x1</div>
                     </Col>
                     <Col style={{ textAlign: "end" }}>
-                      <div className="price">1,400 บาท</div>
+                      <div className="disprice">2080 บาท</div>
+                      <div className="redprice">1,400 บาท</div>
                     </Col>
                   </Row>
                 </Container>
@@ -188,87 +180,79 @@ export class AllBuy extends React.Component {
         <div className="content-bg mt-3">
           <div className="book-history">
             <div className="head-book-history">
-              <Row>
-                <Col
-                  className="mt-3"
-                  style={{ textAlign: "left", marginLeft: "5%" }}
-                >
-                  <p>หมายเลการจอง : 564403517</p>
-                </Col>
-                <Col
-                  className="mt-3"
-                  style={{ textAlign: "right", marginRight: "5%" }}
-                >
-                  <p>สั่งซื้อเมื่อวันที่ : 06/05/2021</p>
-                </Col>
-              </Row>
+              <Container>
+                <Row>
+                  <Col className="mt-3" style={{ textAlign: "left" }}>
+                    <p>หมายเลการจอง : 564403517</p>
+                  </Col>
+                  <Col className="mt-3" style={{ textAlign: "right" }}>
+                    <p>สั่งซื้อเมื่อวันที่ : {`27/05/2021`}</p>
+                  </Col>
+                </Row>
+              </Container>
             </div>
             <div className="shop-history">
               <div className="head-shop-history">
-                <Row>
-                  <Col>
-                    <Row>
-                      <Col
-                        sm={1}
-                        className="mt-3"
-                        style={{ marginLeft: "10%" }}
-                      >
-                        <img
-                          className="shop-logo"
-                          src={shoplogo}
-                          alt="logo"
-                        ></img>
-                      </Col>
-                      <Col
-                        sm={9}
-                        className="mt-3"
-                        style={{ textAlign: "left" }}
-                      >
-                        <p>QIAOYUE Sports City</p>
-                      </Col>
-                    </Row>
-                  </Col>
+                <Container>
+                  <Row>
+                    <Col>
+                      <Row>
+                        <Col xs={8} md={10} className="mt-3">
+                          <i
+                            className="fas fa-store"
+                            style={{ color: "gray" }}
+                          ></i>{" "}
+                          ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
+                        </Col>
+                      </Row>
+                    </Col>
 
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <p>1 รายการ</p>
-                  </Col>
-                </Row>
+                    <Col
+                      xs={4}
+                      md={2}
+                      className="mt-3"
+                      style={{ textAlign: "end" }}
+                    >
+                      <p>2 รายการ</p>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
 
               <div className="body-book-history mb-3">
-                <Row>
-                  <Col sm={2} className="mt-3" style={{ marginLeft: "5%" }}>
-                    <img
-                      className="product-image"
-                      src={bagpackproduct}
-                      alt="logo"
-                    ></img>
-                  </Col>
-                  <Col sm={5} className="mt-3">
-                    <div className="name-product">
-                      AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา
-                      Retractable สตูลพลาสติกสำหรับผู้ใหญ่
-                    </div>
-                    <div className="about-product mt-3">
-                      ตัวเลือกสินค้า:Joom 1pc
-                    </div>
-                  </Col>
+                <Container>
+                  <Row className="mt-4">
+                    <Col sm={2} style={{ textAlign: "center" }}>
+                      <img
+                        className="product-image"
+                        src={bagpackproduct}
+                        alt="logo"
+                      ></img>
+                    </Col>
+                    <Col sm={5}>
+                      <div className="name-product">
+                        AliExpress เก้าอี้พับเก้าอี้พนักพิงแบบพกพาตกปลา
+                        Retractable สตูลพลาสติกสำหรับผู้ใหญ่
+                      </div>
+                      <div className="about-product mt-3">
+                        ตัวเลือกสินค้า:Joom 1pc
+                      </div>
+                    </Col>
 
-                  <Col>
-                    <div className="circle-quantity">
-                      <div className="quantity">x1</div>
-                    </div>
-                  </Col>
-                  <Col
-                    className="mt-3"
-                    style={{ textAlign: "right", marginRight: "5%" }}
-                  >
-                    <div className="price">1,400 บาท</div>
-                  </Col>
-                </Row>
+                    <Col>
+                      <div
+                        className="circle-quantity"
+                        style={{ textAlign: "center" }}
+                      >
+                        x1
+                      </div>
+                    </Col>
+                    <Col style={{ textAlign: "right" }}>
+                      <div className="disprice">2080 บาท</div>
+                      <div className="redprice">1,400 บาท</div>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
             </div>
           </div>

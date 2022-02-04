@@ -204,24 +204,13 @@ export class Cart extends React.Component {
                               </Row>
                             </Col>
                             <Col sm={2} className="justify-content-center mt-4">
-                              <Row>
-                                <Col>
-                                  <Row
-                                    style={{
-                                      width: "30px",
-                                      textAlign: "right",
-                                    }}
-                                  >
-                                    <button
+                              <li>
+                                 <button
                                       className="decreaseNumber"
                                       onClick={this.DecreaseItem}
                                     >
                                       -
-                                    </button>
-                                  </Row>
-                                </Col>
-                                <Col style={{ width: "30px" }}>
-                                  <Row>
+                                    </button> 
                                     <input
                                       name="clicks"
                                       value={this.state.clicks}
@@ -230,21 +219,16 @@ export class Cart extends React.Component {
                                         textAlign: "center",
                                         border: "none",
                                         height: "25px",
+                                        width:"100%",
                                       }}
                                     />
-                                  </Row>
-                                </Col>
-                                <Col>
-                                  <Row style={{ width: "30px" }}>
-                                    <button
+                                     <button
                                       className="incrementNumber"
                                       onClick={this.IncrementItem}
                                     >
                                       +
                                     </button>
-                                  </Row>
-                                </Col>
-                              </Row>
+                              </li>
                             </Col>
                             <Col sm={2}>
                               <div className="fontprice">
