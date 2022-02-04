@@ -18,7 +18,7 @@ class SearchTab extends Component {
               </Form.Select>
             </Form.Group>
           </Col>
-          <Col className="mt-3" sm={7}>
+          <Col className="mt-3" sm="auto" lg={7} >
             <Form className="d-flex">
               <FormControl
                 type="search"
@@ -29,7 +29,7 @@ class SearchTab extends Component {
               <Button variant="outline-success">ค้นหา</Button>
             </Form>
           </Col>
-          <Col>
+          <Col sm="auto" >
             <Row sm="auto">
               <Col>
                 <Nav.Link className="booking-link mt-1 ">

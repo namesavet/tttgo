@@ -15,7 +15,7 @@ import "./Summary.css";
 import visa from "../../img/visa.png";
 import shoplogo from "../../img/shoplogo.png";
 import bagpackproduct from "../../img/bagpack.jpg";
-import EditAddress from './ChangeAddress' 
+import EditAddress from "./ChangeAddress";
 
 export class Summary extends React.Component {
   constructor(props) {
@@ -85,7 +85,7 @@ export class Summary extends React.Component {
                         </Col>
                         <Col className="mt-3 mb-3">
                           <Row>
-                            <EditAddress/>
+                            <EditAddress />
                           </Row>
                         </Col>
                       </Row>
@@ -134,23 +134,12 @@ export class Summary extends React.Component {
                     <div className="head-shop">
                       <Container className="shopName-insummary">
                         <Row>
-                          <Col>
-                            <Row>
-                              <Col sm={1} className="mt-3">
-                                <img
-                                  className="shop-logo"
-                                  src={shoplogo}
-                                  alt="logo"
-                                ></img>
-                              </Col>
-                              <Col
-                                sm={9}
-                                className="mt-3"
-                                style={{ textAlign: "left" }}
-                              >
-                                <p>ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา</p>
-                              </Col>
-                            </Row>
+                          <Col className="mt-3">
+                            <i
+                              className="fas fa-store"
+                              style={{ color: "gray" }}
+                            ></i>{" "}
+                            ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
                           </Col>
 
                           <Col className="mt-3" style={{ textAlign: "end" }}>
@@ -162,15 +151,15 @@ export class Summary extends React.Component {
 
                     <div className="body-product-insummary mb-3">
                       <Container>
-                        <Row>
-                          <Col sm={2} className="mt-3">
+                        <Row className="mt-3">
+                          <Col sm={2} style={{ textAlign: "center" }}>
                             <img
                               className="product-image"
                               src={bagpackproduct}
                               alt="logo"
                             ></img>
                           </Col>
-                          <Col sm={5} className="mt-3">
+                          <Col sm={5}>
                             <div className="name-product">
                               กระเป๋าเดินทาง LOJEL LUGGAGE ขนาดพิเศษ LJCF1638
                               สีขาว ไซส์ 28
@@ -181,28 +170,27 @@ export class Summary extends React.Component {
                           </Col>
 
                           <Col>
-                            <div className="circle-quantity">
-                              <div className="quantity">x1</div>
-                            </div>
+                            <div className="circle-quantity-summary">x1</div>
                           </Col>
 
-                          <Col className="mt-3" style={{ textAlign: "end" }}>
-                            <div className="font20px-bold">2,500 บาท</div>
+                          <Col style={{ textAlign: "end" }}>
+                            <div className="disprice">4490 บาท</div>
+                            <div className="redprice">2,599 บาท</div>
                           </Col>
                         </Row>
                       </Container>
                     </div>
                     <div className="body-product-insummary mb-3">
                       <Container>
-                        <Row>
-                          <Col sm={2} className="mt-3">
+                        <Row className="mt-3">
+                          <Col sm={2} style={{ textAlign: "center" }}>
                             <img
                               className="product-image"
                               src={bagpackproduct}
                               alt="logo"
                             ></img>
                           </Col>
-                          <Col sm={5} className="mt-3">
+                          <Col sm={5}>
                             <div className="name-product">
                               เครื่องสำอางท่องเที่ยวกระเป๋าหูรูดเชือกกันฝุ่น
                             </div>
@@ -212,12 +200,10 @@ export class Summary extends React.Component {
                           </Col>
 
                           <Col>
-                            <div className="circle-quantity">
-                              <div className="quantity">x1</div>
-                            </div>
+                            <div className="circle-quantity-summary">x1</div>
                           </Col>
-                          <Col className="mt-3" style={{ textAlign: "end" }}>
-                            <div className="font20px-bold">720 บาท</div>
+                          <Col style={{ textAlign: "end" }}>
+                            <div className="greenprice">720 บาท</div>
                           </Col>
                         </Row>
                       </Container>
@@ -228,23 +214,22 @@ export class Summary extends React.Component {
                     <Container>
                       <Row>
                         <Col xs={2}>
-                        <div className="font16px mt-3">
-                          <p>หมายเหตุ:</p>
-                        </div>
+                          <div className="font16px mt-3">
+                            <p>หมายเหตุ:</p>
+                          </div>
                         </Col>
                         <Col sm={10}>
-                        <div className="comment-customer">
-                          <Form.Control 
-                            type="text"
-                            placeholder="ฝากข้อความถึงผู้ขาย"
-                            className="font16px mt-2"
-                          />
-                        </div>
+                          <div className="comment-customer">
+                            <Form.Control
+                              type="text"
+                              placeholder="ฝากข้อความถึงผู้ขาย"
+                              className="font16px mt-2"
+                            />
+                          </div>
                         </Col>
                       </Row>
                     </Container>
                   </div>
-
                 </Col>
 
                 <Col>

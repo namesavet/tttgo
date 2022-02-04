@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Tab, Tabs, Col, Container,} from "react-bootstrap";
+import { Row, Tab, Tabs, Col, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./information.css";
 import bagpackproduct from "../../img/bagpack.jpg";
@@ -27,21 +27,14 @@ export class AllBuy extends React.Component {
               <div className="head-shop-history">
                 <Container>
                   <Row>
-                    <Col>
-                      <Row>
-                        <Col xs={8} md={10} className="mt-3">
-                          <i
-                            className="fas fa-store"
-                            style={{ color: "gray" }}
-                          ></i>{" "}
-                          ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
-                        </Col>
-                      </Row>
+                    <Col xs={8} md={9} className="mt-3">
+                      <i className="fas fa-store" style={{ color: "gray" }}></i>{" "}
+                      ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
                     </Col>
 
                     <Col
                       xs={4}
-                      md={2}
+                      md={3}
                       className="mt-3"
                       style={{ textAlign: "end" }}
                     >
@@ -119,21 +112,19 @@ export class AllBuy extends React.Component {
               <div className="head-shop-history">
                 <Container>
                   <Row>
-                    <Col>
-                      <Row>
-                        <Col xs={8} md={10} className="mt-3">
+                    
+                        <Col xs={8} md={9} className="mt-3">
                           <i
                             className="fas fa-store"
                             style={{ color: "gray" }}
                           ></i>{" "}
                           QIAOYUE Sports City
                         </Col>
-                      </Row>
-                    </Col>
+                     
 
                     <Col
                       xs={4}
-                      md={2}
+                      md={3}
                       className="mt-3"
                       style={{ textAlign: "end" }}
                     >
@@ -195,21 +186,16 @@ export class AllBuy extends React.Component {
               <div className="head-shop-history">
                 <Container>
                   <Row>
-                    <Col>
-                      <Row>
-                        <Col xs={8} md={10} className="mt-3">
+                        <Col xs={8} md={9} className="mt-3">
                           <i
                             className="fas fa-store"
                             style={{ color: "gray" }}
                           ></i>{" "}
                           ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
                         </Col>
-                      </Row>
-                    </Col>
-
                     <Col
                       xs={4}
-                      md={2}
+                      md={3}
                       className="mt-3"
                       style={{ textAlign: "end" }}
                     >

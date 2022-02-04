@@ -98,7 +98,7 @@ export class Cart extends React.Component {
                   <div className="allProductinCart-bg">
                     <Container>
                       <Row>
-                        <Col className="itemcart mt-2">
+                        <Col xs={8} className="itemcart mt-2 mb-2">
                           <Form.Check
                             inline
                             style={{ fontWeight: "bold" }}
@@ -108,19 +108,13 @@ export class Cart extends React.Component {
                             id="selectAllItem"
                           />
                         </Col>
-                        <Col className="mt-2" style={{ textAlign: "right" }}>
-                          <Row>
-                            <div className="col-9">
-                              <img
-                                className="deletelogo"
-                                src={bin}
-                                alt="logo"
-                              ></img>
-                            </div>
-                            <div className="col">
-                              <p>ลบ</p>
-                            </div>
-                          </Row>
+                        <Col
+                          xs={4}
+                          className="mt-2"
+                          style={{ textAlign: "right" }}
+                        >
+                          <i className="fas fa-trash">{" "} 
+                          ลบ</i>
                         </Col>
                       </Row>
                     </Container>
@@ -130,30 +124,27 @@ export class Cart extends React.Component {
                       <Col>
                         <Container className="shopName">
                           <Row className="mt-3">
-                            <Col sm={8}>
+                            <Col xs={8}>
                               <Row>
-                                <Col sm={1}>
+                                <Col>
                                   <Form.Check
+                                    className="select-item-incart"
                                     inline
                                     style={{ fontWeight: "bold" }}
                                     name="selectAllItem"
+                                    label={``}
                                     type="checkbox"
                                     id="selectAllItem"
                                   />
-                                </Col>
-                                <Col sm={1}>
-                                  <img
-                                    className="shoplogo"
-                                    src={shop}
-                                    alt="logo"
-                                  ></img>
-                                </Col>
-                                <Col sm={8}>
-                                  <p>{`ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา`}</p>
+                                  <i
+                                    className="fas fa-store"
+                                    style={{ color: "gray" }}
+                                  ></i>{" "}
+                                  ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
                                 </Col>
                               </Row>
                             </Col>
-                            <Col style={{ textAlign: "right" }}>
+                            <Col xs={4} style={{ textAlign: "end" }}>
                               <Row>
                                 <div className="col">
                                   <p style={{ textDecoration: "underline" }}>
@@ -177,14 +168,14 @@ export class Cart extends React.Component {
                                     id="selectAllItem"
                                   />
                                 </Col>
-                                <Col sm={3}>
+                                <Col sm={3} md={4}>
                                   <img
-                                    className="photoProduct"
+                                    style={{ width: "100%" }}
                                     src={bagpack}
                                     alt="logo"
                                   ></img>
                                 </Col>
-                                <Col sm={8}>
+                                <Col sm={8} md={7}>
                                   <div className="productName">
                                     <p>{`กระเป๋าเดินทางLOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์ 28`}</p>
                                   </div>
@@ -203,31 +194,35 @@ export class Cart extends React.Component {
                                 </Col>
                               </Row>
                             </Col>
-                            <Col sm={2} className="justify-content-center mt-4">
+                            <Col
+                              sm={2}
+                              className="justify-content-center mt-4"
+                              style={{ textAlign: "end" }}
+                            >
                               <li>
-                                 <button
-                                      className="decreaseNumber"
-                                      onClick={this.DecreaseItem}
-                                    >
-                                      -
-                                    </button> 
-                                    <input
-                                      name="clicks"
-                                      value={this.state.clicks}
-                                      onChange={this.handleChange.bind(this)}
-                                      style={{
-                                        textAlign: "center",
-                                        border: "none",
-                                        height: "25px",
-                                        width:"100%",
-                                      }}
-                                    />
-                                     <button
-                                      className="incrementNumber"
-                                      onClick={this.IncrementItem}
-                                    >
-                                      +
-                                    </button>
+                                <button
+                                  className="decreaseNumber"
+                                  onClick={this.DecreaseItem}
+                                >
+                                  -
+                                </button>
+                                <input
+                                  name="clicks"
+                                  value={this.state.clicks}
+                                  onChange={this.handleChange.bind(this)}
+                                  style={{
+                                    textAlign: "center",
+                                    border: "none",
+                                    height: "25px",
+                                    width: "30px",
+                                  }}
+                                />
+                                <button
+                                  className="incrementNumber"
+                                  onClick={this.IncrementItem}
+                                >
+                                  +
+                                </button>
                               </li>
                             </Col>
                             <Col sm={2}>
@@ -245,100 +240,88 @@ export class Cart extends React.Component {
                           </Row>
                         </Container>
                         <Container>
-                        <Row className="productInshop mt-3 mb-3">
-                          <Col sm={8}>
-                            <Row>
-                              <Col sm={1}>
-                                <Form.Check
-                                  inline
-                                  style={{ marginTop: "40px" }}
-                                  name="selectAllItem"
-                                  type="checkbox"
-                                  id="selectAllItem"
+                          <Row className="productInshop mt-3 mb-3">
+                            <Col sm={8}>
+                              <Row>
+                                <Col sm={1}>
+                                  <Form.Check
+                                    inline
+                                    style={{ marginTop: "40px" }}
+                                    name="selectAllItem"
+                                    type="checkbox"
+                                    id="selectAllItem"
+                                  />
+                                </Col>
+                                <Col sm={3} md={4}>
+                                  <img
+                                    className="photoProduct"
+                                    src={bagpack}
+                                    alt="logo"
+                                  ></img>
+                                </Col>
+                                <Col sm={8} md={7}>
+                                  <div className="productName">
+                                    <p>{`กระเป๋าเดินทางLOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์ 28`}</p>
+                                  </div>
+                                  <div className="productDetail">
+                                    <p>
+                                      ตัวเลือกสินค้า:
+                                      <select
+                                        className="select-detailPrduct"
+                                        name="detailProduct"
+                                        id="detailProduct"
+                                      >
+                                        <option>{`HM50GL+footrest`}</option>
+                                      </select>
+                                    </p>
+                                  </div>
+                                </Col>
+                              </Row>
+                            </Col>
+                            <Col
+                              sm={2}
+                              className="justify-content-center mt-4"
+                              style={{ textAlign: "end" }}
+                            >
+                              <li>
+                                <button
+                                  className="decreaseNumber"
+                                  onClick={this.DecreaseItem}
+                                >
+                                  -
+                                </button>
+                                <input
+                                  name="clicks"
+                                  value={this.state.clicks}
+                                  onChange={this.handleChange.bind(this)}
+                                  style={{
+                                    textAlign: "center",
+                                    border: "none",
+                                    height: "25px",
+                                    width: "30px",
+                                  }}
                                 />
-                              </Col>
-                              <Col sm={3}>
+                                <button
+                                  className="incrementNumber"
+                                  onClick={this.IncrementItem}
+                                >
+                                  +
+                                </button>
+                              </li>
+                            </Col>
+                            <Col sm={2}>
+                              <div className="fontprice">
+                                <p>{`2,599`} บาท</p>
+                              </div>
+                              <div style={{ textAlign: "end" }}>
                                 <img
-                                  className="photoProduct"
-                                  src={bagpack}
+                                  className="deletelogo"
+                                  src={bin}
                                   alt="logo"
                                 ></img>
-                              </Col>
-                              <Col sm={8}>
-                                <div className="productName">
-                                  <p>{`กระเป๋าเดินทางLOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์ 28`}</p>
-                                </div>
-                                <div className="productDetail">
-                                  <p>
-                                    ตัวเลือกสินค้า:
-                                    <select
-                                      className="select-detailPrduct"
-                                      name="detailProduct"
-                                      id="detailProduct"
-                                    >
-                                      <option>{`HM50GL+footrest`}</option>
-                                    </select>
-                                  </p>
-                                </div>
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col sm={2} className="justify-content-center mt-4">
-                            <Row>
-                              <Col>
-                                <Row
-                                  style={{
-                                    width: "30px",
-                                    textAlign: "right",
-                                  }}
-                                >
-                                  <button
-                                    className="decreaseNumber"
-                                    onClick={this.DecreaseItem}
-                                  >
-                                    -
-                                  </button>
-                                </Row>
-                              </Col>
-                              <Col style={{ width: "30px" }}>
-                                <Row>
-                                  <input
-                                    name="clicks"
-                                    value={this.state.clicks}
-                                    onChange={this.handleChange.bind(this)}
-                                    style={{
-                                      textAlign: "center",
-                                      border: "none",
-                                      height: "25px",
-                                    }}
-                                  />
-                                </Row>
-                              </Col>
-                              <Col>
-                                <Row style={{ width: "30px" }}>
-                                  <button
-                                    className="incrementNumber"
-                                    onClick={this.IncrementItem}
-                                  >
-                                    +
-                                  </button>
-                                </Row>
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col sm={2}>
-                            <div className="fontprice">
-                              <p>{`2,599`} บาท</p>
-                            </div>
-                            <div style={{ textAlign: "end" }}>
-                              <img
-                                className="deletelogo"
-                                src={bin}
-                                alt="logo"
-                              ></img>
-                            </div>
-                          </Col>
-                        </Row>
+                              </div>
+                            </Col>
+                          </Row>
                         </Container>
                       </Col>
                     </Row>
@@ -348,30 +331,27 @@ export class Cart extends React.Component {
                       <Col>
                         <Container className="shopName">
                           <Row className="mt-3">
-                            <Col sm={8}>
+                            <Col xs={8}>
                               <Row>
-                                <Col sm={1}>
+                                <Col>
                                   <Form.Check
+                                    className="select-item-incart"
                                     inline
                                     style={{ fontWeight: "bold" }}
                                     name="selectAllItem"
+                                    label={``}
                                     type="checkbox"
                                     id="selectAllItem"
                                   />
-                                </Col>
-                                <Col sm={1}>
-                                  <img
-                                    className="shoplogo"
-                                    src={shop}
-                                    alt="logo"
-                                  ></img>
-                                </Col>
-                                <Col sm={8}>
-                                  <p>{`ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา`}</p>
+                                  <i
+                                    className="fas fa-store"
+                                    style={{ color: "gray" }}
+                                  ></i>{" "}
+                                  ร้านของที่ระลึกเที่ยวไทย ณ อยุธยา
                                 </Col>
                               </Row>
                             </Col>
-                            <Col style={{ textAlign: "right" }}>
+                            <Col xs={4} style={{ textAlign: "end" }}>
                               <Row>
                                 <div className="col">
                                   <p style={{ textDecoration: "underline" }}>
@@ -395,14 +375,14 @@ export class Cart extends React.Component {
                                     id="selectAllItem"
                                   />
                                 </Col>
-                                <Col sm={3}>
+                                <Col sm={3} md={4}>
                                   <img
                                     className="photoProduct"
                                     src={bagpack}
                                     alt="logo"
                                   ></img>
                                 </Col>
-                                <Col sm={8}>
+                                <Col sm={8} md={7}>
                                   <div className="productName">
                                     <p>{`กระเป๋าเดินทางLOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์ 28`}</p>
                                   </div>
@@ -421,48 +401,36 @@ export class Cart extends React.Component {
                                 </Col>
                               </Row>
                             </Col>
-                            <Col sm={2} className="justify-content-center mt-4">
-                              <Row>
-                                <Col>
-                                  <Row
-                                    style={{
-                                      width: "30px",
-                                      textAlign: "right",
-                                    }}
-                                  >
-                                    <button
-                                      className="decreaseNumber"
-                                      onClick={this.DecreaseItem}
-                                    >
-                                      -
-                                    </button>
-                                  </Row>
-                                </Col>
-                                <Col style={{ width: "30px" }}>
-                                  <Row>
-                                    <input
-                                      name="clicks"
-                                      value={this.state.clicks}
-                                      onChange={this.handleChange.bind(this)}
-                                      style={{
-                                        textAlign: "center",
-                                        border: "none",
-                                        height: "25px",
-                                      }}
-                                    />
-                                  </Row>
-                                </Col>
-                                <Col>
-                                  <Row style={{ width: "30px" }}>
-                                    <button
-                                      className="incrementNumber"
-                                      onClick={this.IncrementItem}
-                                    >
-                                      +
-                                    </button>
-                                  </Row>
-                                </Col>
-                              </Row>
+                            <Col
+                              sm={2}
+                              className="justify-content-center mt-4"
+                              style={{ textAlign: "end" }}
+                            >
+                              <li>
+                                <button
+                                  className="decreaseNumber"
+                                  onClick={this.DecreaseItem}
+                                >
+                                  -
+                                </button>
+                                <input
+                                  name="clicks"
+                                  value={this.state.clicks}
+                                  onChange={this.handleChange.bind(this)}
+                                  style={{
+                                    textAlign: "center",
+                                    border: "none",
+                                    height: "25px",
+                                    width: "30px",
+                                  }}
+                                />
+                                <button
+                                  className="incrementNumber"
+                                  onClick={this.IncrementItem}
+                                >
+                                  +
+                                </button>
+                              </li>
                             </Col>
                             <Col sm={2}>
                               <div className="fontprice">
@@ -479,100 +447,88 @@ export class Cart extends React.Component {
                           </Row>
                         </Container>
                         <Container>
-                        <Row className="productInshop mt-3 mb-3">
-                          <Col sm={8}>
-                            <Row>
-                              <Col sm={1}>
-                                <Form.Check
-                                  inline
-                                  style={{ marginTop: "40px" }}
-                                  name="selectAllItem"
-                                  type="checkbox"
-                                  id="selectAllItem"
+                          <Row className="productInshop mt-3 mb-3">
+                            <Col sm={8}>
+                              <Row>
+                                <Col sm={1}>
+                                  <Form.Check
+                                    inline
+                                    style={{ marginTop: "40px" }}
+                                    name="selectAllItem"
+                                    type="checkbox"
+                                    id="selectAllItem"
+                                  />
+                                </Col>
+                                <Col sm={3} md={4}>
+                                  <img
+                                    className="photoProduct"
+                                    src={bagpack}
+                                    alt="logo"
+                                  ></img>
+                                </Col>
+                                <Col sm={8} md={7}>
+                                  <div className="productName">
+                                    <p>{`กระเป๋าเดินทางLOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์ 28`}</p>
+                                  </div>
+                                  <div className="productDetail">
+                                    <p>
+                                      ตัวเลือกสินค้า:
+                                      <select
+                                        className="select-detailPrduct"
+                                        name="detailProduct"
+                                        id="detailProduct"
+                                      >
+                                        <option>{`HM50GL+footrest`}</option>
+                                      </select>
+                                    </p>
+                                  </div>
+                                </Col>
+                              </Row>
+                            </Col>
+                            <Col
+                              sm={2}
+                              className="justify-content-center mt-4"
+                              style={{ textAlign: "end" }}
+                            >
+                              <li>
+                                <button
+                                  className="decreaseNumber"
+                                  onClick={this.DecreaseItem}
+                                >
+                                  -
+                                </button>
+                                <input
+                                  name="clicks"
+                                  value={this.state.clicks}
+                                  onChange={this.handleChange.bind(this)}
+                                  style={{
+                                    textAlign: "center",
+                                    border: "none",
+                                    height: "25px",
+                                    width: "30px",
+                                  }}
                                 />
-                              </Col>
-                              <Col sm={3}>
+                                <button
+                                  className="incrementNumber"
+                                  onClick={this.IncrementItem}
+                                >
+                                  +
+                                </button>
+                              </li>
+                            </Col>
+                            <Col sm={2}>
+                              <div className="fontprice">
+                                <p>{`2,599`} บาท</p>
+                              </div>
+                              <div style={{ textAlign: "end" }}>
                                 <img
-                                  className="photoProduct"
-                                  src={bagpack}
+                                  className="deletelogo"
+                                  src={bin}
                                   alt="logo"
                                 ></img>
-                              </Col>
-                              <Col sm={8}>
-                                <div className="productName">
-                                  <p>{`กระเป๋าเดินทางLOJEL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาว ไซส์ 28`}</p>
-                                </div>
-                                <div className="productDetail">
-                                  <p>
-                                    ตัวเลือกสินค้า:
-                                    <select
-                                      className="select-detailPrduct"
-                                      name="detailProduct"
-                                      id="detailProduct"
-                                    >
-                                      <option>{`HM50GL+footrest`}</option>
-                                    </select>
-                                  </p>
-                                </div>
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col sm={2} className="justify-content-center mt-4">
-                            <Row>
-                              <Col>
-                                <Row
-                                  style={{
-                                    width: "30px",
-                                    textAlign: "right",
-                                  }}
-                                >
-                                  <button
-                                    className="decreaseNumber"
-                                    onClick={this.DecreaseItem}
-                                  >
-                                    -
-                                  </button>
-                                </Row>
-                              </Col>
-                              <Col style={{ width: "30px" }}>
-                                <Row>
-                                  <input
-                                    name="clicks"
-                                    value={this.state.clicks}
-                                    onChange={this.handleChange.bind(this)}
-                                    style={{
-                                      textAlign: "center",
-                                      border: "none",
-                                      height: "25px",
-                                    }}
-                                  />
-                                </Row>
-                              </Col>
-                              <Col>
-                                <Row style={{ width: "30px" }}>
-                                  <button
-                                    className="incrementNumber"
-                                    onClick={this.IncrementItem}
-                                  >
-                                    +
-                                  </button>
-                                </Row>
-                              </Col>
-                            </Row>
-                          </Col>
-                          <Col sm={2}>
-                            <div className="fontprice">
-                              <p>{`2,599`} บาท</p>
-                            </div>
-                            <div style={{ textAlign: "end" }}>
-                              <img
-                                className="deletelogo"
-                                src={bin}
-                                alt="logo"
-                              ></img>
-                            </div>
-                          </Col>
-                        </Row>
+                              </div>
+                            </Col>
+                          </Row>
                         </Container>
                       </Col>
                     </Row>

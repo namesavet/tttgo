@@ -50,7 +50,6 @@
 }
 .photoProduct {
   width: 100%;
-  height: 100%;
 }
 .fontprice {
   text-align: end;
@@ -161,5 +160,15 @@
   border: none;
   width: 150px;
   height: 40px;
+}
+.circle-quantity-summary{
+  background-color: #d5dbe4ef;
+  width:35px;
+  height:35px;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 16px;
+  margin-left: 50%;
 }
 

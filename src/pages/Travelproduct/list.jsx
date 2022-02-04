@@ -59,292 +59,233 @@ export class Travelproduct extends React.Component {
       ],
     };
     return (
-
       <div>
         <div className="head-productTraval mt-3 mb-3">
-          <SearchTab/>
-</div>
-      <Container>
-
-        <ul className="breadcrumb">
-          <li>
-            <a href="/">หน้าแรก</a>
-          </li>
-          <li>       สินค้าประจำวัน</li>
-        </ul>
-
-
-
-        <div className="ads">
+          <SearchTab />
+        </div>
           <Container>
+            <Breadcrumb className="province-head-path">
+              <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
+              <Breadcrumb.Item href="" active>
+                สินค้าประจำวัน
+              </Breadcrumb.Item>
+            </Breadcrumb>
+
+            <div className="ads">
+              <Container>
+                <Row>
+                  <Col>
+                    {" "}
+                    <img className="ads380" src={ads1400} alt="" />
+                  </Col>
+                </Row>
+              </Container>
+            </div>
             <Row>
               <Col>
-                {" "}
-                <img className="ads380" src={ads1400} alt="" />
+                <h5>ร้านค้าที่เข้าร่วมรายการ</h5>
+              </Col>
+              <Col>
+                <NavLink href="" className="btn-seeall">
+                  ดูทั้งหมด
+                </NavLink>
               </Col>
             </Row>
+            <div className="row">
+              <div className="col-3  col-md  col-xl  logoproduct-top">
+                <img src={logo401} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl logoproduct-top">
+                <img src={logo402} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl logoproduct-top">
+                <img src={logo403} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl logoproduct-top">
+                <img src={logo404} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md col-xl logoproduct-top">
+                <img src={logo404} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md col-xl logoproduct-top">
+                <img src={logo403} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md col-xl logoproduct-top">
+                <img src={logo402} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl logoproduct-top">
+                <img src={logo401} alt="" className="pic100per" />
+              </div>
+            </div>
+
+            <div className="row ">
+              <div className="col-3  col-md  col-xl  logoproduct-bottom">
+                <img src={logo401} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl  logoproduct-bottom">
+                <img src={logo402} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl  logoproduct-bottom">
+                <img src={logo403} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl  logoproduct-bottom">
+                <img src={logo404} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md col-xl  logoproduct-bottom">
+                <img src={logo404} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md col-xl  logoproduct-bottom">
+                <img src={logo403} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md col-xl  logoproduct-bottom">
+                <img src={logo402} alt="" className="pic100per" />
+              </div>
+              <div className="col-3  col-md  col-xl  logoproduct-bottom">
+                <img src={logo401} alt="" className="pic100per" />
+              </div>
+            </div>
+
+            <div className="categorymenu">
+              <h5>หมวดหมู่สินค้า</h5>
+              <Slider {...category}>
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ padding: "5%" }}>
+                    <div>
+                      <img className="categorypic" src={shirt} alt="" />
+                    </div>
+                    <div className="categorytext">เสื้อผ้า</div>
+                  </div>
+                </div>
+              </Slider>
+            </div>
+
+            <h5 style={{ marginTop: "30px" }}>สินค้าท่องเที่ยวแนะนำ</h5>
+            <div className="row  flashsale" style={{ listStyle: "none" }}>
+              <li className="flashdetail-product-col">
+                <Card className="flashdetail-product">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </li>
+              <li className="flashdetail-product-col">
+                <Card className="flashdetail-product">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </li>
+              <li className="flashdetail-product-col">
+                <Card className="flashdetail-product">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </li>
+              <li className="flashdetail-product-col">
+                <Card className="flashdetail-product">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </li>
+              <li className="flashdetail-product-col">
+                <Card className="flashdetail-product">
+                  <Card.Img variant="top" src={product} />
+                  <Card.Body>
+                    <div>
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                      <div className="disprice">ปกติ 2990 บาท</div>
+                      <div className="redprice">1560 บาท</div>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </li>
+            </div>
           </Container>
-        </div>
-        <Row>
-          <Col>
-            <h5>ร้านค้าที่เข้าร่วมรายการ</h5>
-          </Col>
-          <Col>
-            <NavLink href="" className="btn-seeall">
-              ดูทั้งหมด
-            </NavLink>
-          </Col>
-        </Row>
-        <div className="row">
-          <div className="col-3  col-md  col-xl  logoproduct-top">
-            <img src={logo401} alt="" className="pic100per" />
-          </div>
-          <div className="col-3  col-md  col-xl logoproduct-top">
-            <img src={logo402} alt="" className="pic100per" />
-          </div>
-          <div className="col-3  col-md  col-xl logoproduct-top">
-            <img src={logo403} alt="" className="pic100per" />
-          </div>
-          <div className="col-3  col-md  col-xl logoproduct-top">
-            <img src={logo404} alt="" className="pic100per" />
-          </div>
-          <div className="col-3  col-md col-xl logoproduct-top">
-            <img src={logo404} alt="" className="pic100per" />
-          </div>
-          <div className="col-3  col-md col-xl logoproduct-top">
-            <img src={logo403} alt="" className="pic100per" />
-          </div>
-          <div className="col-3  col-md col-xl logoproduct-top">
-            <img src={logo402} alt="" className="pic100per" />
-          </div>
-          <div className="col-3  col-md  col-xl logoproduct-top">
-            <img src={logo401} alt="" className="pic100per" />
-          </div>
-        </div>
-        <Container>
-          <Breadcrumb className="province-head-path">
-            <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
-            <Breadcrumb.Item href="" active>
-              สินค้าประจำวัน
-            </Breadcrumb.Item>
-          </Breadcrumb>
-
-          <div className="ads">
-            <Container>
-              <Row>
-                <Col>
-                  {" "}
-                  <img className="ads380" src={ads1400} alt="" />
-                </Col>
-              </Row>
-            </Container>
-          </div>
-          <Row>
-            <Col>
-              <h5>ร้านค้าที่เข้าร่วมรายการ</h5>
-            </Col>
-            <Col>
-              <NavLink href="" className="btn-seeall">
-                ดูทั้งหมด
-              </NavLink>
-            </Col>
-          </Row>
-          <div className="row">
-            <div className="col-3  col-md  col-xl  logoproduct-top">
-              <img src={logo401} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl logoproduct-top">
-              <img src={logo402} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl logoproduct-top">
-              <img src={logo403} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl logoproduct-top">
-              <img src={logo404} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md col-xl logoproduct-top">
-              <img src={logo404} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md col-xl logoproduct-top">
-              <img src={logo403} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md col-xl logoproduct-top">
-              <img src={logo402} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl logoproduct-top">
-              <img src={logo401} alt="" className="pic100per" />
-            </div>
-          </div>
-
-          <div className="row ">
-            <div className="col-3  col-md  col-xl  logoproduct-bottom">
-              <img src={logo401} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl  logoproduct-bottom">
-              <img src={logo402} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl  logoproduct-bottom">
-              <img src={logo403} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl  logoproduct-bottom">
-              <img src={logo404} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md col-xl  logoproduct-bottom">
-              <img src={logo404} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md col-xl  logoproduct-bottom">
-              <img src={logo403} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md col-xl  logoproduct-bottom">
-              <img src={logo402} alt="" className="pic100per" />
-            </div>
-            <div className="col-3  col-md  col-xl  logoproduct-bottom">
-              <img src={logo401} alt="" className="pic100per" />
-            </div>
-          </div>
-
-          <div className="categorymenu">
-            <h5>หมวดหมู่สินค้า</h5>
-            <Slider {...category}>
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-            </Slider>
-          </div>
-
-        <h5 style={{marginTop:"30px"}}>สินค้าท่องเที่ยวแนะนำ</h5>
-        <div className="row  flashsale" style={{ listStyle: "none" }}>
-          <li className="flashdetail-product-col">
-          <Card className="flashdetail-product">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
-          </li>
-          <li className="flashdetail-product-col">
-          <Card className="flashdetail-product">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
-          </li>
-          <li className="flashdetail-product-col">
-          <Card className="flashdetail-product">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
-          </li>
-          <li className="flashdetail-product-col">
-          <Card className="flashdetail-product">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
-          </li>
-          <li className="flashdetail-product-col">
-          <Card className="flashdetail-product">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด 
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
-          </li>
-          
-        </div>
-      </Container>
       </div>
     );
   }
