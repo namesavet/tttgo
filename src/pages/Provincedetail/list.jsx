@@ -23,13 +23,17 @@ export class Provincedetail extends React.Component {
   render() {
     return (
       <Container>
-        <Breadcrumb className="province-head-path">
-          <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
-          <Breadcrumb.Item href="/Province">ชลบุรี</Breadcrumb.Item>
-          <Breadcrumb.Item href="" active>
-            Great & Grand Sweet Destination
-          </Breadcrumb.Item>
-        </Breadcrumb>
+        
+        <ul className="breadcrumb">
+          <li>
+            <a href="/">หน้าแรก</a>
+          </li>
+          <li>
+            <a href="/Province">ชลบุรี</a>
+          </li>
+          <li>   Great & Grand Sweet Destination</li>
+        </ul>
+
 
         <div className="row">
           <li className="col-sm-16 col-md-5 provincedetail-img">

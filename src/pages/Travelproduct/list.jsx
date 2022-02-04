@@ -59,9 +59,67 @@ export class Travelproduct extends React.Component {
       ],
     };
     return (
+
       <div>
         <div className="head-productTraval mt-3 mb-3">
           <SearchTab/>
+</div>
+      <Container>
+
+        <ul className="breadcrumb">
+          <li>
+            <a href="/">หน้าแรก</a>
+          </li>
+          <li>       สินค้าประจำวัน</li>
+        </ul>
+
+
+
+        <div className="ads">
+          <Container>
+            <Row>
+              <Col>
+                {" "}
+                <img className="ads380" src={ads1400} alt="" />
+              </Col>
+            </Row>
+          </Container>
+        </div>
+        <Row>
+          <Col>
+            <h5>ร้านค้าที่เข้าร่วมรายการ</h5>
+          </Col>
+          <Col>
+            <NavLink href="" className="btn-seeall">
+              ดูทั้งหมด
+            </NavLink>
+          </Col>
+        </Row>
+        <div className="row">
+          <div className="col-3  col-md  col-xl  logoproduct-top">
+            <img src={logo401} alt="" className="pic100per" />
+          </div>
+          <div className="col-3  col-md  col-xl logoproduct-top">
+            <img src={logo402} alt="" className="pic100per" />
+          </div>
+          <div className="col-3  col-md  col-xl logoproduct-top">
+            <img src={logo403} alt="" className="pic100per" />
+          </div>
+          <div className="col-3  col-md  col-xl logoproduct-top">
+            <img src={logo404} alt="" className="pic100per" />
+          </div>
+          <div className="col-3  col-md col-xl logoproduct-top">
+            <img src={logo404} alt="" className="pic100per" />
+          </div>
+          <div className="col-3  col-md col-xl logoproduct-top">
+            <img src={logo403} alt="" className="pic100per" />
+          </div>
+          <div className="col-3  col-md col-xl logoproduct-top">
+            <img src={logo402} alt="" className="pic100per" />
+          </div>
+          <div className="col-3  col-md  col-xl logoproduct-top">
+            <img src={logo401} alt="" className="pic100per" />
+          </div>
         </div>
         <Container>
           <Breadcrumb className="province-head-path">

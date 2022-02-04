@@ -27,7 +27,7 @@ function Btnchoosecolor() {
     { name: "HM50GL+footrest", value: "2" },
   ];
   return (
-    <>
+    <div>
       <ButtonGroup className="mb-2">
         {radios.map((radio, idx) => (
           <ToggleButton
@@ -44,28 +44,55 @@ function Btnchoosecolor() {
           </ToggleButton>
         ))}
       </ButtonGroup>
-    </>
+    </div>
   );
 }
 
 export class Travelproductdetail extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      clicks: 0,
+      show: true,
+    };
+  }
+
+  IncrementItem = () => {
+    this.setState({ clicks: this.state.clicks + 1 });
+  };
+
+  DecreaseItem = () => {
+    if (this.state.clicks < 1) {
+      this.setState({
+        clicks: 0,
+      });
+    } else {
+      this.setState({
+        clicks: this.state.clicks - 1,
+      });
+    }
+  };
+  handleChange(event) {
+    this.setState({ clicks: event.target.value });
+  }
+
   render() {
     return (
       <div className="bg-travelproductdetail">
         <Container>
-          <Breadcrumb className="travelproductdetail-head-path">
-            <Breadcrumb.Item href="/">หน้าแรก</Breadcrumb.Item>
-            <Breadcrumb.Item href="/Travelproduct">
-              สินค้าประจำวัน
-            </Breadcrumb.Item>
-            <Breadcrumb.Item href="" active>
-              กระเป๋าเดินทาง LOJELL LUGGAGE LJCF1638 สีขาวไซส์28
-            </Breadcrumb.Item>
-          </Breadcrumb>
+          <ul className="breadcrumb">
+            <li>
+              <a href="/">หน้าแรก</a>
+            </li>
+            <li>
+              <a href="/Travelproduct">สินค้าประจำวัน</a>
+            </li>
+            <li> กระเป๋าเดินทาง LOJELL LUGGAGE LJCF1638 สีขาวไซส์28</li>
+          </ul>
 
-          <Imgproduct />
+         
           <div className="row" style={{ marginTop: "30px" }}>
-            <div className="col-xs-16 col-md-6">wda</div>
+            <div className="col-xs-16 col-md-6"> <Imgproduct /></div>
             <div className="col-xs-16 col-md-6">
               <h5>
                 กระเป๋าเดินทาง LOJELL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาวไซส์28
@@ -99,16 +126,47 @@ export class Travelproductdetail extends React.Component {
               </div>
 
               <div className="row" style={{ marginTop: "10px" }}>
-                <div className="col-3">สี</div>
-                <div className="col">
-                  <Btnchoosecolor />
+                <div className="col col-md-2 col-lg-3">สี</div>
+                <div className="col col-md-6 col-lg-6">
+                  <div>
+                    <Btnchoosecolor />
+                  </div>
                 </div>
               </div>
 
               <div className="row" style={{ marginTop: "10px" }}>
                 <div className="col-3">จำนวน</div>
                 <div className="col">
-                  {/* <input type="number" value="50" min="0" max="100" step="10" /> */}
+                  <li>
+                    <button
+                      className="decreaseNumber btn-decreaseNumber"
+                      onClick={this.DecreaseItem}
+                    >
+                      -
+                    </button>
+
+                    <input
+                      name="clicks input-num-product"
+                      value={this.state.clicks}
+                      onChange={this.handleChange.bind(this)}
+                      style={{
+                        textAlign: "center",             
+                        borderLeft:"none",
+                        borderRight:"none",
+                        borderTop:"1px solid #E8E8E8",
+                        borderBottom:"1px solid #E8E8E8",
+                        height: "30px",
+                        width:"15%",
+                      }}
+                    />
+
+                    <button
+                      className="incrementNumber btn-incrementNumber"
+                      onClick={this.IncrementItem}
+                    >
+                      +
+                    </button>
+                  </li>
                 </div>
               </div>
               <div className="row" style={{ marginTop: "10px" }}>
@@ -392,10 +450,6 @@ export class Travelproductdetail extends React.Component {
               </div>
             </div>
           </div>
-
-                 
-
-
         </Container>
       </div>
     );

@@ -17,15 +17,7 @@
 .thailand {
   margin-bottom: 3%;
 }
-.province-head-path {
-  margin-top: 3%;
-  font-size: small;
-  color: black;
-}
-.www{
-    color: black;
-    text-decoration: none;
-}
+
 
 .tab-procinve  .nav-link, .tab-procinve .nav-link.active {
   color: white;

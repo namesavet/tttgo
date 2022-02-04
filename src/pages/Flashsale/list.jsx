@@ -17,12 +17,12 @@ export class Flashsale extends React.Component {
   render() {
     return (
       <Container>
-        <Breadcrumb className="province-head-path">
-          <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="" active>
-            ดีลพิเศษประจำวัน
-          </Breadcrumb.Item>
-        </Breadcrumb>
+        <ul className="breadcrumb">
+          <li>
+            <a href="/">หน้าแรก</a>
+          </li>
+          <li> ดีลพิเศษประจำวัน</li>
+        </ul>
 
         <h4>ดีลพิเศษประจำวัน หมดเวลาใน..........นาที</h4>
 
