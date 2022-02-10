@@ -8,6 +8,7 @@ import { Reservation } from "./Reservation";
 
 export class Information extends React.Component {
   render() {
+    
     return (
       <div className="information-bg">
         <Container style={{ paddingTop: "30px", paddingBottom: "30px" }}>
@@ -82,6 +83,7 @@ export class Information extends React.Component {
                   <Tab.Pane eventKey="bookings" className="bg-reservation">
                     <Reservation />
                   </Tab.Pane>
+                  
                 </Tab.Content>
               </Col>
             </Row>

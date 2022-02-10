@@ -1,3 +1,7 @@
+
+
+
+
 .layoutmenubtn {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -177,6 +181,7 @@ button.row.menubtn.btn.btn-primary:hover {
 }
 .pic100per{
   width: 100%;
+  cursor: pointer;
 }
 
 ul.breadcrumb {

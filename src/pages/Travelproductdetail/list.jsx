@@ -11,7 +11,9 @@ import {
   Col,
   Pagination,
   ButtonGroup,
+  NavLink,
 } from "react-bootstrap";
+import Slider from "react-slick";
 import "bootstrap/dist/css/bootstrap.min.css";
 import product from "../../img/product1.jpg";
 import "./travelproductdetail.css";
@@ -77,6 +79,38 @@ export class Travelproductdetail extends React.Component {
   }
 
   render() {
+    const promotion = {
+      infinite: true,
+      speed: 500,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
     return (
       <div className="bg-travelproductdetail">
         <Container>
@@ -90,9 +124,11 @@ export class Travelproductdetail extends React.Component {
             <li> กระเป๋าเดินทาง LOJELL LUGGAGE LJCF1638 สีขาวไซส์28</li>
           </ul>
 
-         
           <div className="row" style={{ marginTop: "30px" }}>
-            <div className="col-xs-16 col-md-6"> <Imgproduct /></div>
+            <div className="col-xs-16 col-md-6">
+              {" "}
+              <Imgproduct />
+            </div>
             <div className="col-xs-16 col-md-6">
               <h5>
                 กระเป๋าเดินทาง LOJELL LUGGAGE ขนาดพิเศษ LJCF1638 สีขาวไซส์28
@@ -150,13 +186,13 @@ export class Travelproductdetail extends React.Component {
                       value={this.state.clicks}
                       onChange={this.handleChange.bind(this)}
                       style={{
-                        textAlign: "center",             
-                        borderLeft:"none",
-                        borderRight:"none",
-                        borderTop:"1px solid #E8E8E8",
-                        borderBottom:"1px solid #E8E8E8",
+                        textAlign: "center",
+                        borderLeft: "none",
+                        borderRight: "none",
+                        borderTop: "1px solid #E8E8E8",
+                        borderBottom: "1px solid #E8E8E8",
                         height: "30px",
-                        width:"15%",
+                        width: "15%",
                       }}
                     />
 
@@ -383,72 +419,120 @@ export class Travelproductdetail extends React.Component {
           </div>
 
           <div className="travelproduct-near">
-            <h5>สินค้าท่องเที่ยวแนะนำ</h5>
-            <div className="row ">
-              <div className="col">
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+            <Row>
+              <Col>
+                <h5 style={{ marginTop: "6px" }}>สินค้าท่องเที่ยวแนะนำ</h5>
+              </Col>
+              <Col>
+                <NavLink
+                  href=""
+                  className="btn-seeall"
+                  style={{ marginTop: "0px" }}
+                >
+                  ดูทั้งหมด
+                </NavLink>
+              </Col>
+            </Row>
+            <Slider {...promotion}>
+              <div>
+                <div style={{ padding: "5%" }}>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
               </div>
-              <div className="col">
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+              <div>
+                <div style={{ padding: "5%" }}>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
               </div>
-              <div className="col">
-                {" "}
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+              <div>
+                <div style={{ padding: "5%" }}>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
               </div>
-              <div className="col">
-                {" "}
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+              <div>
+                <div style={{ padding: "5%" }}>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
               </div>
-              <div className="col">
-                {" "}
-                <Card className="flashdetail">
-                  <Card.Img variant="top" src={product} />
-                  <Card.Body>
-                    <div>
-                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
-                      <div className="disprice">ปกติ 2990 บาท</div>
-                      <div className="redprice">1560 บาท</div>
-                    </div>
-                  </Card.Body>
-                </Card>
+              <div>
+                <div style={{ padding: "5%" }}>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
               </div>
-            </div>
+              <div>
+                <div style={{ padding: "5%" }}>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </div>
+              <div>
+                <div style={{ padding: "5%" }}>
+                  <Card className="flashdetail">
+                    <Card.Img variant="top" src={product} />
+                    <Card.Body>
+                      <div>
+                        *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                        <div className="disprice">ปกติ 2990 บาท</div>
+                        <div className="redprice">1560 บาท</div>
+                      </div>
+                    </Card.Body>
+                  </Card>
+                </div>
+              </div>
+            </Slider>
           </div>
         </Container>
       </div>

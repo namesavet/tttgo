@@ -295,7 +295,7 @@ export class Province extends React.Component {
 
         <div className="row  " style={{ listStyle: "none" }}>
           <li className="col-md-6 col-lg-3">
-            <NavLink href="/Provincedetail" className="province-link">
+            <NavLink href="/Provincedetail" className="Nav-link">
               <Card className="provincedetail">
                 <Card.Img variant="top" src={thai} />
                 <Card.Body>

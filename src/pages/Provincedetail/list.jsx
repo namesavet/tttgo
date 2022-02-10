@@ -15,6 +15,10 @@ import flash from "../../img/flash.jpg";
 import flash1 from "../../img/flash1.jpg";
 import flash2 from "../../img/flash2.jpg";
 import flash3 from "../../img/flash3.jpg";
+import share from "../../img/iconshare/facebook.png";
+import share1 from "../../img/iconshare/instagram.png";
+import share2 from "../../img/iconshare/twitter.png";
+import share3 from "../../img/iconshare/youtube.png";
 import thai from "../../img/thai.jpg";
 import north from "../../img/north.jpg";
 import "./provincedetail.css";
@@ -23,7 +27,6 @@ export class Provincedetail extends React.Component {
   render() {
     return (
       <Container>
-        
         <ul className="breadcrumb">
           <li>
             <a href="/">หน้าแรก</a>
@@ -31,25 +34,19 @@ export class Provincedetail extends React.Component {
           <li>
             <a href="/Province">ชลบุรี</a>
           </li>
-          <li>   Great & Grand Sweet Destination</li>
+          <li> Great & Grand Sweet Destination</li>
         </ul>
-
 
         <div className="row">
           <li className="col-sm-16 col-md-5 provincedetail-img">
-           
-              <img src={flash} alt="" width={"100%"} />
-           
+            <img src={flash} alt="" width={"100%"} />
           </li>
           <li className="col-sm-16 col-md-5 provincedetail-img">
-            
-              <img src={flash} alt="" width={"100%"} />
-           
+            <img src={flash} alt="" width={"100%"} />
           </li>
           <li className="col-sm-16 col-md-2 provincedetail-img">
-            
-              <img src={flash} alt="" width={"100%"} />
-              <img src={flash} alt="" width={"100%"} />
+            <img src={flash} alt="" width={"100%"} />
+            <img src={flash} alt="" width={"100%"} />
           </li>
         </div>
 
@@ -67,8 +64,14 @@ export class Provincedetail extends React.Component {
                 เมืองพัทยา อำเภอแหลมฉบัง
               </li>
             </Col>
-            <Col xs={6} md={4}>
-              <li>แชร์ :</li>
+            <Col xs={6} md={4} style={{textAlign:"end"}}>
+              <li>
+                แชร์ : 
+                <img src={share} alt="" style={{ width: "25px",marginRight:"5px" ,marginLeft:"10px"}} />
+                <img src={share1} alt="" style={{ width: "25px",marginRight:"5px" }}/>
+                <img src={share2} alt="" style={{ width: "25px",marginRight:"5px" }} />
+                <img src={share3} alt="" style={{ width: "25px",marginRight:"5px" }} />
+              </li>
             </Col>
           </Row>
 

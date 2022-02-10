@@ -58,7 +58,7 @@ margin-left: 100px;
   bottom: 8px;
   left: 16px;
 }
-.province-link,.province-link:focus,.province-link:hover{
+.Nav-link,.Nav-link:focus,.Nav-link:hover{
   color: black;
   padding: 0px;
 }

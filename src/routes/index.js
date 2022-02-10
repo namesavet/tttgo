@@ -8,6 +8,7 @@ import { Information } from '../pages/Information'
 import { Travelproduct } from '../pages/Travelproduct'
 import { Travelproductdetail } from '../pages/Travelproductdetail'
 import {Ordersuccessful} from '../pages/Ordersuccessful'
+import {Testreact} from '../pages/Testreact'
 export default () => (
      <Switch>
      <Route exact path="/" component={Home} />
@@ -18,6 +19,7 @@ export default () => (
      <Route exact path="/Travelproduct" component={Travelproduct} />
      <Route exact path="/Travelproductdetail" component={Travelproductdetail} />
      <Route exact path="/Ordersuccessful" component={Ordersuccessful} />
+     <Route exact path="/Testreact" component={Testreact} />
     </Switch>
 )
    

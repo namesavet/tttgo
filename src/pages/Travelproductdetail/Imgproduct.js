@@ -62,7 +62,7 @@ export class Imgproduct extends React.Component {
         <img
           src={setImages[index].image}
           alt=""
-          style={{ width: "100%" ,marginBottom:"20px"}}
+          style={{ width: "100%" ,marginBottom:"20px",cursor:"pointer"}}
           onClick={() => this.fullgetImages(setImages[index].image)}
         />
       );
