@@ -77,13 +77,14 @@ function CradProvince(props){
 function Item(props){
  const {title,image} = props
     return(
-        <div>
+        <NavLink href="/Province" style={{padding:"0px"}}>
+          
               <div style={{ padding: "3%" }}>
                   <div className="provinec-pic">
                     <img className="thaipic " src={image} alt="" />
                     <div className="provinec-name">{title}</div>
                   </div>
                 </div>
-        </div>
+        </NavLink>
     )
 }

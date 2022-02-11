@@ -13,225 +13,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import thai from "../../img/thai.jpg";
 import north from "../../img/north.jpg";
 import "./province.css";
+import {Attractions} from "../Home/Attractions"
 
-export class Central extends React.Component {
-  render() {
-    const toptravel = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 6,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
 
-    return (
-      <div>
-        <div className="">
-          <Slider {...toptravel}>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic" src={thai} alt="" />
-                  <div className="provinec-name">กรุงเทพ</div>
-                </div>
-              </div>
-            </div>
-          </Slider>
-        </div>
-      </div>
-    );
-  }
-}
-export class North extends React.Component {
-  render() {
-    const toptravel = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 6,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-
-    return (
-      <div>
-        <div className="">
-          <Slider {...toptravel}>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div style={{ padding: "3%" }}>
-                <div className="provinec-pic">
-                  <img className="thaipic " src={north} alt="" />
-                  <div className="provinec-name">เชียงใหม่</div>
-                </div>
-              </div>
-            </div>
-          </Slider>
-        </div>
-      </div>
-    );
-  }
-}
 
 export class PaginationProvince extends React.Component {
   render() {
@@ -270,23 +54,23 @@ export class Province extends React.Component {
             className="mb-4 tab-procinve"
           >
             <Tab eventKey="central" title="ภาคกลาง">
-              <Central />
+            <Attractions region={`central`}/>
             </Tab>
 
             <Tab eventKey="north" title="ภาคเหนือ">
-              <North />
+            <Attractions region={`north`} />
             </Tab>
             <Tab eventKey="northeast" title="ภาคตะวันออกเฉียง">
-              <Central />
+            <Attractions region={`northeast`} />
             </Tab>
             <Tab eventKey="west" title="ภาคตะวันตก">
-              <North />
+            <Attractions region={`western`} />
             </Tab>
             <Tab eventKey="east" title="ภาคตะวันออก">
-              <Central />
-            </Tab>
-            <Tab eventKey="south" title="ภาคใต้">
-              <North />
+                <Attractions region={`eastern`} />
+              </Tab>
+              <Tab eventKey="south" title="ภาคใต้">
+                <Attractions region={`south`} />
             </Tab>
           </Tabs>
         </div>
@@ -416,3 +200,4 @@ export class Province extends React.Component {
     );
   }
 }
+

@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Row,
-  Tab,
-  Col,
-  Container,
-  Nav,
-  NavLink,
-  Breadcrumb,
-  Card,
-} from "react-bootstrap";
-import Slider from "react-slick";
+import { Row, Col, Container, NavLink, Card } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./travelproduct.css";
 import ads1400 from "../../img/ads1400.jpg";
@@ -17,43 +7,11 @@ import logo401 from "../../img/logoproduct/4001.png";
 import logo402 from "../../img/logoproduct/4002.png";
 import logo403 from "../../img/logoproduct/4003.png";
 import logo404 from "../../img/logoproduct/4004.png";
-import shirt from "../../img/category/shirt.png";
 import product from "../../img/product1.jpg";
+import { Category } from "../Home/Category";
 
 export class Travelproduct extends React.Component {
   render() {
-    const category = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 7,
-      slidesToScroll: 7,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
     return (
       <Container>
         <ul className="breadcrumb">
@@ -139,79 +97,7 @@ export class Travelproduct extends React.Component {
 
         <div className="categorymenu">
           <h5>หมวดหมู่สินค้า</h5>
-          <Slider {...category}>
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ padding: "5%" }}>
-                <div>
-                  <img className="categorypic" src={shirt} alt="" />
-                </div>
-                <div className="categorytext">เสื้อผ้า</div>
-              </div>
-            </div>
-          </Slider>
+          <Category />
         </div>
 
         <h5 style={{ marginTop: "30px" }}>สินค้าท่องเที่ยวแนะนำ</h5>
@@ -222,7 +108,10 @@ export class Travelproduct extends React.Component {
                 <Card.Img variant="top" src={product} />
                 <Card.Body>
                   <div>
-                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                    <p className="texthid">
+                      {" "}
+                      *CASIO* นาฬิกาสายเลส มีกล่องครบชุด
+                    </p>
                     <div className="disprice">ปกติ 2990 บาท</div>
                     <div className="redprice">1560 บาท</div>
                   </div>
@@ -235,7 +124,7 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
@@ -247,7 +136,7 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
@@ -259,7 +148,7 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
@@ -271,7 +160,7 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
@@ -283,7 +172,7 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
@@ -295,7 +184,7 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
@@ -307,7 +196,7 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
@@ -319,14 +208,13 @@ export class Travelproduct extends React.Component {
               <Card.Img variant="top" src={product} />
               <Card.Body>
                 <div>
-                <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p> 
+                  <p className="texthid"> *CASIO* นาฬิกาสายเลส มีกล่องครบชุด</p>
                   <div className="disprice">ปกติ 2990 บาท</div>
                   <div className="redprice">1560 บาท</div>
                 </div>
               </Card.Body>
             </Card>
           </li>
-          
         </div>
       </Container>
     );

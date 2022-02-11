@@ -1,7 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
 import {
-  Card,
   Tabs,
   Tab,
   Row,
@@ -14,14 +12,14 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Specialdeal } from "./Specialdeal";
 import { Attractions } from "./Attractions";
-import {Specialprice} from "./Specialprice";
+import { Specialprice } from "./Specialprice";
+import { Hotel } from "./hotel";
+import { Category } from "./Category";
 import ads1 from "../../img/ads1.png";
 import ads380 from "../../img/ads380.jpg";
-import hotelpic from "../../img/hotel.jpg";
+
 import first from "../../img/first.jpg";
 import second from "../../img/second.jpg";
-import shirt from "../../img/category/shirt.png";
-import product from "../../img/product1.jpg";
 import "./home.css";
 
 export class Home extends React.Component {
@@ -29,74 +27,7 @@ export class Home extends React.Component {
     display: true,
     width: 600,
   };
-
   render() {
-   
-    const category = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 7,
-      slidesToScroll: 7,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-    const hotel = {
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      initialSlide: 0,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-          },
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-          },
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    };
-
     return (
       <div>
         <div>
@@ -195,79 +126,7 @@ export class Home extends React.Component {
         <Container>
           <div className="categorymenu">
             <h2>หมวดหมู่สินค้า</h2>
-            <Slider {...category}>
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <div>
-                    <img className="categorypic" src={shirt} alt="" />
-                  </div>
-                  <div className="categorytext">เสื้อผ้า</div>
-                </div>
-              </div>
-            </Slider>
+            <Category />
           </div>
 
           <div className="todaymenu">
@@ -306,7 +165,7 @@ export class Home extends React.Component {
                 </NavLink>
               </Col>
             </Row>
-            <Specialprice/>
+            <Specialprice />
           </div>
 
           <div className="hotelmenu">
@@ -320,98 +179,7 @@ export class Home extends React.Component {
                 </NavLink>
               </Col>
             </Row>
-            <Slider {...hotel}>
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={hotelpic} />
-                    <Card.Body>
-                      <div>
-                        เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                        <div className="location">
-                          <i className="fas fa-map-marker-alt"></i>
-                          {""} กรุงเทพมหานคร,สุขุมวิท
-                        </div>
-                        <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                        <div className="greenprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </div>
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={hotelpic} />
-                    <Card.Body>
-                      <div>
-                        เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                        <div className="location">
-                          <i className="fas fa-map-marker-alt"></i>
-                          {""} กรุงเทพมหานคร,สุขุมวิท
-                        </div>
-                        <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                        <div className="greenprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </div>
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={hotelpic} />
-                    <Card.Body>
-                      <div>
-                        เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                        <div className="location">
-                          <i className="fas fa-map-marker-alt"></i>
-                          {""} กรุงเทพมหานคร,สุขุมวิท
-                        </div>
-                        <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                        <div className="greenprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </div>
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={hotelpic} />
-                    <Card.Body>
-                      <div>
-                        เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                        <div className="location">
-                          <i className="fas fa-map-marker-alt"></i>
-                          {""} กรุงเทพมหานคร,สุขุมวิท
-                        </div>
-                        <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                        <div className="greenprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </div>
-              <div>
-                <div style={{ padding: "5%" }}>
-                  <Card style={{ width: "100%" }}>
-                    <Card.Img variant="top" src={hotelpic} />
-                    <Card.Body>
-                      <div>
-                        เนอโว่ พรีเมียร์ เรสซิเดนซ์ (Neveu permier Residence)
-                        <div className="location">
-                          <i className="fas fa-map-marker-alt"></i>
-                          {""} กรุงเทพมหานคร,สุขุมวิท
-                        </div>
-                        <div className="detailprice">ราคารวม(ต่อเดือน)</div>
-                        <div className="greenprice">1560 บาท</div>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                </div>
-              </div>
-            </Slider>
+            <Hotel />
           </div>
 
           <div className="ads">
@@ -461,19 +229,19 @@ export class Home extends React.Component {
               </Tab>
 
               <Tab eventKey="north" title="ภาคเหนือ">
-                <Attractions region={`north`}/>
+                <Attractions region={`north`} />
               </Tab>
               <Tab eventKey="northeast" title="ภาคตะวันออกเฉียง">
                 <Attractions region={`northeast`} />
               </Tab>
               <Tab eventKey="west" title="ภาคตะวันตก">
-                <Attractions region={`western`}/>
+                <Attractions region={`western`} />
               </Tab>
               <Tab eventKey="east" title="ภาคตะวันออก">
-                <Attractions region={`eastern`}/>
+                <Attractions region={`eastern`} />
               </Tab>
               <Tab eventKey="south" title="ภาคใต้">
-                <Attractions region={`south`}/>
+                <Attractions region={`south`} />
               </Tab>
             </Tabs>
           </div>
