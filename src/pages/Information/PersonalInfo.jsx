@@ -7,7 +7,7 @@ export class Personal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      image: null,
+      image: "/img/blank-profile.png",
     };
 
     this.onImageChange = this.onImageChange.bind(this);
@@ -84,23 +84,31 @@ export class Personal extends React.Component {
                 </Row>
               </Container>
             </div>
-            <div className="photo-info"></div>
             <div className="data-info mt-3">
               <Form>
                 <Container>
                   <Row>
-                    <div className="circle-image">
-                      <i className="fas fa-user">
-                        <img style={{width:"100%"}} src={this.state.image} />
-                      </i>
+                    <div className="photo-info mb-4">
+                      <div>
+                      <img
+                        className="circle-image"
+                        src={this.state.image}
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <input
+                        id="myInputImage"
+                        type="file"
+                        name="myImage"
+                        onChange={this.onImageChange}
+                      />
+                      <label className="input-img" htmlFor="myInputImage">
+                        เพิ่มรูปภาพ
+                      </label>
+                    </div>
                     </div>
                     
-                    <input
-                    
-                      type="file"
-                      name="myImage"
-                      onChange={this.onImageChange}
-                    />
                   </Row>
                   <Row>
                     <Col>

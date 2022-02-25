@@ -14,7 +14,6 @@ import SearchTab from "../../components/SearchTab";
 import "./Summary.css";
 import visa from "../../img/visa.png";
 import shoplogo from "../../img/shoplogo.png";
-import bagpackproduct from "../../img/bagpack.jpg";
 import EditAddress from "./ChangeAddress";
 
 export class Summary extends React.Component {
@@ -155,7 +154,7 @@ export class Summary extends React.Component {
                           <Col sm={2} style={{ textAlign: "center" }}>
                             <img
                               className="product-image"
-                              src={bagpackproduct}
+                              src="/img/bagpack.jpg"
                               alt="logo"
                             ></img>
                           </Col>
@@ -186,7 +185,7 @@ export class Summary extends React.Component {
                           <Col sm={2} style={{ textAlign: "center" }}>
                             <img
                               className="product-image"
-                              src={bagpackproduct}
+                              src="/img/bagpack.jpg"
                               alt="logo"
                             ></img>
                           </Col>
